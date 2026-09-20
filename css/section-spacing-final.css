@@ -1,0 +1,105 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   FINAL GLOBAL SECTION SPACING
+   Standard professional vertical rhythm
+========================================================= */
+
+:root {
+  --ess-section-space-desktop: 64px;
+  --ess-section-space-tablet: 52px;
+  --ess-section-space-mobile: 40px;
+}
+
+
+/* Remove accidental spacing from include wrappers */
+
+main > div[data-include] {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+
+/* =========================================================
+   NORMAL CONTENT SECTIONS
+
+   Do NOT change:
+   - hero sections
+   - quick navigation sections
+   - section index/navigation bars
+========================================================= */
+
+main > div[data-include] > section:not([class*="hero"]):not([class*="nav"]):not([class*="index"]) {
+
+  padding-top:
+    var(--ess-section-space-desktop) !important;
+
+  padding-bottom:
+    var(--ess-section-space-desktop) !important;
+
+  margin-top:
+    0 !important;
+
+  margin-bottom:
+    0 !important;
+}
+
+
+/* =========================================================
+   Prevent accidental double spacing between sections
+========================================================= */
+
+main > div[data-include] + div[data-include] {
+  margin-top: 0 !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  main > div[data-include] > section:not([class*="hero"]):not([class*="nav"]):not([class*="index"]) {
+
+    padding-top:
+      var(--ess-section-space-tablet) !important;
+
+    padding-bottom:
+      var(--ess-section-space-tablet) !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  main > div[data-include] > section:not([class*="hero"]):not([class*="nav"]):not([class*="index"]) {
+
+    padding-top:
+      var(--ess-section-space-mobile) !important;
+
+    padding-bottom:
+      var(--ess-section-space-mobile) !important;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  :root {
+    --ess-section-space-mobile: 36px;
+  }
+
+}

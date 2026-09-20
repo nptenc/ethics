@@ -1,0 +1,922 @@
+﻿/* =========================================================
+   INDUSTRIES BODY FINAL
+   NO LARGE BODY PHOTOS
+========================================================= */
+
+.ess-sector-directory {
+  padding: 20px 0 75px;
+
+  background: #F6F8FA;
+}
+
+
+.ess-sector-directory > .container {
+  width: 100%;
+  max-width: 1380px;
+
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+
+/* heading */
+
+.ess-sector-directory-head {
+  display: grid;
+
+  grid-template-columns:
+    1fr .48fr;
+
+  gap: 65px;
+
+  align-items: end;
+
+  padding:
+    25px 0 38px;
+
+  border-bottom:
+    1px solid #D9E0E5;
+}
+
+
+.ess-sector-directory-head > div > span {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #B88A32;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: .18em;
+}
+
+
+.ess-sector-directory-head h2 {
+  max-width: 780px;
+
+  margin: 0;
+
+  color: #071B2E;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(37px,4vw,54px);
+
+  line-height: 1.06;
+
+  letter-spacing: -.045em;
+}
+
+
+.ess-sector-directory-head h2 strong {
+  display: block;
+
+  color: #B88A32;
+}
+
+
+.ess-sector-directory-head > p {
+  margin: 0 0 3px;
+
+  color: #6D7883;
+
+  font-size: 11px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   SECTOR ROW
+========================================================= */
+
+.ess-sector-row {
+  display: grid;
+
+  grid-template-columns:
+    115px
+    minmax(220px,.85fr)
+    minmax(280px,1.15fr)
+    minmax(250px,.8fr);
+
+  align-items: stretch;
+
+  min-height: 225px;
+
+  background: #FFFFFF;
+
+  border-left:
+    1px solid #DDE3E8;
+
+  border-right:
+    1px solid #DDE3E8;
+
+  border-bottom:
+    1px solid #DDE3E8;
+}
+
+
+.ess-sector-row > div {
+  padding:
+    29px 26px;
+
+  border-right:
+    1px solid #E3E8EC;
+}
+
+
+.ess-sector-row > div:last-child {
+  border-right: 0;
+}
+
+
+/* number/icon rail */
+
+.ess-sector-index {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+}
+
+
+.ess-sector-index > span {
+  color: #B88A32;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 28px;
+
+  font-weight: 800;
+
+  line-height: 1;
+}
+
+
+.ess-sector-index > i {
+  color: #071B2E;
+
+  font-size: 25px;
+
+  opacity: .65;
+}
+
+
+/* title */
+
+.ess-sector-title {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+
+.ess-sector-title small {
+  color: #B88A32;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: .15em;
+}
+
+
+.ess-sector-title h3 {
+  max-width: 310px;
+
+  margin: 10px 0 0;
+
+  color: #071B2E;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(20px,2vw,28px);
+
+  line-height: 1.18;
+
+  letter-spacing: -.025em;
+}
+
+
+/* description */
+
+.ess-sector-description {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+
+.ess-sector-description p {
+  max-width: 530px;
+
+  margin: 0;
+
+  color: #697680;
+
+  font-size: 10px;
+
+  line-height: 1.85;
+}
+
+
+.ess-sector-description a {
+  width: fit-content;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 17px;
+
+  padding-bottom: 4px;
+
+  color: #071B2E !important;
+
+  border-bottom:
+    1px solid #D2AA52;
+
+  font-size: 8px;
+
+  font-weight: 800;
+}
+
+
+/* focus tags */
+
+.ess-sector-focus {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 8px;
+}
+
+
+.ess-sector-focus span {
+  display: flex;
+
+  align-items: center;
+
+  min-height: 35px;
+
+  padding:
+    8px 11px;
+
+  color: #53636F;
+
+  background: #F6F8FA;
+
+  border:
+    1px solid #E4E8EC;
+
+  font-size: 8px;
+
+  font-weight: 700;
+}
+
+
+.ess-sector-focus span::before {
+  content: "";
+
+  width: 5px;
+  height: 5px;
+
+  flex:
+    0 0 5px;
+
+  margin-right: 9px;
+
+  background: #D2AA52;
+
+  border-radius: 50%;
+}
+
+
+/* subtle hover */
+
+.ess-sector-row {
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+
+.ess-sector-row:hover {
+  position: relative;
+
+  z-index: 2;
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 15px 34px
+    rgba(7,27,46,.06);
+}
+
+
+/* =========================================================
+   INDUSTRIAL DARK ROW
+========================================================= */
+
+.ess-sector-row-dark {
+  background:
+    linear-gradient(
+      135deg,
+      #071B2E,
+      #0B2A47
+    );
+
+  border-color: #173850;
+}
+
+
+.ess-sector-row-dark > div {
+  border-right-color:
+    rgba(255,255,255,.09);
+}
+
+
+.ess-sector-row-dark
+.ess-sector-index > i {
+  color: #E9CF8A;
+}
+
+
+.ess-sector-row-dark
+.ess-sector-title h3 {
+  color: #FFFFFF;
+}
+
+
+.ess-sector-row-dark
+.ess-sector-description p {
+  color:
+    rgba(255,255,255,.56);
+}
+
+
+.ess-sector-row-dark
+.ess-sector-description a {
+  color: #FFFFFF !important;
+}
+
+
+.ess-sector-row-dark
+.ess-sector-focus span {
+  color:
+    rgba(255,255,255,.70);
+
+  background:
+    rgba(255,255,255,.035);
+
+  border-color:
+    rgba(255,255,255,.10);
+}
+
+
+/* =========================================================
+   EVENTS ACCENT ROW
+========================================================= */
+
+.ess-sector-row-accent {
+  border-left:
+    4px solid #D2AA52;
+}
+
+
+/* =========================================================
+   REMOVE OLD EMPTY BODY SPACING
+========================================================= */
+
+.ess-industry-intro {
+  padding-bottom:
+    42px !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  .ess-sector-directory > .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  .ess-sector-directory-head {
+    grid-template-columns:
+      1fr;
+
+    gap: 18px;
+  }
+
+
+  .ess-sector-row {
+    grid-template-columns:
+      90px 1fr 1.25fr;
+
+    min-height: 0;
+  }
+
+
+  .ess-sector-focus {
+    grid-column:
+      2 / 4;
+
+    display: grid;
+
+    grid-template-columns:
+      repeat(4,1fr);
+
+    border-top:
+      1px solid #E3E8EC;
+
+    border-right: 0 !important;
+  }
+
+
+  .ess-sector-row-dark
+  .ess-sector-focus {
+    border-top-color:
+      rgba(255,255,255,.09);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  .ess-sector-directory {
+    padding:
+      10px 0 58px;
+  }
+
+
+  .ess-sector-directory > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  .ess-sector-directory-head {
+    padding-bottom: 28px;
+  }
+
+
+  .ess-sector-row {
+    grid-template-columns:
+      72px 1fr;
+
+    min-height: 0;
+  }
+
+
+  .ess-sector-row > div {
+    padding:
+      23px 18px;
+  }
+
+
+  .ess-sector-index {
+    grid-row:
+      1 / 3;
+
+    justify-content:
+      space-between;
+  }
+
+
+  .ess-sector-title {
+    border-right: 0 !important;
+  }
+
+
+  .ess-sector-description {
+    grid-column: 2;
+
+    border-top:
+      1px solid #E3E8EC;
+
+    border-right: 0 !important;
+  }
+
+
+  .ess-sector-focus {
+    grid-column:
+      1 / 3;
+
+    display: grid;
+
+    grid-template-columns:
+      1fr 1fr;
+
+    padding:
+      14px !important;
+
+    border-top:
+      1px solid #E3E8EC;
+
+    border-right: 0 !important;
+  }
+
+
+  .ess-sector-row-dark
+  .ess-sector-description,
+  .ess-sector-row-dark
+  .ess-sector-focus {
+    border-top-color:
+      rgba(255,255,255,.09);
+  }
+
+
+  .ess-sector-title h3 {
+    font-size: 21px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .ess-sector-row {
+    grid-template-columns:
+      58px 1fr;
+  }
+
+
+  .ess-sector-row > div {
+    padding:
+      20px 14px;
+  }
+
+
+  .ess-sector-index > span {
+    font-size: 22px;
+  }
+
+
+  .ess-sector-index > i {
+    font-size: 19px;
+  }
+
+
+  .ess-sector-focus {
+    grid-template-columns:
+      1fr;
+  }
+
+}
+
+
+/* =========================================================
+   INDUSTRIES CTA - FINAL VISUAL FIX
+========================================================= */
+
+body.ess-industries-page .ess-industry-cta-shell {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  gap: 45px !important;
+
+  padding: 40px 42px !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071B2E 0%,
+      #0B2A47 100%
+    ) !important;
+
+  border-radius: 14px !important;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 22px 55px
+    rgba(7,27,46,.14) !important;
+}
+
+
+/* left content */
+
+body.ess-industries-page
+.ess-industry-cta-shell > div:first-child {
+  flex: 1 1 auto;
+}
+
+
+body.ess-industries-page
+.ess-industry-cta-shell > div:first-child > span {
+  display: block !important;
+
+  margin: 0 0 9px !important;
+
+  color: #D2AA52 !important;
+
+  font-size: 8px !important;
+
+  font-weight: 800 !important;
+
+  letter-spacing: .16em !important;
+}
+
+
+body.ess-industries-page
+.ess-industry-cta-shell h2 {
+  max-width: 760px !important;
+
+  margin: 0 !important;
+
+  color: #FFFFFF !important;
+
+  font-family:
+    var(--ess-font-heading) !important;
+
+  font-size:
+    clamp(24px,2.7vw,36px) !important;
+
+  font-weight: 700 !important;
+
+  line-height: 1.2 !important;
+
+  letter-spacing: -.025em !important;
+}
+
+
+body.ess-industries-page
+.ess-industry-cta-shell h2 strong {
+  display: inline !important;
+
+  color: #E9CF8A !important;
+}
+
+
+body.ess-industries-page
+.ess-industry-cta-shell p {
+  max-width: 680px !important;
+
+  margin: 11px 0 0 !important;
+
+  color:
+    rgba(255,255,255,.60) !important;
+
+  font-size: 10px !important;
+
+  line-height: 1.7 !important;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+body.ess-industries-page
+.ess-industry-cta-actions {
+  flex: 0 0 auto;
+
+  display: flex !important;
+
+  align-items: center !important;
+
+  gap: 10px !important;
+
+  margin: 0 !important;
+}
+
+
+/* phone */
+
+body.ess-industries-page
+.ess-industry-call {
+  min-width: 205px !important;
+  min-height: 52px !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+
+  gap: 11px !important;
+
+  padding: 10px 15px !important;
+
+  color: #FFFFFF !important;
+
+  text-decoration: none !important;
+
+  background:
+    rgba(255,255,255,.035) !important;
+
+  border:
+    1px solid rgba(255,255,255,.16) !important;
+
+  border-radius: 7px !important;
+}
+
+
+body.ess-industries-page
+.ess-industry-call i {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 30px;
+
+  color: #071B2E !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #E9CF8A,
+      #D2AA52
+    );
+
+  border-radius: 5px;
+}
+
+
+body.ess-industries-page
+.ess-industry-call small {
+  display: block !important;
+
+  color:
+    rgba(255,255,255,.48) !important;
+
+  font-size: 6px !important;
+
+  font-weight: 700 !important;
+
+  letter-spacing: .12em !important;
+}
+
+
+body.ess-industries-page
+.ess-industry-call strong {
+  display: block !important;
+
+  margin-top: 3px !important;
+
+  color: #FFFFFF !important;
+
+  font-size: 10px !important;
+
+  font-weight: 800 !important;
+}
+
+
+/* assessment button */
+
+body.ess-industries-page
+.ess-industry-request {
+  min-height: 52px !important;
+
+  display: inline-flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  gap: 9px !important;
+
+  padding: 11px 18px !important;
+
+  color: #071B2E !important;
+
+  text-decoration: none !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #E9CF8A,
+      #D2AA52
+    ) !important;
+
+  border: 0 !important;
+
+  border-radius: 7px !important;
+
+  font-size: 8px !important;
+
+  font-weight: 800 !important;
+
+  white-space: nowrap !important;
+}
+
+
+body.ess-industries-page
+.ess-industry-request i {
+  color: #071B2E !important;
+}
+
+
+/* remove browser/default link blue */
+
+body.ess-industries-page
+.ess-industry-cta-shell a:link,
+body.ess-industries-page
+.ess-industry-cta-shell a:visited,
+body.ess-industries-page
+.ess-industry-cta-shell a:hover,
+body.ess-industries-page
+.ess-industry-cta-shell a:active {
+  text-decoration: none !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  body.ess-industries-page
+  .ess-industry-cta-shell {
+    flex-direction: column !important;
+
+    align-items: flex-start !important;
+  }
+
+
+  body.ess-industries-page
+  .ess-industry-cta-actions {
+    width: 100% !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  body.ess-industries-page
+  .ess-industry-cta-shell {
+    padding:
+      28px 22px !important;
+
+    gap: 26px !important;
+  }
+
+
+  body.ess-industries-page
+  .ess-industry-cta-shell h2 {
+    font-size:
+      clamp(23px,7vw,31px) !important;
+  }
+
+
+  body.ess-industries-page
+  .ess-industry-cta-actions {
+    display: grid !important;
+
+    grid-template-columns:
+      1fr !important;
+  }
+
+
+  body.ess-industries-page
+  .ess-industry-call,
+  body.ess-industries-page
+  .ess-industry-request {
+    width: 100% !important;
+  }
+
+}

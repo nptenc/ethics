@@ -1,0 +1,805 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   HOMEPAGE BODY PREMIUM POLISH
+========================================================= */
+
+
+/* =========================================================
+   SHARED BODY WIDTH
+========================================================= */
+
+.ess-about > .container,
+.ess-services > .container {
+  width: 100%;
+  max-width: 1320px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+
+/* =========================================================
+   ABOUT SECTION
+========================================================= */
+
+.ess-about {
+  padding: 115px 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      #FFFFFF 0%,
+      #F8FAFC 100%
+    );
+
+  border-top:
+    1px solid #EDF0F3;
+
+  border-bottom:
+    1px solid #E5E9ED;
+}
+
+
+.ess-about::before {
+  opacity: .65;
+}
+
+
+/* better grid balance */
+
+.ess-about-grid {
+  grid-template-columns:
+    minmax(0, 1.05fr)
+    minmax(430px, .82fr);
+
+  gap:
+    clamp(65px, 6vw, 95px);
+}
+
+
+/* heading */
+
+.ess-about-content h2 {
+  max-width: 690px;
+
+  font-size:
+    clamp(
+      40px,
+      3.8vw,
+      56px
+    );
+
+  line-height: 1.07;
+}
+
+
+.ess-about-content h2 strong {
+  color: #B88A32;
+}
+
+
+/* lead text */
+
+.ess-about-lead {
+  max-width: 650px;
+
+  font-size: 16px;
+
+  line-height: 1.75;
+}
+
+
+.ess-about-text {
+  max-width: 650px;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   VALUES - TURN INTO PREMIUM CARDS
+========================================================= */
+
+.ess-about-values {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap: 12px;
+
+  margin-top: 34px;
+
+  border: 0;
+}
+
+
+.ess-about-values > div,
+.ess-about-values > div:not(:first-child) {
+  position: relative;
+
+  min-height: 122px;
+
+  padding: 20px;
+
+  background: #FFFFFF;
+
+  border:
+    1px solid #E4E8EC;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 10px 28px
+    rgba(7,27,46,.04);
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease;
+}
+
+
+.ess-about-values > div:hover {
+  transform:
+    translateY(-4px);
+
+  border-color:
+    rgba(210,170,82,.45);
+
+  box-shadow:
+    0 16px 34px
+    rgba(7,27,46,.08);
+}
+
+
+.ess-about-values > div::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 3px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      #E5C978,
+      #B88A32
+    );
+
+  border-radius:
+    10px 0 0 10px;
+}
+
+
+.ess-about-values span {
+  color: #B88A32;
+}
+
+
+.ess-about-values strong {
+  font-size: 14px;
+}
+
+
+.ess-about-values small {
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   ABOUT LINK
+========================================================= */
+
+.ess-about-link {
+  margin-top: 28px;
+
+  padding-bottom: 6px;
+
+  font-size: 10px;
+
+  letter-spacing: .025em;
+}
+
+
+/* =========================================================
+   RIGHT PANEL
+========================================================= */
+
+.ess-about-panel {
+  position: relative;
+
+  padding: 34px;
+
+  border-radius: 14px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.10);
+
+  background:
+    linear-gradient(
+      145deg,
+      #071B2E 0%,
+      #0B2946 62%,
+      #0D3355 100%
+    );
+
+  box-shadow:
+    0 34px 70px
+    rgba(7,27,46,.18);
+}
+
+
+.ess-about-panel::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #E3C677,
+      #B98A31,
+      transparent 82%
+    );
+}
+
+
+.ess-about-panel::after {
+  width: 300px;
+  height: 300px;
+
+  right: -135px;
+  top: -135px;
+
+  border-color:
+    rgba(210,170,82,.16);
+}
+
+
+/* operating standard badge */
+
+.ess-about-panel-number {
+  border-radius: 10px;
+
+  background:
+    rgba(255,255,255,.025);
+}
+
+
+/* assurance rows */
+
+.ess-assurance-item {
+  padding: 20px 0;
+
+  grid-template-columns:
+    48px 1fr;
+
+  gap: 16px;
+}
+
+
+.ess-assurance-icon {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 10px;
+
+  background:
+    rgba(210,170,82,.05);
+}
+
+
+.ess-assurance-item strong {
+  font-size: 12px;
+}
+
+
+.ess-assurance-item p {
+  max-width: 370px;
+
+  font-size: 9px;
+
+  color:
+    rgba(255,255,255,.60);
+}
+
+
+/* =========================================================
+   SERVICES SECTION
+========================================================= */
+
+.ess-services {
+  padding:
+    115px 0 105px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #061725 0%,
+      #071B2E 55%,
+      #0A2742 100%
+    );
+}
+
+
+/* heading */
+
+.ess-services-heading {
+  grid-template-columns:
+    1.1fr .75fr;
+
+  gap: 70px;
+
+  margin-bottom: 48px;
+}
+
+
+.ess-services-heading h2 {
+  font-size:
+    clamp(
+      40px,
+      3.8vw,
+      55px
+    );
+}
+
+
+.ess-services-heading > p {
+  font-size: 13px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   SERVICES GRID
+========================================================= */
+
+.ess-services-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  gap: 16px;
+
+  border: 0;
+}
+
+
+/* =========================================================
+   SERVICE CARDS
+========================================================= */
+
+.ess-service-card {
+  min-height: 370px;
+
+  padding: 28px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.09);
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.045),
+      rgba(255,255,255,.018)
+    );
+
+  box-shadow:
+    0 18px 42px
+    rgba(0,0,0,.08);
+
+  backdrop-filter:
+    blur(4px);
+
+  transition:
+    transform .28s ease,
+    border-color .28s ease,
+    background .28s ease,
+    box-shadow .28s ease;
+}
+
+
+.ess-service-card::before {
+  width: 100%;
+  height: 3px;
+
+  left: 0;
+  top: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      #E4C776,
+      #B88A32,
+      transparent 72%
+    );
+
+  transform:
+    scaleX(.18);
+
+  transform-origin:
+    left;
+
+  transition:
+    transform .28s ease;
+}
+
+
+.ess-service-card:hover {
+  transform:
+    translateY(-6px);
+
+  border-color:
+    rgba(210,170,82,.32);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.07),
+      rgba(255,255,255,.028)
+    );
+
+  box-shadow:
+    0 26px 55px
+    rgba(0,0,0,.17);
+}
+
+
+.ess-service-card:hover::before {
+  height: 3px;
+
+  transform:
+    scaleX(1);
+}
+
+
+/* number */
+
+.ess-service-number {
+  font-size: 9px;
+
+  letter-spacing: .12em;
+}
+
+
+/* icon */
+
+.ess-service-icon {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 10px;
+
+  background:
+    rgba(210,170,82,.045);
+}
+
+
+.ess-service-card:hover .ess-service-icon {
+  background:
+    linear-gradient(
+      135deg,
+      #E8CE82,
+      #C89A3C
+    );
+}
+
+
+/* headings */
+
+.ess-service-card h3 {
+  margin-top: 27px;
+
+  font-size: 18px;
+
+  line-height: 1.32;
+}
+
+
+/* description */
+
+.ess-service-card > p {
+  margin-top: 13px;
+
+  font-size: 10px;
+
+  line-height: 1.75;
+
+  color:
+    rgba(255,255,255,.58);
+}
+
+
+/* tags */
+
+.ess-service-tags {
+  margin-top: 18px;
+}
+
+
+.ess-service-tags span {
+  padding: 5px 8px;
+
+  border-radius: 20px;
+
+  border-color:
+    rgba(255,255,255,.12);
+
+  background:
+    rgba(255,255,255,.025);
+
+  font-size: 7px;
+}
+
+
+/* service links */
+
+.ess-service-card > a {
+  padding-top: 22px;
+
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   SERVICES FOOTER CTA
+========================================================= */
+
+.ess-services-footer {
+  margin-top: 40px;
+
+  padding: 25px 28px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.10);
+
+  border-radius: 12px;
+
+  background:
+    rgba(255,255,255,.025);
+}
+
+
+.ess-services-footer strong {
+  font-size: 15px;
+}
+
+
+.ess-services-footer > a {
+  min-height: 46px;
+
+  padding: 11px 19px;
+
+  border-radius: 8px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #E8CD80,
+      #CFA248
+    );
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+
+.ess-services-footer > a:hover {
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 12px 28px
+    rgba(210,170,82,.20);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  .ess-about > .container,
+  .ess-services > .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+
+  .ess-about {
+    padding:
+      85px 0;
+  }
+
+
+  .ess-about-grid {
+    grid-template-columns:
+      1fr;
+
+    gap: 55px;
+  }
+
+
+  .ess-about-panel {
+    max-width: none;
+  }
+
+
+  .ess-services {
+    padding:
+      85px 0;
+  }
+
+
+  .ess-services-grid {
+    grid-template-columns:
+      repeat(2,1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  .ess-about > .container,
+  .ess-services > .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+
+  .ess-about {
+    padding:
+      68px 0;
+  }
+
+
+  .ess-about-content h2 {
+    font-size:
+      clamp(
+        33px,
+        9vw,
+        43px
+      );
+  }
+
+
+  .ess-about-values {
+    grid-template-columns:
+      1fr;
+
+    gap: 10px;
+  }
+
+
+  .ess-about-values > div,
+  .ess-about-values > div:not(:first-child) {
+    min-height: auto;
+
+    padding:
+      18px 18px 18px 22px;
+
+    border:
+      1px solid
+      #E4E8EC;
+  }
+
+
+  .ess-about-panel {
+    padding:
+      26px 20px;
+
+    border-radius: 12px;
+  }
+
+
+  .ess-services {
+    padding:
+      68px 0;
+  }
+
+
+  .ess-services-heading {
+    grid-template-columns:
+      1fr;
+
+    gap: 20px;
+  }
+
+
+  .ess-services-grid {
+    grid-template-columns:
+      1fr;
+
+    gap: 12px;
+  }
+
+
+  .ess-service-card {
+    min-height: 335px;
+
+    padding: 24px 21px;
+  }
+
+
+  .ess-services-footer {
+    padding:
+      22px 20px;
+
+    flex-direction:
+      column;
+
+    align-items:
+      flex-start;
+  }
+
+
+  .ess-services-footer > a {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .ess-about > .container,
+  .ess-services > .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+
+  .ess-about-content h2,
+  .ess-services-heading h2 {
+    font-size: 32px;
+  }
+
+
+  .ess-about-panel-top {
+    gap: 13px;
+  }
+
+
+  .ess-about-panel-number {
+    width: 54px;
+    height: 54px;
+
+    flex-basis: 54px;
+  }
+
+
+  .ess-service-card {
+    min-height: 320px;
+  }
+
+}

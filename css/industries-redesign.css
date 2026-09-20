@@ -1,0 +1,988 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   INDUSTRIES PAGE - PREMIUM REDESIGN
+   Uses existing HTML structure
+========================================================= */
+
+
+/* =========================================================
+   PAGE WIDTH
+========================================================= */
+
+body.ess-industries-page
+.ess-industry-page-hero > .container,
+body.ess-industries-page
+.ess-industry-nav > .container,
+body.ess-industries-page
+.ess-industry-intro > .container,
+body.ess-industries-page
+.ess-industry-sector > .container,
+body.ess-industries-page
+.ess-industry-approach > .container,
+body.ess-industries-page
+.ess-industry-cta > .container {
+  width: 100%;
+  max-width: 1380px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+
+/* =========================================================
+   HERO - COMPLETELY DIFFERENT
+========================================================= */
+
+body.ess-industries-page
+.ess-industry-page-hero {
+  padding: 72px 0;
+
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(210,170,82,.09),
+      transparent 26%
+    ),
+    linear-gradient(
+      135deg,
+      #04121F 0%,
+      #071B2E 56%,
+      #0B2A47 100%
+    ) !important;
+
+  overflow: hidden;
+}
+
+
+body.ess-industries-page
+.ess-industry-hero-grid {
+  display: grid;
+
+  grid-template-columns:
+    1.05fr .75fr;
+
+  gap: 85px;
+
+  align-items: center;
+}
+
+
+body.ess-industries-page
+.ess-industry-kicker {
+  color: #E9CF8A !important;
+}
+
+
+body.ess-industries-page
+.ess-industry-kicker span {
+  background: #D2AA52 !important;
+}
+
+
+body.ess-industries-page
+.ess-industry-hero-copy h1 {
+  max-width: 760px;
+
+  color: #FFFFFF !important;
+
+  font-size:
+    clamp(46px,5.3vw,72px) !important;
+
+  line-height: 1.01 !important;
+}
+
+
+body.ess-industries-page
+.ess-industry-hero-copy h1 strong {
+  color: #E9CF8A !important;
+}
+
+
+body.ess-industries-page
+.ess-industry-hero-copy > p {
+  color:
+    rgba(255,255,255,.58) !important;
+}
+
+
+body.ess-industries-page
+.ess-industry-primary {
+  color: #071B2E !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #E9CF8A,
+      #D2AA52
+    ) !important;
+
+  border: 0 !important;
+}
+
+
+body.ess-industries-page
+.ess-industry-secondary {
+  color: #FFFFFF !important;
+
+  background: transparent !important;
+
+  border:
+    1px solid rgba(255,255,255,.24) !important;
+}
+
+
+body.ess-industries-page
+.ess-industry-breadcrumb {
+  color:
+    rgba(255,255,255,.38) !important;
+}
+
+
+body.ess-industries-page
+.ess-industry-breadcrumb a {
+  color: #E9CF8A !important;
+}
+
+
+/* REMOVE HERO PHOTO COMPLETELY */
+
+body.ess-industries-page
+.ess-industry-hero-visual {
+  display: block !important;
+
+  min-height: auto !important;
+
+  background: transparent !important;
+
+  border:
+    1px solid rgba(255,255,255,.12) !important;
+
+  box-shadow: none !important;
+}
+
+
+body.ess-industries-page
+.ess-industry-hero-photo {
+  display: none !important;
+}
+
+
+/* HERO SECTOR DIRECTORY */
+
+body.ess-industries-page
+.ess-industry-hero-sector-list {
+  display: grid !important;
+
+  grid-template-columns:
+    1fr 1fr !important;
+
+  grid-template-rows:
+    auto !important;
+
+  background:
+    rgba(255,255,255,.025) !important;
+}
+
+
+body.ess-industries-page
+.ess-industry-hero-sector-list > div {
+  min-height: 105px;
+
+  display: flex !important;
+
+  flex-direction: column;
+
+  align-items: flex-start !important;
+  justify-content: center;
+
+  gap: 8px !important;
+
+  padding: 20px !important;
+
+  border-right:
+    1px solid rgba(255,255,255,.08);
+
+  border-bottom:
+    1px solid rgba(255,255,255,.08) !important;
+}
+
+
+body.ess-industries-page
+.ess-industry-hero-sector-list > div:nth-child(even) {
+  border-right: 0;
+}
+
+
+body.ess-industries-page
+.ess-industry-hero-sector-list > div:nth-last-child(-n+2) {
+  border-bottom: 0 !important;
+}
+
+
+body.ess-industries-page
+.ess-industry-hero-sector-list span {
+  color: #D2AA52 !important;
+
+  font-size: 8px !important;
+
+  font-weight: 800;
+
+  letter-spacing: .12em;
+}
+
+
+body.ess-industries-page
+.ess-industry-hero-sector-list strong {
+  color: #FFFFFF !important;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 12px !important;
+
+  line-height: 1.35;
+}
+
+
+/* =========================================================
+   SECTOR NAV
+========================================================= */
+
+body.ess-industries-page
+.ess-industry-nav {
+  background: #FFFFFF !important;
+
+  border-bottom:
+    1px solid #E1E6EA;
+}
+
+
+body.ess-industries-page
+.ess-industry-nav-inner > a {
+  min-height: 64px !important;
+
+  color: #4A5A66 !important;
+
+  background: #FFFFFF;
+
+  transition:
+    background .2s ease,
+    color .2s ease;
+}
+
+
+body.ess-industries-page
+.ess-industry-nav-inner > a:hover {
+  color: #071B2E !important;
+
+  background: #F6F8FA !important;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+body.ess-industries-page
+.ess-industry-intro {
+  padding: 82px 0 62px !important;
+
+  background: #F6F8FA !important;
+}
+
+
+body.ess-industries-page
+.ess-industry-intro-grid {
+  grid-template-columns:
+    .85fr 1.15fr !important;
+
+  gap: 90px !important;
+}
+
+
+/* =========================================================
+   ALL SECTIONS
+========================================================= */
+
+body.ess-industries-page
+.ess-industry-sector {
+  padding: 0 0 70px !important;
+
+  background: #F6F8FA !important;
+}
+
+
+body.ess-industries-page
+.ess-industry-sector-grid,
+body.ess-industries-page
+.ess-industry-industrial-shell,
+body.ess-industries-page
+.ess-industry-event-shell {
+  box-shadow:
+    0 18px 45px
+    rgba(7,27,46,.045) !important;
+}
+
+
+/* =========================================================
+   BANKING - NO PHOTO
+========================================================= */
+
+body.ess-industries-page
+#banking
+.ess-industry-sector-grid {
+  grid-template-columns:
+    .78fr 1.22fr !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071B2E,
+      #0B2946
+    ) !important;
+
+  border: 0 !important;
+}
+
+
+/* visual becomes graphic panel */
+
+body.ess-industries-page
+#banking
+.ess-industry-sector-visual {
+  position: relative;
+
+  min-height: 470px !important;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  padding: 36px;
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      rgba(210,170,82,.18),
+      transparent 28%
+    ),
+    linear-gradient(
+      160deg,
+      #0B2A47,
+      #071B2E
+    ) !important;
+
+  border-right:
+    1px solid rgba(255,255,255,.08);
+}
+
+
+body.ess-industries-page
+#banking
+.ess-industry-sector-visual img {
+  display: none !important;
+}
+
+
+body.ess-industries-page
+#banking
+.ess-industry-sector-visual::before {
+  content: "\f19c";
+
+  position: absolute;
+
+  left: 40px;
+  top: 50%;
+
+  transform:
+    translateY(-50%);
+
+  color:
+    rgba(210,170,82,.13);
+
+  font-family: FontAwesome;
+
+  font-size: 170px;
+}
+
+
+body.ess-industries-page
+#banking
+.ess-industry-sector-number {
+  position: relative !important;
+
+  left: auto !important;
+  bottom: auto !important;
+
+  z-index: 2;
+
+  color: #D2AA52 !important;
+
+  font-size: 64px !important;
+}
+
+
+body.ess-industries-page
+#banking
+.ess-industry-sector-content {
+  background: transparent !important;
+}
+
+
+body.ess-industries-page
+#banking
+.ess-industry-sector-label {
+  color: #D2AA52 !important;
+}
+
+
+body.ess-industries-page
+#banking
+.ess-industry-sector-content h2 {
+  color: #FFFFFF !important;
+}
+
+
+body.ess-industries-page
+#banking
+.ess-industry-sector-content h2 strong {
+  color: #E9CF8A !important;
+}
+
+
+body.ess-industries-page
+#banking
+.ess-industry-sector-content > p {
+  color:
+    rgba(255,255,255,.56) !important;
+}
+
+
+body.ess-industries-page
+#banking
+.ess-industry-use-grid > div {
+  background:
+    rgba(255,255,255,.035) !important;
+
+  border-color:
+    rgba(255,255,255,.10) !important;
+}
+
+
+body.ess-industries-page
+#banking
+.ess-industry-use-grid span {
+  color:
+    rgba(255,255,255,.76) !important;
+}
+
+
+body.ess-industries-page
+#banking
+.ess-industry-profile-note {
+  color:
+    rgba(255,255,255,.56) !important;
+
+  background:
+    rgba(210,170,82,.07) !important;
+}
+
+
+/* =========================================================
+   CORPORATE - UNIQUE PHOTO
+========================================================= */
+
+body.ess-industries-page
+#corporate
+.ess-industry-sector-grid {
+  grid-template-columns:
+    .9fr 1.1fr !important;
+
+  min-height: 500px !important;
+
+  background: #FFFFFF !important;
+}
+
+
+body.ess-industries-page
+#corporate
+.ess-industry-sector-visual {
+  min-height: 500px !important;
+}
+
+
+body.ess-industries-page
+#corporate
+.ess-industry-sector-visual img {
+  object-fit: cover !important;
+
+  object-position:
+    center center !important;
+}
+
+
+/* =========================================================
+   INDUSTRIAL - PREMIUM FEATURE
+========================================================= */
+
+body.ess-industries-page
+#industrial
+.ess-industry-industrial-shell {
+  grid-template-columns:
+    1fr .88fr !important;
+
+  min-height: 540px !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #061725,
+      #0B2A47
+    ) !important;
+
+  border: 0 !important;
+}
+
+
+body.ess-industries-page
+#industrial
+.ess-industry-industrial-image {
+  min-height: 540px !important;
+}
+
+
+body.ess-industries-page
+#industrial
+.ess-industry-industrial-image img {
+  object-fit: cover !important;
+
+  object-position:
+    center center !important;
+}
+
+
+/* =========================================================
+   RESIDENTIAL
+========================================================= */
+
+body.ess-industries-page
+#residential
+.ess-industry-sector-grid {
+  grid-template-columns:
+    1.05fr .95fr !important;
+
+  min-height: 490px !important;
+
+  background: #FFFFFF !important;
+}
+
+
+body.ess-industries-page
+#residential
+.ess-industry-sector-visual {
+  min-height: 490px !important;
+}
+
+
+body.ess-industries-page
+#residential
+.ess-industry-sector-visual img {
+  object-fit: cover !important;
+
+  object-position:
+    center center !important;
+}
+
+
+/* =========================================================
+   HEALTHCARE - NO PHOTO
+========================================================= */
+
+body.ess-industries-page
+#healthcare
+.ess-industry-sector-grid {
+  grid-template-columns:
+    1.15fr .85fr !important;
+
+  min-height: 470px !important;
+
+  background: #FFFFFF !important;
+}
+
+
+body.ess-industries-page
+#healthcare
+.ess-industry-sector-visual {
+  position: relative;
+
+  min-height: 470px !important;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      145deg,
+      #071B2E,
+      #0B2A47
+    ) !important;
+}
+
+
+body.ess-industries-page
+#healthcare
+.ess-industry-sector-visual img {
+  display: none !important;
+}
+
+
+body.ess-industries-page
+#healthcare
+.ess-industry-sector-visual::before {
+  content: "\f0f8";
+
+  position: absolute;
+
+  color:
+    rgba(210,170,82,.16);
+
+  font-family: FontAwesome;
+
+  font-size: 165px;
+}
+
+
+body.ess-industries-page
+#healthcare
+.ess-industry-sector-number {
+  position: relative !important;
+
+  left: auto !important;
+  bottom: auto !important;
+
+  z-index: 2;
+
+  color: #D2AA52 !important;
+
+  font-size: 68px !important;
+}
+
+
+/* =========================================================
+   EVENTS - NO PHOTO
+========================================================= */
+
+body.ess-industries-page
+#events
+.ess-industry-event-shell {
+  grid-template-columns:
+    .72fr 1.28fr !important;
+
+  min-height: 480px !important;
+
+  background: #FFFFFF !important;
+}
+
+
+body.ess-industries-page
+#events
+.ess-industry-event-image {
+  position: relative;
+
+  min-height: 480px !important;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  padding: 34px;
+
+  background:
+    radial-gradient(
+      circle at 60% 28%,
+      rgba(210,170,82,.16),
+      transparent 26%
+    ),
+    linear-gradient(
+      150deg,
+      #0B2A47,
+      #061725
+    ) !important;
+}
+
+
+body.ess-industries-page
+#events
+.ess-industry-event-image img {
+  display: none !important;
+}
+
+
+body.ess-industries-page
+#events
+.ess-industry-event-image::before {
+  content: "\f073";
+
+  position: absolute;
+
+  left: 50%;
+  top: 48%;
+
+  transform:
+    translate(-50%,-50%);
+
+  color:
+    rgba(210,170,82,.15);
+
+  font-family: FontAwesome;
+
+  font-size: 145px;
+}
+
+
+body.ess-industries-page
+#events
+.ess-industry-event-badge {
+  position: relative !important;
+
+  left: auto !important;
+  bottom: auto !important;
+
+  z-index: 2;
+}
+
+
+body.ess-industries-page
+#events
+.ess-industry-event-badge span {
+  color: #D2AA52 !important;
+
+  font-size: 58px !important;
+}
+
+
+body.ess-industries-page
+#events
+.ess-industry-event-badge strong {
+  color: #FFFFFF !important;
+}
+
+
+/* =========================================================
+   APPROACH
+========================================================= */
+
+body.ess-industries-page
+.ess-industry-approach {
+  padding: 80px 0 !important;
+
+  background: #F6F8FA !important;
+}
+
+
+body.ess-industries-page
+.ess-industry-approach-row {
+  background: #FFFFFF;
+}
+
+
+body.ess-industries-page
+.ess-industry-approach-row article {
+  transition:
+    background .2s ease;
+}
+
+
+body.ess-industries-page
+.ess-industry-approach-row article:hover {
+  background: #FAFBFC;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+body.ess-industries-page
+.ess-industry-cta {
+  padding:
+    0 0 80px !important;
+
+  background: #F6F8FA !important;
+}
+
+
+body.ess-industries-page
+.ess-industry-cta-shell {
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071B2E,
+      #0B2A47
+    ) !important;
+
+  box-shadow:
+    0 24px 55px
+    rgba(7,27,46,.13);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  body.ess-industries-page
+  .ess-industry-page-hero > .container,
+  body.ess-industries-page
+  .ess-industry-nav > .container,
+  body.ess-industries-page
+  .ess-industry-intro > .container,
+  body.ess-industries-page
+  .ess-industry-sector > .container,
+  body.ess-industries-page
+  .ess-industry-approach > .container,
+  body.ess-industries-page
+  .ess-industry-cta > .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  body.ess-industries-page
+  .ess-industry-hero-grid,
+  body.ess-industries-page
+  .ess-industry-intro-grid,
+  body.ess-industries-page
+  #banking .ess-industry-sector-grid,
+  body.ess-industries-page
+  #corporate .ess-industry-sector-grid,
+  body.ess-industries-page
+  #industrial .ess-industry-industrial-shell,
+  body.ess-industries-page
+  #residential .ess-industry-sector-grid,
+  body.ess-industries-page
+  #healthcare .ess-industry-sector-grid,
+  body.ess-industries-page
+  #events .ess-industry-event-shell {
+    grid-template-columns:
+      1fr !important;
+  }
+
+
+  body.ess-industries-page
+  .ess-industry-hero-grid {
+    gap: 38px !important;
+  }
+
+
+  body.ess-industries-page
+  #banking .ess-industry-sector-visual,
+  body.ess-industries-page
+  #healthcare .ess-industry-sector-visual,
+  body.ess-industries-page
+  #events .ess-industry-event-image {
+    min-height: 300px !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  body.ess-industries-page
+  .ess-industry-page-hero > .container,
+  body.ess-industries-page
+  .ess-industry-nav > .container,
+  body.ess-industries-page
+  .ess-industry-intro > .container,
+  body.ess-industries-page
+  .ess-industry-sector > .container,
+  body.ess-industries-page
+  .ess-industry-approach > .container,
+  body.ess-industries-page
+  .ess-industry-cta > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  body.ess-industries-page
+  .ess-industry-page-hero {
+    padding:
+      52px 0 !important;
+  }
+
+
+  body.ess-industries-page
+  .ess-industry-hero-copy h1 {
+    font-size:
+      clamp(38px,10vw,49px) !important;
+  }
+
+
+  body.ess-industries-page
+  .ess-industry-hero-sector-list {
+    grid-template-columns:
+      1fr !important;
+  }
+
+
+  body.ess-industries-page
+  .ess-industry-hero-sector-list > div {
+    min-height: 75px;
+    border-right: 0 !important;
+
+    border-bottom:
+      1px solid rgba(255,255,255,.08) !important;
+  }
+
+
+  body.ess-industries-page
+  .ess-industry-hero-sector-list > div:last-child {
+    border-bottom: 0 !important;
+  }
+
+
+  body.ess-industries-page
+  .ess-industry-intro {
+    padding:
+      58px 0 45px !important;
+  }
+
+
+  body.ess-industries-page
+  .ess-industry-sector {
+    padding-bottom:
+      45px !important;
+  }
+
+
+  body.ess-industries-page
+  #corporate .ess-industry-sector-visual,
+  body.ess-industries-page
+  #industrial .ess-industry-industrial-image,
+  body.ess-industries-page
+  #residential .ess-industry-sector-visual {
+    min-height: 300px !important;
+  }
+
+
+  body.ess-industries-page
+  #banking .ess-industry-sector-visual::before,
+  body.ess-industries-page
+  #healthcare .ess-industry-sector-visual::before,
+  body.ess-industries-page
+  #events .ess-industry-event-image::before {
+    font-size: 100px;
+  }
+
+}

@@ -1,0 +1,483 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   SERVICE PAGE - FINAL IMAGE FIT
+   ONLY affects service.html
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL SERVICE PAGE IMAGE RULE
+========================================================= */
+
+body.ess-service-page img {
+  display: block;
+
+  max-width: 100%;
+}
+
+
+/* =========================================================
+   HERO IMAGE COMPOSITION
+   2:1 grid perfectly matches three 16:9 images
+========================================================= */
+
+body.ess-service-page
+.ess-service-hero-visual {
+  height: auto !important;
+
+  display: grid;
+
+  grid-template-columns:
+    2fr 1fr;
+
+  gap: 10px;
+
+  align-items: stretch;
+}
+
+
+body.ess-service-page
+.ess-service-hero-main-image {
+  position: relative;
+
+  min-height: 0 !important;
+
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+}
+
+
+body.ess-service-page
+.ess-service-hero-main-image img {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain !important;
+  object-position: center !important;
+
+  background: #071B2E;
+}
+
+
+/* right two images */
+
+body.ess-service-page
+.ess-service-hero-small-images {
+  min-width: 0;
+  min-height: 0;
+
+  display: grid;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  gap: 10px;
+}
+
+
+body.ess-service-page
+.ess-service-hero-small-images > div {
+  position: relative;
+
+  min-width: 0;
+  min-height: 0;
+
+  overflow: hidden;
+}
+
+
+body.ess-service-page
+.ess-service-hero-small-images img {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain !important;
+  object-position: center !important;
+
+  background: #071B2E;
+}
+
+
+/* =========================================================
+   ALL 6 SERVICE FEATURE IMAGES
+========================================================= */
+
+body.ess-service-page
+.ess-service-detail-grid {
+  min-height: 0 !important;
+
+  align-items: center;
+}
+
+
+body.ess-service-page
+.ess-service-detail-image {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 0 !important;
+
+  aspect-ratio: 16 / 9;
+
+  align-self: center;
+
+  background: #071B2E;
+
+  overflow: hidden;
+}
+
+
+body.ess-service-page
+.ess-service-detail-image img {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain !important;
+  object-position: center center !important;
+
+  background: #071B2E;
+}
+
+
+/* subtle overlay - no longer hides picture */
+
+body.ess-service-page
+.ess-service-detail-image::after {
+  background:
+    linear-gradient(
+      to top,
+      rgba(7,27,46,.22),
+      transparent 42%
+    ) !important;
+}
+
+
+/* keep number visible */
+
+body.ess-service-page
+.ess-service-image-number {
+  text-shadow:
+    0 2px 10px
+    rgba(0,0,0,.50);
+}
+
+
+/* =========================================================
+   INDUSTRIAL IMAGE
+========================================================= */
+
+body.ess-service-page
+.ess-industrial-shell {
+  min-height: 0 !important;
+
+  align-items: center;
+}
+
+
+body.ess-service-page
+.ess-industrial-image {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 0 !important;
+
+  aspect-ratio: 16 / 9;
+
+  align-self: center;
+
+  background: #061725;
+
+  overflow: hidden;
+}
+
+
+body.ess-service-page
+.ess-industrial-image > img {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain !important;
+  object-position: center !important;
+
+  background: #061725;
+}
+
+
+body.ess-service-page
+.ess-industrial-image::after {
+  background:
+    linear-gradient(
+      to top,
+      rgba(7,27,46,.40),
+      transparent 48%
+    ) !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  body.ess-service-page
+  .ess-service-hero-visual {
+    height: auto !important;
+  }
+
+
+  body.ess-service-page
+  .ess-service-detail-image {
+    min-height: 0 !important;
+
+    aspect-ratio:
+      16 / 9;
+  }
+
+
+  body.ess-service-page
+  .ess-industrial-image {
+    min-height: 0 !important;
+
+    aspect-ratio:
+      16 / 9;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  body.ess-service-page
+  .ess-service-hero-visual {
+    grid-template-columns:
+      1fr;
+
+    gap: 8px;
+  }
+
+
+  body.ess-service-page
+  .ess-service-hero-main-image {
+    min-height: 0 !important;
+
+    aspect-ratio:
+      16 / 9;
+
+    border-radius:
+      10px 10px 0 0;
+  }
+
+
+  body.ess-service-page
+  .ess-service-hero-small-images {
+    display: grid;
+
+    grid-template-columns:
+      1fr 1fr;
+
+    grid-template-rows:
+      auto;
+
+    gap: 8px;
+  }
+
+
+  body.ess-service-page
+  .ess-service-hero-small-images > div {
+    aspect-ratio:
+      16 / 9;
+  }
+
+
+  body.ess-service-page
+  .ess-service-detail-image {
+    min-height: 0 !important;
+
+    aspect-ratio:
+      16 / 9;
+  }
+
+
+  body.ess-service-page
+  .ess-industrial-image {
+    min-height: 0 !important;
+
+    aspect-ratio:
+      16 / 9;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  body.ess-service-page
+  .ess-service-hero-small-images {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  body.ess-service-page
+  .ess-service-hero-small-images > div {
+    aspect-ratio:
+      16 / 9;
+  }
+
+}
+
+/* =========================================================
+   HERO ONLY FINAL FIX
+   Keep other service images unchanged
+========================================================= */
+
+body.ess-service-page .ess-service-hero-visual {
+  display: grid;
+  grid-template-columns: minmax(0, 2.15fr) minmax(0, 0.95fr);
+  gap: 12px;
+  align-items: stretch;
+}
+
+body.ess-service-page .ess-service-hero-main-image {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  min-height: 0 !important;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #071b2e;
+}
+
+body.ess-service-page .ess-service-hero-main-image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  object-position: center center !important;
+  background: #071b2e;
+}
+
+body.ess-service-page .ess-service-hero-small-images {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 12px;
+  min-width: 0;
+  min-height: 0;
+}
+
+body.ess-service-page .ess-service-hero-small-images > div {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  min-height: 0 !important;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #071b2e;
+}
+
+body.ess-service-page .ess-service-hero-small-images img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+  object-position: center center !important;
+  background: #071b2e;
+}
+
+/* Better crop control for current 3 hero images */
+body.ess-service-page .ess-service-hero-main-image img {
+  object-position: center center !important;
+}
+
+body.ess-service-page .ess-service-hero-small-images > div:first-child img {
+  object-position: center 34% !important;
+}
+
+body.ess-service-page .ess-service-hero-small-images > div:last-child img {
+  object-position: center 38% !important;
+}
+
+/* Caption overlay stays readable */
+body.ess-service-page .ess-service-hero-main-image::after,
+body.ess-service-page .ess-service-hero-small-images > div::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    to top,
+    rgba(7, 27, 46, 0.30) 0%,
+    rgba(7, 27, 46, 0.08) 36%,
+    rgba(7, 27, 46, 0.00) 70%
+  );
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+  body.ess-service-page .ess-service-hero-visual {
+    grid-template-columns: 1.6fr 0.95fr;
+    gap: 10px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  body.ess-service-page .ess-service-hero-visual {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  body.ess-service-page .ess-service-hero-main-image {
+    aspect-ratio: 16 / 9;
+    border-radius: 14px;
+  }
+
+  body.ess-service-page .ess-service-hero-small-images {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+
+  body.ess-service-page .ess-service-hero-small-images > div {
+    aspect-ratio: 16 / 9;
+    border-radius: 14px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 420px) {
+  body.ess-service-page .ess-service-hero-small-images {
+    grid-template-columns: 1fr;
+  }
+}
+
+

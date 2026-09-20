@@ -1,0 +1,306 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   HOMEPAGE HERO - FINAL DESKTOP PHOTO COMPOSITION
+========================================================= */
+
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+@media (min-width: 992px) {
+
+  /* Correct stage proportion for 16:9 source photos */
+  .ess-hero-stage {
+    height: 520px !important;
+    min-height: 520px !important;
+    max-height: 520px !important;
+  }
+
+
+  .ess-hero-slide {
+    background: #061725 !important;
+  }
+
+
+  /*
+     IMPORTANT:
+     Photo now lives only on the right side.
+     It is NOT stretched behind the whole hero anymore.
+  */
+  .ess-hero-photo {
+    position: absolute !important;
+
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: auto !important;
+
+    width: 58% !important;
+    height: 100% !important;
+
+    overflow: hidden !important;
+
+    background: #0B2A47 !important;
+  }
+
+
+  .ess-hero-photo picture {
+    display: block !important;
+
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+
+  .ess-hero-photo picture img,
+  .ess-hero-photo img {
+    display: block !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit: cover !important;
+
+    object-position: center center !important;
+
+    transform: none !important;
+
+    transition: none !important;
+  }
+
+
+  /* =====================================================
+     INDIVIDUAL PHOTO FOCUS
+     Keep changes small — no aggressive 68% cropping
+  ====================================================== */
+
+  /* 01 Reception / Corporate */
+  .ess-hero-slide[data-slide="0"]
+  .ess-hero-photo img {
+    object-position: 50% 50% !important;
+  }
+
+
+  /* 02 Security personnel / Industrial */
+  .ess-hero-slide[data-slide="1"]
+  .ess-hero-photo img {
+    object-position: 50% 48% !important;
+  }
+
+
+  /* 03 VIP / Event */
+  .ess-hero-slide[data-slide="2"]
+  .ess-hero-photo img {
+    object-position: 50% 42% !important;
+  }
+
+
+  /* 04 Manpower */
+  .ess-hero-slide[data-slide="3"]
+  .ess-hero-photo img {
+    object-position: 50% 46% !important;
+  }
+
+
+  /* =====================================================
+     LEFT SIDE + SOFT JOIN
+  ====================================================== */
+
+  .ess-hero-shade {
+    position: absolute !important;
+    inset: 0 !important;
+
+    z-index: 2 !important;
+
+    background:
+      linear-gradient(
+        90deg,
+        #04121F 0%,
+        #061725 34%,
+        #071B2E 41%,
+        rgba(7,27,46,.96) 44%,
+        rgba(7,27,46,.66) 48%,
+        rgba(7,27,46,.20) 53%,
+        rgba(7,27,46,0) 59%,
+        rgba(7,27,46,0) 100%
+      ) !important;
+
+    pointer-events: none;
+  }
+
+
+  /* Keep text safely on left */
+  .ess-hero-copy {
+    width: 42% !important;
+    max-width: 570px !important;
+
+    padding-right: 22px !important;
+  }
+
+
+  .ess-hero-content {
+    height: 100% !important;
+
+    display: flex !important;
+    align-items: center !important;
+  }
+
+
+  /* Slightly better heading size for new 520px stage */
+  .ess-hero-copy h1 {
+    font-size:
+      clamp(42px, 4.2vw, 61px) !important;
+
+    line-height: 1.02 !important;
+  }
+
+
+  .ess-hero-copy > p {
+    margin-top: 20px !important;
+
+    font-size: 12px !important;
+    line-height: 1.75 !important;
+  }
+
+
+  .ess-hero-buttons {
+    margin-top: 23px !important;
+  }
+
+
+  .ess-hero-proof {
+    margin-top: 18px !important;
+  }
+
+
+  /* Counter stays over image */
+  .ess-hero-counter {
+    z-index: 20 !important;
+  }
+
+
+  .ess-hero-arrows {
+    z-index: 20 !important;
+  }
+
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1600px) {
+
+  .ess-hero-stage {
+    height: 550px !important;
+    min-height: 550px !important;
+    max-height: 550px !important;
+  }
+
+
+  .ess-hero-photo {
+    width: 60% !important;
+  }
+
+
+  .ess-hero-copy {
+    width: 40% !important;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  .ess-hero-stage {
+    height: 520px !important;
+    min-height: 520px !important;
+  }
+
+
+  .ess-hero-photo {
+    position: absolute !important;
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+
+  .ess-hero-photo picture,
+  .ess-hero-photo img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+
+  .ess-hero-photo img {
+    object-fit: cover !important;
+    object-position: center !important;
+
+    transform: none !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   Keep dedicated mobile image
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  .ess-hero-photo {
+    position: absolute !important;
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+
+  .ess-hero-photo picture,
+  .ess-hero-photo img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+
+  .ess-hero-photo img {
+    object-fit: cover !important;
+
+    transform: none !important;
+  }
+
+
+  .ess-hero-slide[data-slide="0"]
+  .ess-hero-photo img {
+    object-position: center 45% !important;
+  }
+
+
+  .ess-hero-slide[data-slide="1"]
+  .ess-hero-photo img {
+    object-position: center 40% !important;
+  }
+
+
+  .ess-hero-slide[data-slide="2"]
+  .ess-hero-photo img {
+    object-position: center 35% !important;
+  }
+
+
+  .ess-hero-slide[data-slide="3"]
+  .ess-hero-photo img {
+    object-position: center 40% !important;
+  }
+
+}

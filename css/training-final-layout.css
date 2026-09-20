@@ -1,0 +1,1474 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   TRAINING PAGE - FINAL SITE ALIGNMENT
+   Same width system as other pages
+========================================================= */
+
+body.ess-training-page,
+body.ess-training-page main {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body.ess-training-page *,
+body.ess-training-page *::before,
+body.ess-training-page *::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MASTER CONTENT WIDTH
+========================================================= */
+
+body.ess-training-page .ess-training-hero > .container,
+body.ess-training-page .ess-training-principles > .container,
+body.ess-training-page .ess-training-intro > .container,
+body.ess-training-page .ess-training-process > .container,
+body.ess-training-page .ess-training-delivery > .container,
+body.ess-training-page .ess-training-control > .container,
+body.ess-training-page .ess-training-post > .container,
+body.ess-training-page .ess-training-cta > .container {
+  width: 100% !important;
+  max-width: 1380px !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+body.ess-training-page .ess-training-hero-grid {
+  width: 100% !important;
+
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(380px, .78fr) !important;
+
+  gap: 65px !important;
+
+  align-items: center !important;
+}
+
+body.ess-training-page .ess-training-hero-copy,
+body.ess-training-page .ess-training-readiness {
+  min-width: 0 !important;
+}
+
+
+/* =========================================================
+   PRINCIPLES
+========================================================= */
+
+body.ess-training-page .ess-training-principles-grid {
+  width: 100% !important;
+
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(4, minmax(0,1fr)) !important;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+body.ess-training-page .ess-training-intro-grid {
+  width: 100% !important;
+
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(0,.9fr)
+    minmax(0,1.1fr) !important;
+
+  gap: 70px !important;
+}
+
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+body.ess-training-page .ess-training-process-head {
+  width: 100% !important;
+
+  padding: 0 0 34px !important;
+
+  border: 0 !important;
+}
+
+body.ess-training-page .ess-training-process-head::before,
+body.ess-training-page .ess-training-process-head::after,
+body.ess-training-page .ess-training-process-head h2::before,
+body.ess-training-page .ess-training-process-head h2::after {
+  content: none !important;
+  display: none !important;
+}
+
+body.ess-training-page .ess-training-process-head h2 {
+  max-width: 820px !important;
+
+  margin: 10px 0 0 !important;
+
+  border: 0 !important;
+}
+
+
+body.ess-training-page .ess-training-process-list {
+  width: 100% !important;
+  max-width: none !important;
+
+  margin: 0 !important;
+}
+
+
+body.ess-training-page .ess-training-process-list article {
+  width: 100% !important;
+  max-width: none !important;
+
+  display: grid !important;
+
+  grid-template-columns:
+    82px
+    68px
+    minmax(220px,.8fr)
+    minmax(320px,1.25fr)
+    minmax(240px,.85fr) !important;
+
+  min-height: 158px !important;
+
+  align-items: stretch !important;
+}
+
+
+body.ess-training-page
+.ess-training-process-list article > div {
+  min-width: 0 !important;
+
+  padding: 22px !important;
+}
+
+
+body.ess-training-page .ess-training-step-number,
+body.ess-training-page .ess-training-step-icon {
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+
+body.ess-training-page .ess-training-step-title,
+body.ess-training-page .ess-training-step-copy,
+body.ess-training-page .ess-training-step-tags {
+  display: flex !important;
+
+  flex-direction: column !important;
+
+  justify-content: center !important;
+}
+
+
+body.ess-training-page .ess-training-step-copy p {
+  width: 100% !important;
+
+  max-width: 560px !important;
+
+  margin: 0 !important;
+
+  text-align: left !important;
+}
+
+
+body.ess-training-page .ess-training-step-tags {
+  align-items: flex-start !important;
+
+  gap: 7px !important;
+}
+
+
+/* =========================================================
+   DELIVERY
+========================================================= */
+
+body.ess-training-page .ess-training-delivery-grid {
+  width: 100% !important;
+
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(0,1fr)
+    minmax(380px,.82fr) !important;
+
+  gap: 65px !important;
+
+  align-items: center !important;
+}
+
+
+/* =========================================================
+   CONTROL
+========================================================= */
+
+body.ess-training-page .ess-training-control-head {
+  width: 100% !important;
+
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(0,1fr)
+    minmax(300px,.55fr) !important;
+
+  gap: 60px !important;
+
+  align-items: end !important;
+}
+
+
+body.ess-training-page .ess-training-control-grid {
+  width: 100% !important;
+
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(4,minmax(0,1fr)) !important;
+}
+
+
+/* =========================================================
+   POST DEPLOYMENT
+========================================================= */
+
+body.ess-training-page .ess-training-post-shell {
+  width: 100% !important;
+
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(0,.9fr)
+    minmax(0,1.1fr) !important;
+}
+
+
+body.ess-training-page .ess-training-post-list {
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(2,minmax(0,1fr)) !important;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+body.ess-training-page .ess-training-cta-shell {
+  width: 100% !important;
+
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(0,1fr)
+    auto !important;
+
+  gap: 45px !important;
+
+  align-items: center !important;
+
+  padding: 38px 40px !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  body.ess-training-page
+  .ess-training-process-list article {
+    grid-template-columns:
+      65px
+      55px
+      minmax(190px,.8fr)
+      minmax(260px,1.2fr) !important;
+  }
+
+
+  body.ess-training-page
+  .ess-training-step-tags {
+    grid-column:
+      3 / 5 !important;
+
+    flex-direction:
+      row !important;
+
+    flex-wrap:
+      wrap !important;
+
+    border-top:
+      1px solid #E3E8EC;
+
+    border-right:
+      0 !important;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET STACK
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  body.ess-training-page .ess-training-hero > .container,
+  body.ess-training-page .ess-training-principles > .container,
+  body.ess-training-page .ess-training-intro > .container,
+  body.ess-training-page .ess-training-process > .container,
+  body.ess-training-page .ess-training-delivery > .container,
+  body.ess-training-page .ess-training-control > .container,
+  body.ess-training-page .ess-training-post > .container,
+  body.ess-training-page .ess-training-cta > .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+
+  body.ess-training-page .ess-training-hero-grid,
+  body.ess-training-page .ess-training-intro-grid,
+  body.ess-training-page .ess-training-delivery-grid,
+  body.ess-training-page .ess-training-control-head,
+  body.ess-training-page .ess-training-post-shell {
+    grid-template-columns:
+      1fr !important;
+
+    gap: 35px !important;
+  }
+
+
+  body.ess-training-page
+  .ess-training-control-grid {
+    grid-template-columns:
+      repeat(2,minmax(0,1fr)) !important;
+  }
+
+
+  body.ess-training-page
+  .ess-training-cta-shell {
+    grid-template-columns:
+      1fr !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  body.ess-training-page .ess-training-hero > .container,
+  body.ess-training-page .ess-training-principles > .container,
+  body.ess-training-page .ess-training-intro > .container,
+  body.ess-training-page .ess-training-process > .container,
+  body.ess-training-page .ess-training-delivery > .container,
+  body.ess-training-page .ess-training-control > .container,
+  body.ess-training-page .ess-training-post > .container,
+  body.ess-training-page .ess-training-cta > .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+
+  body.ess-training-page
+  .ess-training-principles-grid {
+    grid-template-columns:
+      repeat(2,minmax(0,1fr)) !important;
+  }
+
+
+  body.ess-training-page
+  .ess-training-process-list article {
+    grid-template-columns:
+      52px minmax(0,1fr) !important;
+
+    min-height: 0 !important;
+  }
+
+
+  body.ess-training-page
+  .ess-training-step-number {
+    grid-row:
+      1 / 4 !important;
+  }
+
+
+  body.ess-training-page
+  .ess-training-step-icon,
+  body.ess-training-page
+  .ess-training-step-title,
+  body.ess-training-page
+  .ess-training-step-copy {
+    grid-column:
+      2 !important;
+
+    align-items:
+      flex-start !important;
+
+    border-right:
+      0 !important;
+  }
+
+
+  body.ess-training-page
+  .ess-training-step-tags {
+    grid-column:
+      1 / 3 !important;
+
+    padding:
+      14px !important;
+  }
+
+
+  body.ess-training-page
+  .ess-training-board-grid,
+  body.ess-training-page
+  .ess-training-control-grid,
+  body.ess-training-page
+  .ess-training-post-list {
+    grid-template-columns:
+      1fr !important;
+  }
+
+
+  body.ess-training-page
+  .ess-training-cta-actions {
+    width: 100%;
+
+    display: grid !important;
+
+    grid-template-columns:
+      1fr !important;
+  }
+
+
+  body.ess-training-page
+  .ess-training-call,
+  body.ess-training-page
+  .ess-training-request {
+    width: 100% !important;
+  }
+
+}
+
+/* =========================================================
+   TRAINING PIPELINE - HARD FINAL FIX
+   Only this section
+========================================================= */
+
+/* Center the complete section exactly like the rest of the website */
+.ess-training-process > .container {
+  width: 100% !important;
+  max-width: 1380px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  box-sizing: border-box !important;
+}
+
+
+/* heading must stay inside same container */
+.ess-training-process-head {
+  width: 100% !important;
+  max-width: 100% !important;
+
+  margin: 0 !important;
+  padding: 0 0 34px !important;
+
+  border: 0 !important;
+}
+
+
+.ess-training-process-head::before,
+.ess-training-process-head::after,
+.ess-training-process-head h2::before,
+.ess-training-process-head h2::after {
+  content: none !important;
+  display: none !important;
+}
+
+
+.ess-training-process-head > span {
+  display: block !important;
+}
+
+
+.ess-training-process-head h2 {
+  width: 100% !important;
+  max-width: 820px !important;
+
+  margin: 10px 0 0 !important;
+
+  border: 0 !important;
+}
+
+
+/* =========================================================
+   PIPELINE TABLE
+========================================================= */
+
+.ess-training-process-list {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* force every row to fill the complete container */
+
+.ess-training-process-list article {
+  display: grid !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+
+  margin: 0 !important;
+
+  grid-template-columns:
+    78px
+    64px
+    minmax(210px, .85fr)
+    minmax(300px, 1.35fr)
+    minmax(220px, .90fr) !important;
+
+  align-items: stretch !important;
+
+  min-height: 155px !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* every cell fills its grid area */
+
+.ess-training-process-list article > div {
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+
+  margin: 0 !important;
+
+  padding: 22px !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* number */
+
+.ess-training-step-number {
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+
+/* icon */
+
+.ess-training-step-icon {
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+
+/* title */
+
+.ess-training-step-title {
+  display: flex !important;
+
+  flex-direction: column !important;
+
+  align-items: flex-start !important;
+  justify-content: center !important;
+
+  text-align: left !important;
+}
+
+
+/* explanation */
+
+.ess-training-step-copy {
+  display: flex !important;
+
+  flex-direction: column !important;
+
+  align-items: flex-start !important;
+  justify-content: center !important;
+}
+
+
+.ess-training-step-copy p {
+  width: 100% !important;
+  max-width: 560px !important;
+
+  margin: 0 !important;
+
+  text-align: left !important;
+
+  line-height: 1.7 !important;
+}
+
+
+/* tags */
+
+.ess-training-step-tags {
+  display: flex !important;
+
+  flex-direction: column !important;
+
+  align-items: flex-start !important;
+  justify-content: center !important;
+
+  gap: 7px !important;
+}
+
+
+.ess-training-step-tags span {
+  width: auto !important;
+  max-width: 100% !important;
+
+  margin: 0 !important;
+
+  white-space: normal !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .ess-training-process-list article {
+    grid-template-columns:
+      64px
+      54px
+      minmax(190px, .8fr)
+      minmax(250px, 1.2fr) !important;
+  }
+
+
+  .ess-training-step-tags {
+    grid-column: 3 / 5 !important;
+
+    flex-direction: row !important;
+
+    flex-wrap: wrap !important;
+
+    justify-content: flex-start !important;
+
+    padding: 15px 22px !important;
+
+    border-top: 1px solid #E3E8EC !important;
+    border-right: 0 !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  .ess-training-process > .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+
+  .ess-training-process-list article {
+    grid-template-columns:
+      52px minmax(0, 1fr) !important;
+
+    min-height: 0 !important;
+  }
+
+
+  .ess-training-step-number {
+    grid-column: 1 !important;
+    grid-row: 1 / 4 !important;
+  }
+
+
+  .ess-training-step-icon,
+  .ess-training-step-title,
+  .ess-training-step-copy {
+    grid-column: 2 !important;
+
+    border-right: 0 !important;
+  }
+
+
+  .ess-training-step-icon {
+    justify-content: flex-start !important;
+  }
+
+
+  .ess-training-step-tags {
+    grid-column: 1 / 3 !important;
+
+    flex-direction: row !important;
+
+    flex-wrap: wrap !important;
+
+    padding: 14px !important;
+  }
+
+
+  .ess-training-process-list article > div {
+    padding: 18px 15px !important;
+  }
+
+}
+
+
+/* =========================================================
+   TRAINING PROCESS - ROOT CAUSE FIX
+   The section itself was incorrectly acting as a grid
+========================================================= */
+
+body.ess-training-page section.ess-training-process {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: none !important;
+
+  margin: 0 !important;
+
+  grid-template-columns: none !important;
+  grid-template-rows: none !important;
+  grid-auto-columns: auto !important;
+  grid-auto-rows: auto !important;
+
+  gap: 0 !important;
+
+  position: relative !important;
+
+  background: #F6F8FA !important;
+}
+
+
+/* REMOVE THE LINE / DECORATIVE PSEUDO ELEMENT */
+
+body.ess-training-page section.ess-training-process::before,
+body.ess-training-page section.ess-training-process::after {
+  content: none !important;
+  display: none !important;
+
+  width: 0 !important;
+  height: 0 !important;
+
+  border: 0 !important;
+  background: none !important;
+}
+
+
+/* =========================================================
+   NORMAL SITE CONTAINER
+========================================================= */
+
+body.ess-training-page
+section.ess-training-process > .container {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 1380px !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+body.ess-training-page
+.ess-training-process-head {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: 100% !important;
+
+  margin: 0 !important;
+
+  padding: 0 0 34px !important;
+
+  border: 0 !important;
+
+  position: relative !important;
+}
+
+
+body.ess-training-page
+.ess-training-process-head::before,
+body.ess-training-page
+.ess-training-process-head::after,
+body.ess-training-page
+.ess-training-process-head h2::before,
+body.ess-training-page
+.ess-training-process-head h2::after {
+  content: none !important;
+  display: none !important;
+}
+
+
+body.ess-training-page
+.ess-training-process-head h2 {
+  width: 100% !important;
+  max-width: 820px !important;
+
+  margin: 10px 0 0 !important;
+
+  padding: 0 !important;
+
+  border: 0 !important;
+}
+
+
+/* =========================================================
+   FULL-WIDTH PIPELINE INSIDE 1380 CONTAINER
+========================================================= */
+
+body.ess-training-page
+.ess-training-process-list {
+  display: block !important;
+
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  float: none !important;
+
+  position: static !important;
+}
+
+
+body.ess-training-page
+.ess-training-process-list article {
+  display: grid !important;
+
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+
+  margin: 0 !important;
+
+  grid-template-columns:
+    80px
+    70px
+    minmax(215px, .8fr)
+    minmax(320px, 1.35fr)
+    minmax(230px, .9fr) !important;
+
+  align-items: stretch !important;
+
+  min-height: 155px !important;
+}
+
+
+body.ess-training-page
+.ess-training-process-list article > div {
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0 !important;
+
+  margin: 0 !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* NUMBER */
+
+body.ess-training-page
+.ess-training-step-number {
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+
+/* ICON */
+
+body.ess-training-page
+.ess-training-step-icon {
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+
+/* TITLE */
+
+body.ess-training-page
+.ess-training-step-title {
+  display: flex !important;
+
+  flex-direction: column !important;
+
+  align-items: flex-start !important;
+  justify-content: center !important;
+}
+
+
+/* DESCRIPTION */
+
+body.ess-training-page
+.ess-training-step-copy {
+  display: flex !important;
+
+  flex-direction: column !important;
+
+  align-items: flex-start !important;
+  justify-content: center !important;
+}
+
+
+body.ess-training-page
+.ess-training-step-copy p {
+  width: 100% !important;
+  max-width: 560px !important;
+
+  margin: 0 !important;
+
+  text-align: left !important;
+}
+
+
+/* TAGS */
+
+body.ess-training-page
+.ess-training-step-tags {
+  display: flex !important;
+
+  flex-direction: column !important;
+
+  align-items: flex-start !important;
+  justify-content: center !important;
+
+  gap: 7px !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  body.ess-training-page
+  .ess-training-process-list article {
+    grid-template-columns:
+      65px
+      55px
+      minmax(190px, .8fr)
+      minmax(250px, 1.2fr) !important;
+  }
+
+
+  body.ess-training-page
+  .ess-training-step-tags {
+    grid-column: 3 / 5 !important;
+
+    flex-direction: row !important;
+
+    flex-wrap: wrap !important;
+
+    justify-content: flex-start !important;
+
+    border-top: 1px solid #E3E8EC !important;
+    border-right: 0 !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  body.ess-training-page
+  section.ess-training-process > .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+
+  body.ess-training-page
+  .ess-training-process-list article {
+    grid-template-columns:
+      52px minmax(0,1fr) !important;
+
+    min-height: 0 !important;
+  }
+
+
+  body.ess-training-page
+  .ess-training-step-number {
+    grid-column: 1 !important;
+    grid-row: 1 / 4 !important;
+  }
+
+
+  body.ess-training-page
+  .ess-training-step-icon,
+  body.ess-training-page
+  .ess-training-step-title,
+  body.ess-training-page
+  .ess-training-step-copy {
+    grid-column: 2 !important;
+
+    border-right: 0 !important;
+  }
+
+
+  body.ess-training-page
+  .ess-training-step-icon {
+    justify-content: flex-start !important;
+  }
+
+
+  body.ess-training-page
+  .ess-training-step-tags {
+    grid-column: 1 / 3 !important;
+
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+
+    padding: 14px !important;
+  }
+
+}
+
+
+/* =========================================================
+   TRAINING PIPELINE - PROFESSIONAL CONTENT POLISH
+========================================================= */
+
+body.ess-training-page
+.ess-training-process-list article {
+  grid-template-columns:
+    72px
+    60px
+    300px
+    minmax(400px, 1fr)
+    300px !important;
+
+  min-height: 145px !important;
+
+  background: #FFFFFF !important;
+}
+
+
+body.ess-training-page
+.ess-training-process-list article:nth-child(even) {
+  background: #FBFCFD !important;
+}
+
+
+/* cleaner cell spacing */
+
+body.ess-training-page
+.ess-training-process-list article > div {
+  padding: 24px 24px !important;
+}
+
+
+/* number */
+
+body.ess-training-page
+.ess-training-step-number {
+  color: #B88A32 !important;
+
+  font-size: 25px !important;
+
+  font-weight: 800 !important;
+
+  text-align: center !important;
+}
+
+
+/* icon */
+
+body.ess-training-page
+.ess-training-step-icon {
+  color: #071B2E !important;
+
+  font-size: 20px !important;
+}
+
+
+/* title area */
+
+body.ess-training-page
+.ess-training-step-title {
+  align-items: flex-start !important;
+
+  text-align: left !important;
+}
+
+
+body.ess-training-page
+.ess-training-step-title > span {
+  margin-bottom: 8px !important;
+
+  color: #B88A32 !important;
+
+  font-size: 7px !important;
+
+  font-weight: 800 !important;
+
+  letter-spacing: .15em !important;
+}
+
+
+body.ess-training-page
+.ess-training-step-title h3 {
+  max-width: 270px !important;
+
+  margin: 0 !important;
+
+  color: #071B2E !important;
+
+  font-size: 18px !important;
+
+  line-height: 1.25 !important;
+
+  letter-spacing: -.015em !important;
+}
+
+
+/* description */
+
+body.ess-training-page
+.ess-training-step-copy {
+  align-items: flex-start !important;
+}
+
+
+body.ess-training-page
+.ess-training-step-copy p {
+  width: 100% !important;
+
+  max-width: 590px !important;
+
+  margin: 0 !important;
+
+  color: #667681 !important;
+
+  font-size: 10px !important;
+
+  line-height: 1.75 !important;
+
+  text-align: left !important;
+}
+
+
+/* tags - no more ugly vertical tiny stack */
+
+body.ess-training-page
+.ess-training-step-tags {
+  display: flex !important;
+
+  flex-direction: row !important;
+
+  flex-wrap: wrap !important;
+
+  align-content: center !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+
+  gap: 7px !important;
+}
+
+
+body.ess-training-page
+.ess-training-step-tags span {
+  display: inline-flex !important;
+
+  align-items: center !important;
+
+  min-height: 31px !important;
+
+  padding: 7px 10px !important;
+
+  color: #4D5E6B !important;
+
+  background: #F6F8FA !important;
+
+  border: 1px solid #DFE5EA !important;
+
+  border-radius: 4px !important;
+
+  font-size: 7px !important;
+
+  font-weight: 700 !important;
+
+  line-height: 1.3 !important;
+
+  white-space: nowrap !important;
+}
+
+
+/* gold detail */
+
+body.ess-training-page
+.ess-training-step-tags span::before {
+  content: "";
+
+  width: 4px;
+  height: 4px;
+
+  flex: 0 0 4px;
+
+  margin-right: 7px;
+
+  background: #D2AA52;
+
+  border-radius: 50%;
+}
+
+
+/* subtle interaction */
+
+body.ess-training-page
+.ess-training-process-list article {
+  transition:
+    background .2s ease,
+    box-shadow .2s ease;
+}
+
+
+body.ess-training-page
+.ess-training-process-list article:hover {
+  position: relative;
+
+  z-index: 2;
+
+  background: #FFFFFF !important;
+
+  box-shadow:
+    0 10px 26px rgba(7,27,46,.045);
+}
+
+
+/* =========================================================
+   MEDIUM DESKTOP
+========================================================= */
+
+@media (max-width: 1250px) {
+
+  body.ess-training-page
+  .ess-training-process-list article {
+    grid-template-columns:
+      65px
+      55px
+      250px
+      minmax(300px,1fr)
+      250px !important;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  body.ess-training-page
+  .ess-training-process-list article {
+    grid-template-columns:
+      65px
+      55px
+      minmax(200px,.8fr)
+      minmax(260px,1.2fr) !important;
+  }
+
+
+  body.ess-training-page
+  .ess-training-step-tags {
+    grid-column: 3 / 5 !important;
+
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+
+    border-top: 1px solid #E3E8EC !important;
+    border-right: 0 !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  body.ess-training-page
+  .ess-training-process-list article {
+    grid-template-columns:
+      52px minmax(0,1fr) !important;
+  }
+
+
+  body.ess-training-page
+  .ess-training-step-title h3 {
+    max-width: none !important;
+
+    font-size: 17px !important;
+  }
+
+
+  body.ess-training-page
+  .ess-training-step-copy p {
+    max-width: none !important;
+  }
+
+
+  body.ess-training-page
+  .ess-training-step-tags {
+    grid-column: 1 / 3 !important;
+
+    padding: 14px !important;
+  }
+
+
+  body.ess-training-page
+  .ess-training-step-tags span {
+    white-space: normal !important;
+  }
+
+}
+
+
+/* =========================================================
+   TRAINING INTRO PROOF STRIP
+========================================================= */
+
+.ess-training-intro-proof {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,minmax(0,1fr));
+
+  gap: 8px;
+
+  margin-top: 24px;
+}
+
+
+.ess-training-intro-proof > div {
+  min-height: 92px;
+
+  padding: 15px 16px;
+
+  background: #FFFFFF;
+
+  border: 1px solid #E1E6EA;
+}
+
+
+.ess-training-intro-proof span,
+.ess-training-intro-proof strong,
+.ess-training-intro-proof small {
+  display: block;
+}
+
+
+.ess-training-intro-proof span {
+  color: #B88A32;
+
+  font-size: 7px;
+
+  font-weight: 800;
+}
+
+
+.ess-training-intro-proof strong {
+  margin-top: 10px;
+
+  color: #071B2E;
+
+  font-size: 9px;
+}
+
+
+.ess-training-intro-proof small {
+  margin-top: 5px;
+
+  color: #77838D;
+
+  font-size: 7px;
+
+  line-height: 1.5;
+}
+
+
+@media (max-width: 767.98px) {
+
+  .ess-training-intro-proof {
+    grid-template-columns:
+      1fr;
+  }
+
+}
+

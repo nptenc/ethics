@@ -1,0 +1,653 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   CORE SERVICES
+========================================================= */
+
+.ess-services {
+  position: relative;
+
+  padding:
+    105px 0;
+
+  background:
+    #071B2E;
+
+  overflow: hidden;
+}
+
+
+.ess-services::before {
+  content: "";
+
+  position: absolute;
+
+  width: 520px;
+  height: 520px;
+
+  right: -220px;
+  top: -240px;
+
+  border:
+    1px solid
+    rgba(210,170,82,.10);
+
+  border-radius: 50%;
+}
+
+
+.ess-services::after {
+  content: "SECURITY";
+
+  position: absolute;
+
+  left: -20px;
+  bottom: -35px;
+
+  color:
+    rgba(255,255,255,.018);
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(100px, 15vw, 230px);
+
+  font-weight: 800;
+
+  letter-spacing: -.07em;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.ess-services-heading {
+  position: relative;
+
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns:
+    1.05fr .75fr;
+
+  gap:
+    60px;
+
+  align-items: end;
+
+  margin-bottom:
+    48px;
+}
+
+
+.ess-section-label-light {
+  color:
+    var(--ess-gold-light);
+}
+
+
+.ess-services-heading h2 {
+  max-width:
+    690px;
+
+  margin: 0;
+
+  color:
+    #FFFFFF;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(
+      38px,
+      4vw,
+      56px
+    );
+
+  font-weight:
+    700;
+
+  line-height:
+    1.08;
+
+  letter-spacing:
+    -.045em;
+}
+
+
+.ess-services-heading h2 strong {
+  display: block;
+
+  margin-top:
+    4px;
+
+  color:
+    var(--ess-gold-light);
+
+  font-weight:
+    800;
+}
+
+
+.ess-services-heading > p {
+  max-width:
+    520px;
+
+  margin:
+    0 0 5px;
+
+  color:
+    rgba(255,255,255,.58);
+
+  font-size:
+    13px;
+
+  line-height:
+    1.8;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.ess-services-grid {
+  position: relative;
+
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  border-top:
+    1px solid
+    rgba(255,255,255,.10);
+
+  border-left:
+    1px solid
+    rgba(255,255,255,.10);
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.ess-service-card {
+  position: relative;
+
+  min-height:
+    395px;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  padding:
+    30px;
+
+  background:
+    rgba(255,255,255,.025);
+
+  border-right:
+    1px solid
+    rgba(255,255,255,.10);
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.10);
+
+  overflow: hidden;
+
+  transition:
+    background .3s ease,
+    transform .3s ease;
+}
+
+
+.ess-service-card::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 3px;
+  height: 0;
+
+  background:
+    var(--ess-gold);
+
+  transition:
+    height .3s ease;
+}
+
+
+.ess-service-card:hover {
+  background:
+    rgba(255,255,255,.055);
+
+  transform:
+    translateY(-3px);
+}
+
+
+.ess-service-card:hover::before {
+  height: 100%;
+}
+
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.ess-service-top {
+  display:
+    flex;
+
+  justify-content:
+    space-between;
+
+  align-items:
+    flex-start;
+}
+
+
+.ess-service-number {
+  color:
+    rgba(255,255,255,.28);
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    10px;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    .08em;
+}
+
+
+.ess-service-icon {
+  width:
+    52px;
+
+  height:
+    52px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  color:
+    var(--ess-gold);
+
+  font-size:
+    19px;
+
+  border:
+    1px solid
+    rgba(210,170,82,.30);
+
+  transition:
+    background .3s ease,
+    color .3s ease;
+}
+
+
+.ess-service-card:hover .ess-service-icon {
+  color:
+    var(--ess-navy-dark);
+
+  background:
+    var(--ess-gold);
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.ess-service-card h3 {
+  max-width:
+    290px;
+
+  margin:
+    30px 0 0;
+
+  color:
+    #FFFFFF;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    20px;
+
+  font-weight:
+    700;
+
+  line-height:
+    1.35;
+}
+
+
+.ess-service-card > p {
+  max-width:
+    330px;
+
+  margin:
+    15px 0 0;
+
+  color:
+    rgba(255,255,255,.52);
+
+  font-size:
+    11px;
+
+  line-height:
+    1.75;
+}
+
+
+/* =========================================================
+   TAGS
+========================================================= */
+
+.ess-service-tags {
+  display:
+    flex;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    6px;
+
+  margin-top:
+    20px;
+}
+
+
+.ess-service-tags span {
+  padding:
+    5px 8px;
+
+  color:
+    rgba(255,255,255,.50);
+
+  font-size:
+    7px;
+
+  font-weight:
+    700;
+
+  letter-spacing:
+    .07em;
+
+  text-transform:
+    uppercase;
+
+  border:
+    1px solid
+    rgba(255,255,255,.11);
+}
+
+
+/* =========================================================
+   CARD LINK
+========================================================= */
+
+.ess-service-card > a {
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  gap:
+    10px;
+
+  width:
+    fit-content;
+
+  margin-top:
+    auto;
+
+  padding-top:
+    25px;
+
+  color:
+    var(--ess-gold-light) !important;
+
+  font-size:
+    9px;
+
+  font-weight:
+    800;
+
+  transition:
+    gap .25s ease;
+}
+
+
+.ess-service-card > a:hover {
+  gap:
+    16px;
+}
+
+
+/* =========================================================
+   BOTTOM CTA
+========================================================= */
+
+.ess-services-footer {
+  position: relative;
+
+  z-index: 2;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  gap:
+    30px;
+
+  margin-top:
+    35px;
+
+  padding-top:
+    30px;
+
+  border-top:
+    1px solid
+    rgba(255,255,255,.11);
+}
+
+
+.ess-services-footer span,
+.ess-services-footer strong {
+  display:
+    block;
+}
+
+
+.ess-services-footer span {
+  margin-bottom:
+    5px;
+
+  color:
+    var(--ess-gold);
+
+  font-size:
+    8px;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    .16em;
+}
+
+
+.ess-services-footer strong {
+  color:
+    #FFFFFF;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    16px;
+
+  font-weight:
+    700;
+}
+
+
+.ess-services-footer > a {
+  min-height:
+    48px;
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  gap:
+    12px;
+
+  padding:
+    12px 20px;
+
+  white-space:
+    nowrap;
+
+  color:
+    var(--ess-navy-dark) !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ECD187,
+      #D1A74C
+    );
+
+  font-size:
+    10px;
+
+  font-weight:
+    800;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media
+(max-width: 991.98px) {
+
+  .ess-services {
+    padding:
+      80px 0;
+  }
+
+
+  .ess-services-heading {
+    grid-template-columns:
+      1fr;
+
+    gap:
+      20px;
+  }
+
+
+  .ess-services-grid {
+    grid-template-columns:
+      repeat(2,1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media
+(max-width: 767.98px) {
+
+  .ess-services {
+    padding:
+      65px 0;
+  }
+
+
+  .ess-services-heading h2 {
+    font-size:
+      clamp(
+        34px,
+        9vw,
+        44px
+      );
+  }
+
+
+  .ess-services-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .ess-service-card {
+    min-height:
+      350px;
+
+    padding:
+      25px 22px;
+  }
+
+
+  .ess-services-footer {
+    align-items:
+      flex-start;
+
+    flex-direction:
+      column;
+  }
+
+
+  .ess-services-footer > a {
+    width:
+      100%;
+  }
+
+}

@@ -1,0 +1,451 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   MOBILE FOOTER - FINAL
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  .ess-footer {
+    padding: 0 !important;
+    background: #051724 !important;
+  }
+
+  .ess-footer > .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+
+  /* =====================================================
+     TOP AREA
+  ====================================================== */
+
+  .ess-footer-top {
+    min-height: 0 !important;
+
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+
+    gap: 15px !important;
+
+    padding: 24px 0 !important;
+  }
+
+
+  .ess-footer-top-copy span {
+    font-size: 7px !important;
+  }
+
+
+  .ess-footer-top-copy strong {
+    max-width: 100% !important;
+
+    font-size: 18px !important;
+    line-height: 1.35 !important;
+  }
+
+
+  .ess-footer-call {
+    width: 100% !important;
+    min-width: 0 !important;
+
+    padding: 11px 13px !important;
+  }
+
+
+  /* =====================================================
+     MAIN FOOTER
+  ====================================================== */
+
+  .ess-footer-main,
+  .ess-footer-grid {
+    display: grid !important;
+
+    grid-template-columns:
+      1fr 1fr !important;
+
+    gap: 0 !important;
+
+    padding:
+      26px 0 24px !important;
+  }
+
+
+  /* =====================================================
+     BRAND - FULL WIDTH
+  ====================================================== */
+
+  .ess-footer-brand {
+    grid-column:
+      1 / -1 !important;
+
+    padding-bottom:
+      22px !important;
+
+    margin-bottom:
+      22px !important;
+
+    border-bottom:
+      1px solid rgba(255,255,255,.08);
+  }
+
+
+  .ess-footer-logo {
+    display: flex !important;
+
+    align-items: center !important;
+
+    gap: 11px !important;
+  }
+
+
+  .ess-footer-logo img,
+  .ess-footer-brand img {
+    width: 48px !important;
+    height: 48px !important;
+
+    flex: 0 0 48px !important;
+  }
+
+
+  .ess-footer-logo div > strong,
+  .ess-footer-brand strong {
+    font-size: 14px !important;
+  }
+
+
+  .ess-footer-logo div > span,
+  .ess-footer-brand span {
+    font-size: 6px !important;
+  }
+
+
+  .ess-footer-brand > p {
+    max-width: 100% !important;
+
+    margin:
+      13px 0 0 !important;
+
+    font-size: 8px !important;
+
+    line-height: 1.65 !important;
+  }
+
+
+  /* =====================================================
+     VALUES
+  ====================================================== */
+
+  .ess-footer-values {
+    display: flex !important;
+
+    align-items: center !important;
+
+    flex-wrap: wrap !important;
+
+    gap: 7px !important;
+
+    margin-top:
+      13px !important;
+
+    font-size: 6px !important;
+  }
+
+
+  /* =====================================================
+     COMPANY + SERVICES
+     SIDE BY SIDE
+  ====================================================== */
+
+  .ess-footer-nav {
+    min-width: 0;
+
+    padding:
+      0 14px 22px 0 !important;
+  }
+
+
+  .ess-footer-nav + .ess-footer-nav {
+    padding:
+      0 0 22px 14px !important;
+
+    border-left:
+      1px solid rgba(255,255,255,.08);
+  }
+
+
+  .ess-footer-nav h3,
+  .ess-footer-contact h3 {
+    margin:
+      0 0 16px !important;
+
+    padding-bottom:
+      9px !important;
+
+    font-size:
+      11px !important;
+  }
+
+
+  .ess-footer-nav h3::after,
+  .ess-footer-contact h3::after {
+    width:
+      24px !important;
+  }
+
+
+  .ess-footer-nav > a {
+    margin-bottom:
+      9px !important;
+
+    font-size:
+      8px !important;
+
+    line-height:
+      1.45 !important;
+  }
+
+
+  /* =====================================================
+     HEAD OFFICE - FULL WIDTH
+  ====================================================== */
+
+  .ess-footer-contact {
+    grid-column:
+      1 / -1 !important;
+
+    padding-top:
+      22px !important;
+
+    border-top:
+      1px solid rgba(255,255,255,.08);
+  }
+
+
+  .ess-footer-contact p {
+    display: grid !important;
+
+    grid-template-columns:
+      22px 1fr !important;
+
+    gap: 10px !important;
+
+    align-items: start !important;
+
+    margin:
+      0 0 13px !important;
+
+    font-size:
+      8px !important;
+
+    line-height:
+      1.55 !important;
+  }
+
+
+  .ess-footer-contact p i {
+    width: 22px !important;
+
+    margin-top: 2px !important;
+
+    color: #D2AA52 !important;
+
+    text-align: center;
+  }
+
+
+  .ess-footer-contact a {
+    color:
+      rgba(255,255,255,.58) !important;
+  }
+
+
+  /* =====================================================
+     BOTTOM
+  ====================================================== */
+
+  .ess-footer-bottom {
+    min-height: 0 !important;
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+
+    gap: 13px !important;
+
+    padding:
+      18px 0 20px !important;
+
+    font-size:
+      7px !important;
+  }
+
+
+  .ess-footer-bottom > div {
+    display: flex !important;
+
+    align-items: center !important;
+
+    flex-wrap: wrap !important;
+
+    gap: 7px !important;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .ess-footer > .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+
+  .ess-footer-main,
+  .ess-footer-grid {
+    grid-template-columns:
+      1fr 1fr !important;
+  }
+
+
+  .ess-footer-nav {
+    padding-right:
+      10px !important;
+  }
+
+
+  .ess-footer-nav + .ess-footer-nav {
+    padding-left:
+      10px !important;
+  }
+
+
+  .ess-footer-nav > a {
+    font-size:
+      7.5px !important;
+  }
+
+}
+
+/* =========================================================
+   MOBILE FOOTER CONTACT - REAL STRUCTURE FIX
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  /* Each contact row: icon + full available content */
+  .ess-footer-contact .ess-footer-contact-item {
+    width: 100% !important;
+
+    display: grid !important;
+
+    grid-template-columns:
+      24px minmax(0, 1fr) !important;
+
+    align-items: start !important;
+
+    column-gap: 12px !important;
+
+    margin: 0 0 17px !important;
+  }
+
+
+  /* Icon */
+  .ess-footer-contact
+  .ess-footer-contact-item > i {
+    width: 24px !important;
+
+    margin: 2px 0 0 !important;
+
+    color: #D2AA52 !important;
+
+    text-align: left !important;
+
+    flex: none !important;
+  }
+
+
+  /* IMPORTANT:
+     p is normal block again - NOT grid
+  */
+  .ess-footer-contact
+  .ess-footer-contact-item > p {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    color: rgba(255,255,255,.58) !important;
+
+    font-size: 9px !important;
+
+    line-height: 1.65 !important;
+
+    white-space: normal !important;
+
+    word-break: normal !important;
+
+    overflow-wrap: normal !important;
+  }
+
+
+  /* Phone/email links */
+  .ess-footer-contact
+  .ess-footer-contact-item > p > a {
+    color: rgba(255,255,255,.62) !important;
+
+    text-decoration: none !important;
+
+    white-space: normal !important;
+
+    word-break: normal !important;
+  }
+
+
+  /* Put the two phone numbers neatly on separate lines */
+  .ess-footer-contact
+  .ess-footer-contact-item:nth-of-type(2)
+  > p > a {
+    display: block !important;
+
+    width: fit-content !important;
+
+    margin-bottom: 5px !important;
+
+    white-space: nowrap !important;
+  }
+
+
+  .ess-footer-contact
+  .ess-footer-contact-item:nth-of-type(2)
+  > p > a:last-child {
+    margin-bottom: 0 !important;
+  }
+
+
+  /* Email remains one clean line when space allows */
+  .ess-footer-contact
+  .ess-footer-contact-item:last-child
+  > p > a {
+    display: inline-block !important;
+
+    max-width: 100% !important;
+
+    overflow-wrap: anywhere !important;
+  }
+
+}

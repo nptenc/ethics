@@ -1,0 +1,20 @@
+﻿
+/* INDUSTRIES PAGE ACTIVE NAV */
+
+@media (min-width: 992px) {
+
+  body.ess-industries-page
+  .ess-nav-list
+  a[href="industries.html"] {
+    color: #B88A32 !important;
+  }
+
+
+  body.ess-industries-page
+  .ess-nav-list
+  a[href="industries.html"]::after {
+    width: 24px !important;
+  }
+
+}
+

@@ -1,0 +1,1257 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   FINAL PROFESSIONAL RESPONSIVE HERO
+========================================================= */
+
+.ess-hero {
+  position: relative;
+  background: #061725;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO STAGE
+========================================================= */
+
+.ess-hero-stage {
+  position: relative;
+
+  height: clamp(
+    520px,
+    calc(100svh - 230px),
+    680px
+  );
+
+  min-height: 520px;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   SLIDES
+========================================================= */
+
+.ess-hero-slide {
+  position: absolute;
+  inset: 0;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity .9s ease,
+    visibility .9s ease;
+}
+
+
+.ess-hero-slide.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* =========================================================
+   PHOTO
+========================================================= */
+
+.ess-hero-photo {
+  position: absolute;
+  inset: 0;
+
+  overflow: hidden;
+}
+
+
+.ess-hero-photo picture {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+}
+
+
+.ess-hero-photo img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transform: scale(1.018);
+
+  transition:
+    transform 7s ease;
+}
+
+
+.ess-hero-slide.is-active .ess-hero-photo img {
+  transform: scale(1);
+}
+
+
+/* Individual desktop focal points */
+
+.ess-hero-slide[data-slide="0"] .ess-hero-photo img {
+  object-position: 65% center;
+}
+
+.ess-hero-slide[data-slide="1"] .ess-hero-photo img {
+  object-position: 63% center;
+}
+
+.ess-hero-slide[data-slide="2"] .ess-hero-photo img {
+  object-position: 66% center;
+}
+
+.ess-hero-slide[data-slide="3"] .ess-hero-photo img {
+  object-position: 64% center;
+}
+
+
+/* =========================================================
+   PROFESSIONAL OVERLAY
+========================================================= */
+
+.ess-hero-shade {
+  position: absolute;
+  inset: 0;
+
+  z-index: 2;
+
+  background:
+
+    linear-gradient(
+      90deg,
+
+      rgba(4,17,29,.99) 0%,
+
+      rgba(4,20,35,.98) 24%,
+
+      rgba(5,24,42,.92) 38%,
+
+      rgba(5,26,45,.68) 51%,
+
+      rgba(5,26,45,.28) 65%,
+
+      rgba(5,26,45,.06) 82%,
+
+      rgba(5,26,45,.01) 100%
+    ),
+
+    linear-gradient(
+      0deg,
+      rgba(3,15,26,.40),
+      transparent 38%
+    );
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.ess-hero-content {
+  position: relative;
+  z-index: 10;
+
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+
+.ess-hero-copy {
+  width: 47%;
+  max-width: 600px;
+
+  padding-right: 24px;
+}
+
+
+/* SMALL GOLD LABEL */
+
+.ess-hero-kicker {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  margin-bottom: 17px;
+
+  color: var(--ess-gold-light);
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: .19em;
+
+  text-transform: uppercase;
+}
+
+
+.ess-hero-kicker span {
+  width: 30px;
+  height: 2px;
+
+  flex: 0 0 30px;
+
+  background: var(--ess-gold);
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.ess-hero-copy h1 {
+  max-width: 590px;
+
+  margin: 0;
+
+  color: #FFFFFF;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(43px, 4.15vw, 59px);
+
+  font-weight: 700;
+
+  line-height: 1.035;
+
+  letter-spacing: -.043em;
+}
+
+
+.ess-hero-copy h1 em {
+  display: block;
+
+  margin-top: 3px;
+
+  color: var(--ess-gold-light);
+
+  font-style: normal;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.ess-hero-copy > p {
+  max-width: 540px;
+
+  margin:
+    21px 0 0;
+
+  color:
+    rgba(255,255,255,.74);
+
+  font-size: 13px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.ess-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 26px;
+}
+
+
+.ess-button-primary,
+.ess-button-secondary {
+  min-height: 48px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding:
+    11px 19px;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: .025em;
+
+  transition:
+    transform .25s ease,
+    background .25s ease,
+    border-color .25s ease;
+}
+
+
+.ess-button-primary {
+  color:
+    var(--ess-navy-dark) !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #EDD58E,
+      #D1A84E
+    );
+
+  border:
+    1px solid
+    var(--ess-gold);
+}
+
+
+.ess-button-primary:hover {
+  transform:
+    translateY(-2px);
+
+  background:
+    linear-gradient(
+      135deg,
+      #F3DFA4,
+      #DDB961
+    );
+}
+
+
+.ess-button-secondary {
+  color: #FFFFFF !important;
+
+  background:
+    rgba(255,255,255,.025);
+
+  border:
+    1px solid
+    rgba(255,255,255,.32);
+}
+
+
+.ess-button-secondary:hover {
+  background:
+    rgba(255,255,255,.09);
+
+  border-color:
+    rgba(255,255,255,.58);
+}
+
+
+/* =========================================================
+   PROOF POINTS
+========================================================= */
+
+.ess-hero-proof {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 17px;
+
+  margin-top: 20px;
+
+  color:
+    rgba(255,255,255,.66);
+
+  font-size: 9px;
+
+  font-weight: 600;
+}
+
+
+.ess-hero-proof div {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+}
+
+
+.ess-hero-proof i {
+  color:
+    var(--ess-gold);
+}
+
+
+/* =========================================================
+   COUNTER
+========================================================= */
+
+.ess-hero-counter {
+  position: absolute;
+
+  z-index: 15;
+
+  top: 30px;
+  right: 36px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  color:
+    rgba(255,255,255,.55);
+
+  font-size: 9px;
+  font-weight: 800;
+
+  letter-spacing: .12em;
+}
+
+
+.ess-hero-counter span:first-child {
+  color:
+    var(--ess-gold-light);
+
+  font-size: 17px;
+}
+
+
+.ess-hero-counter i {
+  width: 24px;
+  height: 1px;
+
+  background:
+    rgba(255,255,255,.40);
+}
+
+
+/* =========================================================
+   ARROWS
+========================================================= */
+
+.ess-hero-arrows {
+  position: absolute;
+
+  z-index: 15;
+
+  right: 30px;
+  bottom: 24px;
+
+  display: flex;
+
+  gap: 7px;
+}
+
+
+.ess-hero-arrows button {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  color: #FFFFFF;
+
+  background:
+    rgba(5,21,35,.70);
+
+  border:
+    1px solid
+    rgba(255,255,255,.22);
+
+  backdrop-filter:
+    blur(8px);
+
+  cursor: pointer;
+
+  transition:
+    .25s ease;
+}
+
+
+.ess-hero-arrows button:hover {
+  color:
+    var(--ess-navy-dark);
+
+  background:
+    var(--ess-gold);
+
+  border-color:
+    var(--ess-gold);
+}
+
+
+.ess-hero-arrows i {
+  font-size: 21px;
+}
+
+
+/* =========================================================
+   SLIDE NAVIGATION
+========================================================= */
+
+.ess-hero-navigation {
+  position: relative;
+
+  z-index: 20;
+
+  background:
+    #081D30;
+
+  border-top:
+    1px solid
+    rgba(255,255,255,.08);
+}
+
+
+.ess-hero-nav-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+}
+
+
+.ess-hero-nav-item {
+  position: relative;
+
+  min-height: 76px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  padding:
+    14px 18px;
+
+  text-align: left;
+
+  color: #FFFFFF;
+
+  background:
+    transparent;
+
+  border: 0;
+
+  border-right:
+    1px solid
+    rgba(255,255,255,.08);
+
+  cursor: pointer;
+
+  overflow: hidden;
+}
+
+
+.ess-hero-nav-item:last-child {
+  border-right: 0;
+}
+
+
+.ess-hero-nav-item > span {
+  color:
+    rgba(255,255,255,.32);
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+
+.ess-hero-nav-item strong,
+.ess-hero-nav-item small {
+  display: block;
+}
+
+
+.ess-hero-nav-item strong {
+  color:
+    rgba(255,255,255,.78);
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+
+.ess-hero-nav-item small {
+  margin-top: 2px;
+
+  color:
+    rgba(255,255,255,.38);
+
+  font-size: 8px;
+}
+
+
+.ess-hero-nav-item > i {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 3px;
+
+  background:
+    var(--ess-gold);
+}
+
+
+.ess-hero-nav-item.is-active > span {
+  color:
+    var(--ess-gold);
+}
+
+
+.ess-hero-nav-item.is-active strong {
+  color:
+    #FFFFFF;
+}
+
+
+.ess-hero-nav-item.is-active > i {
+  width: 100%;
+
+  animation:
+    essHeroProgress
+    6.5s linear;
+}
+
+
+@keyframes essHeroProgress {
+
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   TRUST STRIP
+========================================================= */
+
+.ess-trust-bar {
+  background:
+    #FFFFFF;
+
+  border-bottom:
+    1px solid
+    var(--ess-border);
+}
+
+
+.ess-trust-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+}
+
+
+.ess-trust-item {
+  min-height: 86px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding:
+    15px 19px;
+
+  border-right:
+    1px solid
+    var(--ess-border);
+}
+
+
+.ess-trust-item:last-child {
+  border-right: 0;
+}
+
+
+.ess-trust-item > i {
+  color:
+    var(--ess-gold);
+
+  font-size: 22px;
+}
+
+
+.ess-trust-item strong,
+.ess-trust-item span {
+  display: block;
+}
+
+
+.ess-trust-item strong {
+  color:
+    var(--ess-navy-dark);
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 14px;
+}
+
+
+.ess-trust-item span {
+  margin-top: 2px;
+
+  color:
+    var(--ess-muted);
+
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media
+(min-width: 992px)
+and
+(max-width: 1399.98px) {
+
+  .ess-hero-stage {
+    height:
+      clamp(
+        500px,
+        calc(100svh - 215px),
+        620px
+      );
+
+    min-height: 500px;
+  }
+
+
+  .ess-hero-copy {
+    width: 48%;
+    max-width: 540px;
+  }
+
+
+  .ess-hero-copy h1 {
+    font-size:
+      clamp(
+        41px,
+        4vw,
+        54px
+      );
+  }
+
+
+  .ess-hero-copy > p {
+    max-width: 500px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media
+(min-width: 768px)
+and
+(max-width: 991.98px) {
+
+  .ess-hero-stage {
+    height: 610px;
+    min-height: 610px;
+  }
+
+
+  .ess-hero-copy {
+    width: 68%;
+    max-width: 560px;
+  }
+
+
+  .ess-hero-copy h1 {
+    font-size:
+      clamp(
+        40px,
+        6vw,
+        51px
+      );
+  }
+
+
+  .ess-hero-photo img {
+    object-position:
+      64% center !important;
+  }
+
+
+  .ess-hero-shade {
+    background:
+
+      linear-gradient(
+        90deg,
+
+        rgba(4,18,31,.98) 0%,
+
+        rgba(5,24,42,.94) 42%,
+
+        rgba(5,27,46,.58) 69%,
+
+        rgba(5,27,46,.18) 100%
+      );
+  }
+
+
+  .ess-hero-nav-grid {
+    grid-template-columns:
+      repeat(2,1fr);
+  }
+
+
+  .ess-trust-grid {
+    grid-template-columns:
+      repeat(2,1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media
+(max-width: 767.98px) {
+
+  .ess-hero-stage {
+    height: 670px;
+    min-height: 670px;
+  }
+
+
+  .ess-hero-content {
+    height: 100%;
+
+    align-items: flex-end;
+
+    padding-top: 70px;
+    padding-bottom: 88px;
+  }
+
+
+  .ess-hero-copy {
+    width: 100%;
+
+    max-width: none;
+
+    padding-right: 0;
+  }
+
+
+  .ess-hero-copy h1 {
+    max-width: 100%;
+
+    font-size:
+      clamp(
+        34px,
+        9.5vw,
+        44px
+      );
+
+    line-height: 1.06;
+  }
+
+
+  .ess-hero-copy > p {
+    max-width: 95%;
+
+    margin-top: 18px;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+  }
+
+
+  .ess-hero-kicker {
+    font-size: 8px;
+
+    margin-bottom: 14px;
+  }
+
+
+  .ess-hero-photo img {
+    object-position:
+      center center !important;
+  }
+
+
+  .ess-hero-shade {
+    background:
+
+      linear-gradient(
+        0deg,
+
+        rgba(3,15,27,.99) 0%,
+
+        rgba(4,19,33,.93) 40%,
+
+        rgba(4,21,37,.55) 69%,
+
+        rgba(4,21,37,.15) 100%
+      );
+  }
+
+
+  .ess-hero-buttons {
+    margin-top: 22px;
+  }
+
+
+  .ess-hero-proof {
+    display: grid;
+
+    gap: 6px;
+
+    margin-top: 17px;
+  }
+
+
+  .ess-hero-counter {
+    display: none;
+  }
+
+
+  .ess-hero-arrows {
+    right: 15px;
+    bottom: 15px;
+  }
+
+
+  .ess-hero-arrows button {
+    width: 41px;
+    height: 41px;
+  }
+
+
+  .ess-hero-nav-grid {
+    grid-template-columns:
+      repeat(4,1fr);
+  }
+
+
+  .ess-hero-nav-item {
+    min-height: 57px;
+
+    justify-content: center;
+
+    padding:
+      10px 4px;
+  }
+
+
+  .ess-hero-nav-item > div {
+    display: none;
+  }
+
+
+  .ess-hero-nav-item > span {
+    font-size: 10px;
+  }
+
+
+  .ess-trust-grid {
+    grid-template-columns:
+      repeat(2,1fr);
+  }
+
+
+  .ess-trust-item {
+    min-height: 82px;
+
+    padding:
+      12px 14px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media
+(max-width: 480px) {
+
+  .ess-hero-stage {
+    height: 690px;
+    min-height: 690px;
+  }
+
+
+  .ess-hero-content {
+    padding-top: 55px;
+    padding-bottom: 90px;
+  }
+
+
+  .ess-hero-copy h1 {
+    font-size:
+      clamp(
+        31px,
+        10vw,
+        39px
+      );
+  }
+
+
+  .ess-hero-buttons {
+    display: grid;
+
+    width: 100%;
+  }
+
+
+  .ess-button-primary,
+  .ess-button-secondary {
+    width: 100%;
+  }
+
+
+  .ess-trust-item {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 5px;
+  }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media
+(prefers-reduced-motion: reduce) {
+
+  .ess-hero-slide,
+  .ess-hero-photo img,
+  .ess-hero-nav-item > i {
+    transition: none !important;
+    animation: none !important;
+  }
+
+}
+
+/* =========================================================
+   ETHICS HERO - TRUE SPLIT LAYOUT
+   FINAL DESKTOP ALIGNMENT
+========================================================= */
+
+@media (min-width: 992px) {
+
+  /* Full-width hero content instead of Bootstrap centered container */
+  .ess-hero-content.container {
+    width: 100%;
+    max-width: none;
+
+    margin-left: 0;
+    margin-right: 0;
+
+    padding-left: clamp(64px, 6vw, 105px);
+    padding-right: clamp(64px, 5vw, 90px);
+  }
+
+
+  /* Clear navy left panel */
+  .ess-hero-stage {
+    background:
+      var(--ess-navy-dark);
+  }
+
+
+  /* Photograph only occupies right side */
+  .ess-hero-photo {
+    left: 44%;
+    width: 56%;
+  }
+
+
+  .ess-hero-photo picture,
+  .ess-hero-photo img {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .ess-hero-photo img {
+    object-fit: cover;
+  }
+
+
+  /* Keep content properly inside left area */
+  .ess-hero-copy {
+    width: 42%;
+    max-width: 570px;
+
+    padding-right: 22px;
+  }
+
+
+  .ess-hero-copy h1 {
+    max-width: 560px;
+
+    font-size:
+      clamp(
+        42px,
+        3.8vw,
+        57px
+      );
+  }
+
+
+  .ess-hero-copy > p {
+    max-width: 515px;
+  }
+
+
+  /* Blend edge between navy and photograph */
+  .ess-hero-shade {
+    z-index: 2;
+
+    background:
+      linear-gradient(
+        90deg,
+
+        #061725 0%,
+        #061725 36%,
+
+        rgba(6,23,37,.99) 42%,
+        rgba(6,23,37,.90) 46%,
+        rgba(6,23,37,.58) 51%,
+        rgba(6,23,37,.20) 57%,
+        rgba(6,23,37,.02) 67%,
+        transparent 100%
+      );
+  }
+
+
+  /* Slide image focal positions */
+  .ess-hero-slide[data-slide="0"] .ess-hero-photo img {
+    object-position: center center;
+  }
+
+  .ess-hero-slide[data-slide="1"] .ess-hero-photo img {
+    object-position: center center;
+  }
+
+  .ess-hero-slide[data-slide="2"] .ess-hero-photo img {
+    object-position: center center;
+  }
+
+  .ess-hero-slide[data-slide="3"] .ess-hero-photo img {
+    object-position: center center;
+  }
+
+
+  /* Controls stay inside image area */
+  .ess-hero-counter {
+    right: 28px;
+    top: 28px;
+  }
+
+
+  .ess-hero-arrows {
+    right: 28px;
+    bottom: 22px;
+  }
+
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (min-width: 1500px) {
+
+  .ess-hero-content.container {
+    padding-left: 7vw;
+  }
+
+
+  .ess-hero-photo {
+    left: 45%;
+    width: 55%;
+  }
+
+
+  .ess-hero-copy {
+    width: 40%;
+    max-width: 590px;
+  }
+
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media
+(min-width: 992px)
+and
+(max-width: 1199.98px) {
+
+  .ess-hero-content.container {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+
+  .ess-hero-photo {
+    left: 46%;
+    width: 54%;
+  }
+
+
+  .ess-hero-copy {
+    width: 44%;
+    max-width: 490px;
+  }
+
+
+  .ess-hero-copy h1 {
+    font-size:
+      clamp(
+        39px,
+        4vw,
+        50px
+      );
+  }
+
+}
+
