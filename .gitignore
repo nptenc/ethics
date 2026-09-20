@@ -1,0 +1,7 @@
+﻿# Local development backups
+backup-*/
+images/hero-slides-backup-*/
+images/services/cards-original/
+sections/*before*.html
+*.tmp
+*.tmp.*

@@ -1,0 +1,1509 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   TRAINING PAGE
+========================================================= */
+
+.ess-training-hero > .container,
+.ess-training-principles > .container,
+.ess-training-intro > .container,
+.ess-training-process > .container,
+.ess-training-delivery > .container,
+.ess-training-control > .container,
+.ess-training-post > .container,
+.ess-training-cta > .container {
+  width: 100%;
+  max-width: 1380px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.ess-training-hero {
+  padding: 72px 0;
+
+  background:
+    radial-gradient(
+      circle at 82% 18%,
+      rgba(210,170,82,.10),
+      transparent 28%
+    ),
+    linear-gradient(
+      135deg,
+      #04121F 0%,
+      #071B2E 56%,
+      #0B2A47 100%
+    );
+}
+
+
+.ess-training-hero-grid {
+  display: grid;
+
+  grid-template-columns:
+    1fr .78fr;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+
+.ess-training-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 17px;
+
+  color: #E9CF8A;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: .18em;
+}
+
+
+.ess-training-eyebrow span {
+  width: 34px;
+  height: 2px;
+
+  background: #D2AA52;
+}
+
+
+.ess-training-hero h1 {
+  max-width: 760px;
+
+  margin: 0;
+
+  color: #FFFFFF;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(46px,5.3vw,72px);
+
+  line-height: 1.01;
+
+  letter-spacing: -.055em;
+}
+
+
+.ess-training-hero h1 strong {
+  display: block;
+
+  color: #E9CF8A;
+}
+
+
+.ess-training-hero-copy > p {
+  max-width: 630px;
+
+  margin: 23px 0 0;
+
+  color:
+    rgba(255,255,255,.58);
+
+  font-size: 12px;
+
+  line-height: 1.85;
+}
+
+
+.ess-training-hero-actions {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 28px;
+}
+
+
+.ess-training-primary,
+.ess-training-secondary {
+  min-height: 47px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 11px 18px;
+
+  border-radius: 7px;
+
+  font-size: 8px;
+
+  font-weight: 800;
+}
+
+
+.ess-training-primary {
+  color: #071B2E !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #E9CF8A,
+      #D2AA52
+    );
+}
+
+
+.ess-training-secondary {
+  color: #FFFFFF !important;
+
+  border:
+    1px solid rgba(255,255,255,.22);
+}
+
+
+.ess-training-breadcrumb {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 25px;
+
+  color:
+    rgba(255,255,255,.36);
+
+  font-size: 8px;
+}
+
+
+.ess-training-breadcrumb a {
+  color: #E9CF8A !important;
+}
+
+
+/* readiness board */
+
+.ess-training-readiness {
+  border:
+    1px solid rgba(255,255,255,.12);
+
+  background:
+    rgba(255,255,255,.025);
+}
+
+
+.ess-training-readiness-top {
+  min-height: 100px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 22px 24px;
+
+  border-bottom:
+    1px solid rgba(255,255,255,.09);
+}
+
+
+.ess-training-readiness-top span,
+.ess-training-readiness-top strong {
+  display: block;
+}
+
+
+.ess-training-readiness-top span {
+  color: #D2AA52;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: .15em;
+}
+
+
+.ess-training-readiness-top strong {
+  margin-top: 5px;
+
+  color: #FFFFFF;
+
+  font-size: 13px;
+}
+
+
+.ess-training-readiness-mark {
+  color:
+    rgba(255,255,255,.11);
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 38px;
+
+  font-weight: 800;
+}
+
+
+.ess-training-readiness-list > div {
+  min-height: 67px;
+
+  display: grid;
+
+  grid-template-columns:
+    45px 1fr;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 11px 22px;
+
+  border-bottom:
+    1px solid rgba(255,255,255,.075);
+}
+
+
+.ess-training-readiness-list > div:last-child {
+  border-bottom: 0;
+}
+
+
+.ess-training-readiness-list > div > span {
+  color: #D2AA52;
+
+  font-size: 8px;
+
+  font-weight: 800;
+}
+
+
+.ess-training-readiness-list strong,
+.ess-training-readiness-list small {
+  display: block;
+}
+
+
+.ess-training-readiness-list strong {
+  color: #FFFFFF;
+
+  font-size: 9px;
+}
+
+
+.ess-training-readiness-list small {
+  margin-top: 3px;
+
+  color:
+    rgba(255,255,255,.42);
+
+  font-size: 7px;
+}
+
+
+/* =========================================================
+   PRINCIPLES
+========================================================= */
+
+.ess-training-principles {
+  background: #FFFFFF;
+
+  border-bottom:
+    1px solid #E2E7EB;
+}
+
+
+.ess-training-principles-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+}
+
+
+.ess-training-principles-grid > div {
+  min-height: 67px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  border-right:
+    1px solid #E2E7EB;
+}
+
+
+.ess-training-principles-grid > div:first-child {
+  border-left:
+    1px solid #E2E7EB;
+}
+
+
+.ess-training-principles-grid span {
+  color: #B88A32;
+
+  font-size: 7px;
+
+  font-weight: 800;
+}
+
+
+.ess-training-principles-grid strong {
+  color: #41515E;
+
+  font-size: 8px;
+
+  letter-spacing: .08em;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.ess-training-intro {
+  padding: 80px 0 58px;
+
+  background: #F6F8FA;
+}
+
+
+.ess-training-intro-grid {
+  display: grid;
+
+  grid-template-columns:
+    .85fr 1.15fr;
+
+  gap: 90px;
+}
+
+
+.ess-training-intro h2,
+.ess-training-control-head h2 {
+  margin: 0;
+
+  color: #071B2E;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(37px,4vw,54px);
+
+  line-height: 1.07;
+
+  letter-spacing: -.045em;
+}
+
+
+.ess-training-intro h2 strong,
+.ess-training-control-head h2 strong {
+  display: block;
+
+  color: #B88A32;
+}
+
+
+.ess-training-intro-grid p {
+  margin: 0 0 14px;
+
+  color: #687681;
+
+  font-size: 11px;
+
+  line-height: 1.85;
+}
+
+
+.ess-training-intro-lead {
+  color: #263746 !important;
+
+  font-size: 15px !important;
+
+  line-height: 1.75 !important;
+}
+
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.ess-training-process {
+  padding: 0 0 78px;
+
+  background: #F6F8FA;
+}
+
+
+.ess-training-process-head {
+  padding-bottom: 30px;
+
+  border-bottom:
+    1px solid #DCE2E7;
+}
+
+
+.ess-training-process-head > span {
+  color: #B88A32;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: .17em;
+}
+
+
+.ess-training-process-head h2 {
+  max-width: 750px;
+
+  margin: 10px 0 0;
+
+  color: #071B2E;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(34px,3.7vw,49px);
+
+  line-height: 1.08;
+
+  letter-spacing: -.04em;
+}
+
+
+.ess-training-process-head h2 strong {
+  color: #B88A32;
+}
+
+
+.ess-training-process-list {
+  border-left:
+    1px solid #DDE3E8;
+
+  border-right:
+    1px solid #DDE3E8;
+}
+
+
+.ess-training-process-list article {
+  display: grid;
+
+  grid-template-columns:
+    80px 70px
+    minmax(200px,.8fr)
+    minmax(260px,1.15fr)
+    minmax(250px,.9fr);
+
+  align-items: stretch;
+
+  min-height: 160px;
+
+  background: #FFFFFF;
+
+  border-bottom:
+    1px solid #DDE3E8;
+}
+
+
+.ess-training-process-list article > div {
+  padding: 24px;
+
+  border-right:
+    1px solid #E4E8EC;
+}
+
+
+.ess-training-process-list article > div:last-child {
+  border-right: 0;
+}
+
+
+.ess-training-step-number {
+  display: flex;
+
+  align-items: flex-start;
+
+  color: #B88A32;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 25px;
+
+  font-weight: 800;
+}
+
+
+.ess-training-step-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #071B2E;
+
+  font-size: 21px;
+}
+
+
+.ess-training-step-title,
+.ess-training-step-copy,
+.ess-training-step-tags {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+
+.ess-training-step-title span {
+  color: #B88A32;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: .13em;
+}
+
+
+.ess-training-step-title h3 {
+  margin: 7px 0 0;
+
+  color: #071B2E;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 17px;
+
+  line-height: 1.25;
+}
+
+
+.ess-training-step-copy p {
+  margin: 0;
+
+  color: #687681;
+
+  font-size: 9px;
+
+  line-height: 1.75;
+}
+
+
+.ess-training-step-tags {
+  gap: 6px;
+}
+
+
+.ess-training-step-tags span {
+  width: fit-content;
+
+  padding: 6px 9px;
+
+  color: #52626D;
+
+  background: #F7F8FA;
+
+  border:
+    1px solid #E4E8EC;
+
+  font-size: 7px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   DELIVERY
+========================================================= */
+
+.ess-training-delivery {
+  padding: 72px 0;
+
+  background: #071B2E;
+}
+
+
+.ess-training-delivery-grid {
+  display: grid;
+
+  grid-template-columns:
+    1fr .85fr;
+
+  gap: 65px;
+}
+
+
+.ess-training-section-kicker {
+  color: #D2AA52;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: .16em;
+}
+
+
+.ess-training-delivery-main h2 {
+  margin: 11px 0 0;
+
+  color: #FFFFFF;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(34px,3.8vw,49px);
+
+  line-height: 1.08;
+
+  letter-spacing: -.04em;
+}
+
+
+.ess-training-delivery-main h2 strong {
+  display: block;
+
+  color: #E9CF8A;
+}
+
+
+.ess-training-delivery-main > p {
+  max-width: 610px;
+
+  margin: 18px 0 0;
+
+  color:
+    rgba(255,255,255,.55);
+
+  font-size: 11px;
+
+  line-height: 1.8;
+}
+
+
+.ess-training-delivery-lines {
+  margin-top: 28px;
+}
+
+
+.ess-training-delivery-lines > div {
+  display: grid;
+
+  grid-template-columns:
+    45px 1fr;
+
+  gap: 15px;
+
+  padding: 15px 0;
+
+  border-bottom:
+    1px solid rgba(255,255,255,.09);
+}
+
+
+.ess-training-delivery-lines > div > span {
+  color: #D2AA52;
+
+  font-size: 8px;
+
+  font-weight: 800;
+}
+
+
+.ess-training-delivery-lines strong {
+  color: #FFFFFF;
+
+  font-size: 10px;
+}
+
+
+.ess-training-delivery-lines p {
+  margin: 4px 0 0;
+
+  color:
+    rgba(255,255,255,.43);
+
+  font-size: 8px;
+}
+
+
+/* board */
+
+.ess-training-delivery-board {
+  align-self: center;
+
+  border:
+    1px solid rgba(255,255,255,.11);
+
+  background:
+    rgba(255,255,255,.025);
+}
+
+
+.ess-training-board-heading {
+  padding: 24px;
+
+  border-bottom:
+    1px solid rgba(255,255,255,.09);
+}
+
+
+.ess-training-board-heading span,
+.ess-training-board-heading strong {
+  display: block;
+}
+
+
+.ess-training-board-heading span {
+  color: #D2AA52;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: .15em;
+}
+
+
+.ess-training-board-heading strong {
+  max-width: 400px;
+
+  margin-top: 8px;
+
+  color: #FFFFFF;
+
+  font-size: 14px;
+}
+
+
+.ess-training-board-grid {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+}
+
+
+.ess-training-board-grid > div {
+  min-height: 150px;
+
+  padding: 24px;
+
+  border-right:
+    1px solid rgba(255,255,255,.08);
+
+  border-bottom:
+    1px solid rgba(255,255,255,.08);
+}
+
+
+.ess-training-board-grid > div:nth-child(even) {
+  border-right: 0;
+}
+
+
+.ess-training-board-grid > div:nth-last-child(-n+2) {
+  border-bottom: 0;
+}
+
+
+.ess-training-board-grid i {
+  color: #D2AA52;
+
+  font-size: 17px;
+}
+
+
+.ess-training-board-grid strong,
+.ess-training-board-grid span {
+  display: block;
+}
+
+
+.ess-training-board-grid strong {
+  margin-top: 18px;
+
+  color: #FFFFFF;
+
+  font-size: 10px;
+}
+
+
+.ess-training-board-grid span {
+  margin-top: 4px;
+
+  color:
+    rgba(255,255,255,.40);
+
+  font-size: 7px;
+}
+
+
+/* =========================================================
+   CONTROL
+========================================================= */
+
+.ess-training-control {
+  padding: 78px 0;
+
+  background: #F6F8FA;
+}
+
+
+.ess-training-control-head {
+  display: grid;
+
+  grid-template-columns:
+    1fr .55fr;
+
+  gap: 65px;
+
+  align-items: end;
+}
+
+
+.ess-training-control-head > div > span {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #B88A32;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: .16em;
+}
+
+
+.ess-training-control-head > p {
+  margin: 0;
+
+  color: #6D7883;
+
+  font-size: 11px;
+
+  line-height: 1.8;
+}
+
+
+.ess-training-control-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+  margin-top: 38px;
+
+  border-top:
+    1px solid #DCE2E7;
+
+  border-bottom:
+    1px solid #DCE2E7;
+}
+
+
+.ess-training-control-grid article {
+  min-height: 245px;
+
+  position: relative;
+
+  padding: 25px 22px;
+
+  border-right:
+    1px solid #DCE2E7;
+}
+
+
+.ess-training-control-grid article:first-child {
+  border-left:
+    1px solid #DCE2E7;
+}
+
+
+.ess-training-control-grid article > div {
+  color: #B88A32;
+
+  font-size: 7px;
+
+  font-weight: 800;
+}
+
+
+.ess-training-control-grid i {
+  display: block;
+
+  margin-top: 30px;
+
+  color: #071B2E;
+
+  font-size: 24px;
+}
+
+
+.ess-training-control-grid strong {
+  display: block;
+
+  margin-top: 20px;
+
+  color: #071B2E;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 12px;
+}
+
+
+.ess-training-control-grid p {
+  margin: 8px 0 0;
+
+  color: #75808A;
+
+  font-size: 8px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   POST DEPLOYMENT
+========================================================= */
+
+.ess-training-post {
+  padding: 0 0 78px;
+
+  background: #F6F8FA;
+}
+
+
+.ess-training-post-shell {
+  display: grid;
+
+  grid-template-columns:
+    .9fr 1.1fr;
+
+  background: #FFFFFF;
+
+  border:
+    1px solid #E1E6EA;
+}
+
+
+.ess-training-post-intro {
+  padding:
+    42px clamp(32px,4vw,58px);
+
+  border-right:
+    1px solid #E2E7EB;
+}
+
+
+.ess-training-post-intro > span {
+  color: #B88A32;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: .16em;
+}
+
+
+.ess-training-post-intro h2 {
+  margin: 11px 0 0;
+
+  color: #071B2E;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(30px,3vw,42px);
+
+  line-height: 1.09;
+}
+
+
+.ess-training-post-intro h2 strong {
+  display: block;
+
+  color: #B88A32;
+}
+
+
+.ess-training-post-intro p {
+  margin: 17px 0 0;
+
+  color: #687681;
+
+  font-size: 10px;
+
+  line-height: 1.8;
+}
+
+
+.ess-training-post-list {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+}
+
+
+.ess-training-post-list > div {
+  min-height: 160px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 25px;
+
+  border-right:
+    1px solid #E2E7EB;
+
+  border-bottom:
+    1px solid #E2E7EB;
+}
+
+
+.ess-training-post-list > div:nth-child(even) {
+  border-right: 0;
+}
+
+
+.ess-training-post-list > div:nth-last-child(-n+2) {
+  border-bottom: 0;
+}
+
+
+.ess-training-post-list span {
+  color: #B88A32;
+
+  font-size: 7px;
+
+  font-weight: 800;
+}
+
+
+.ess-training-post-list strong {
+  margin-top: 17px;
+
+  color: #071B2E;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.ess-training-cta {
+  padding: 0 0 80px;
+
+  background: #F6F8FA;
+}
+
+
+.ess-training-cta-shell {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  padding: 38px 40px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071B2E,
+      #0B2A47
+    );
+
+  border-radius: 12px;
+}
+
+
+.ess-training-cta-shell > div:first-child > span {
+  color: #D2AA52;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: .15em;
+}
+
+
+.ess-training-cta-shell h2 {
+  margin: 8px 0 0;
+
+  color: #FFFFFF;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(22px,2.7vw,35px);
+
+  line-height: 1.25;
+}
+
+
+.ess-training-cta-shell h2 strong {
+  display: block;
+
+  color: #E9CF8A;
+}
+
+
+.ess-training-cta-actions {
+  display: flex;
+
+  gap: 10px;
+}
+
+
+.ess-training-call {
+  min-width: 195px;
+
+  min-height: 50px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 10px 14px;
+
+  color: #FFFFFF !important;
+
+  border:
+    1px solid rgba(255,255,255,.18);
+
+  text-decoration: none !important;
+}
+
+
+.ess-training-call > i {
+  color: #D2AA52;
+}
+
+
+.ess-training-call small,
+.ess-training-call strong {
+  display: block;
+}
+
+
+.ess-training-call small {
+  color:
+    rgba(255,255,255,.44);
+
+  font-size: 6px;
+}
+
+
+.ess-training-call strong {
+  color: #FFFFFF;
+
+  font-size: 9px;
+}
+
+
+.ess-training-request {
+  min-height: 50px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 10px 17px;
+
+  color: #071B2E !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #E9CF8A,
+      #D2AA52
+    );
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  text-decoration: none !important;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   ACTIVE NAV / ANCHORS
+========================================================= */
+
+#training-process {
+  scroll-margin-top: 135px;
+}
+
+
+@media (min-width: 992px) {
+
+  body.ess-training-page
+  .ess-nav-list
+  a[href="training.html"] {
+    color: #B88A32 !important;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  .ess-training-hero > .container,
+  .ess-training-principles > .container,
+  .ess-training-intro > .container,
+  .ess-training-process > .container,
+  .ess-training-delivery > .container,
+  .ess-training-control > .container,
+  .ess-training-post > .container,
+  .ess-training-cta > .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  .ess-training-hero-grid,
+  .ess-training-intro-grid,
+  .ess-training-delivery-grid,
+  .ess-training-control-head,
+  .ess-training-post-shell {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .ess-training-process-list article {
+    grid-template-columns:
+      70px 60px 1fr 1.2fr;
+  }
+
+
+  .ess-training-step-tags {
+    grid-column:
+      3 / 5;
+
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    border-top:
+      1px solid #E4E8EC;
+
+    border-right: 0 !important;
+  }
+
+
+  .ess-training-control-grid {
+    grid-template-columns:
+      1fr 1fr;
+  }
+
+
+  .ess-training-cta-shell {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  .ess-training-hero > .container,
+  .ess-training-principles > .container,
+  .ess-training-intro > .container,
+  .ess-training-process > .container,
+  .ess-training-delivery > .container,
+  .ess-training-control > .container,
+  .ess-training-post > .container,
+  .ess-training-cta > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  .ess-training-hero {
+    padding:
+      52px 0;
+  }
+
+
+  .ess-training-hero h1 {
+    font-size:
+      clamp(38px,10vw,49px);
+  }
+
+
+  .ess-training-hero-actions {
+    display: grid;
+  }
+
+
+  .ess-training-primary,
+  .ess-training-secondary {
+    width: 100%;
+  }
+
+
+  .ess-training-principles-grid {
+    grid-template-columns:
+      1fr 1fr;
+  }
+
+
+  .ess-training-process-list article {
+    grid-template-columns:
+      58px 1fr;
+  }
+
+
+  .ess-training-step-number {
+    grid-row:
+      1 / 4;
+  }
+
+
+  .ess-training-step-icon {
+    justify-content:
+      flex-start;
+  }
+
+
+  .ess-training-step-title,
+  .ess-training-step-copy {
+    grid-column: 2;
+
+    border-right:
+      0 !important;
+  }
+
+
+  .ess-training-step-tags {
+    grid-column:
+      1 / 3;
+
+    padding:
+      15px !important;
+  }
+
+
+  .ess-training-board-grid,
+  .ess-training-control-grid,
+  .ess-training-post-list {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .ess-training-control-grid article {
+    min-height: auto;
+
+    border-left:
+      1px solid #DCE2E7;
+  }
+
+
+  .ess-training-post-intro {
+    border-right: 0;
+
+    border-bottom:
+      1px solid #E2E7EB;
+  }
+
+
+  .ess-training-post-list > div {
+    border-right: 0;
+
+    border-bottom:
+      1px solid #E2E7EB !important;
+  }
+
+
+  .ess-training-post-list > div:last-child {
+    border-bottom: 0 !important;
+  }
+
+
+  .ess-training-cta-shell {
+    padding:
+      28px 22px;
+  }
+
+
+  .ess-training-cta-actions {
+    width: 100%;
+
+    display: grid;
+  }
+
+
+  .ess-training-call,
+  .ess-training-request {
+    width: 100%;
+  }
+
+
+  #training-process {
+    scroll-margin-top: 85px;
+  }
+
+}

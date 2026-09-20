@@ -1,0 +1,811 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   ABOUT / TRUST INTRO
+========================================================= */
+
+.ess-about {
+  position: relative;
+
+  padding:
+    105px 0;
+
+  background:
+    #FFFFFF;
+
+  overflow: hidden;
+}
+
+
+.ess-about::before {
+  content: "ETHICS";
+
+  position: absolute;
+
+  left: -35px;
+  top: 35px;
+
+  color:
+    rgba(7,27,46,.025);
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(100px, 13vw, 210px);
+
+  font-weight: 800;
+
+  letter-spacing:
+    -.07em;
+
+  line-height: 1;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.ess-about-grid {
+  position: relative;
+
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(420px, .82fr);
+
+  gap:
+    clamp(55px, 6vw, 95px);
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.ess-section-label {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+
+  color:
+    var(--ess-gold-dark);
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing:
+    .20em;
+}
+
+
+.ess-section-label span {
+  width: 34px;
+  height: 2px;
+
+  background:
+    var(--ess-gold);
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.ess-about-content h2 {
+  max-width: 720px;
+
+  margin: 0;
+
+  color:
+    var(--ess-navy-dark);
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(
+      38px,
+      4vw,
+      57px
+    );
+
+  font-weight: 700;
+
+  line-height:
+    1.08;
+
+  letter-spacing:
+    -.045em;
+}
+
+
+.ess-about-content h2 strong {
+  display: block;
+
+  margin-top: 5px;
+
+  color:
+    var(--ess-gold-dark);
+
+  font-weight:
+    800;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.ess-about-lead {
+  max-width: 680px;
+
+  margin:
+    28px 0 0;
+
+  color:
+    var(--ess-text);
+
+  font-size:
+    17px;
+
+  font-weight:
+    500;
+
+  line-height:
+    1.75;
+}
+
+
+.ess-about-text {
+  max-width: 670px;
+
+  margin:
+    17px 0 0;
+
+  color:
+    var(--ess-muted);
+
+  font-size:
+    14px;
+
+  line-height:
+    1.85;
+}
+
+
+/* =========================================================
+   VALUES
+========================================================= */
+
+.ess-about-values {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,1fr);
+
+  margin-top:
+    37px;
+
+  border-top:
+    1px solid
+    var(--ess-border);
+
+  border-bottom:
+    1px solid
+    var(--ess-border);
+}
+
+
+.ess-about-values > div {
+  min-height: 120px;
+
+  padding:
+    20px 19px 20px 0;
+
+  border-right:
+    1px solid
+    var(--ess-border);
+}
+
+
+.ess-about-values > div:not(:first-child) {
+  padding-left:
+    20px;
+}
+
+
+.ess-about-values > div:last-child {
+  border-right: 0;
+}
+
+
+.ess-about-values span,
+.ess-about-values strong,
+.ess-about-values small {
+  display: block;
+}
+
+
+.ess-about-values span {
+  margin-bottom:
+    12px;
+
+  color:
+    var(--ess-gold);
+
+  font-size:
+    9px;
+
+  font-weight:
+    800;
+}
+
+
+.ess-about-values strong {
+  color:
+    var(--ess-navy-dark);
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    13px;
+
+  font-weight:
+    800;
+}
+
+
+.ess-about-values small {
+  margin-top:
+    5px;
+
+  color:
+    var(--ess-muted);
+
+  font-size:
+    9px;
+
+  line-height:
+    1.5;
+}
+
+
+/* =========================================================
+   ABOUT LINK
+========================================================= */
+
+.ess-about-link {
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  gap:
+    12px;
+
+  margin-top:
+    30px;
+
+  padding-bottom:
+    5px;
+
+  color:
+    var(--ess-navy-dark) !important;
+
+  font-size:
+    11px;
+
+  font-weight:
+    800;
+
+  border-bottom:
+    1px solid
+    var(--ess-gold);
+
+  transition:
+    gap .25s ease;
+}
+
+
+.ess-about-link:hover {
+  gap:
+    18px;
+}
+
+
+/* =========================================================
+   ASSURANCE PANEL
+========================================================= */
+
+.ess-about-panel {
+  position: relative;
+
+  padding:
+    32px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #071B2E,
+      #0B2A47
+    );
+
+  box-shadow:
+    0 30px 70px
+    rgba(7,27,46,.16);
+
+  overflow: hidden;
+}
+
+
+.ess-about-panel::after {
+  content: "";
+
+  position: absolute;
+
+  width:
+    260px;
+
+  height:
+    260px;
+
+  right:
+    -110px;
+
+  top:
+    -110px;
+
+  border:
+    1px solid
+    rgba(210,170,82,.20);
+
+  border-radius:
+    50%;
+}
+
+
+/* =========================================================
+   PANEL TOP
+========================================================= */
+
+.ess-about-panel-top {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+
+  gap:
+    20px;
+
+  padding-bottom:
+    25px;
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.12);
+}
+
+
+.ess-about-panel-number {
+  width:
+    70px;
+
+  height:
+    70px;
+
+  flex:
+    0 0 70px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  color:
+    var(--ess-gold-light);
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    20px;
+
+  font-weight:
+    800;
+
+  border:
+    1px solid
+    rgba(210,170,82,.45);
+}
+
+
+.ess-about-panel-title small,
+.ess-about-panel-title strong {
+  display:
+    block;
+}
+
+
+.ess-about-panel-title small {
+  margin-bottom:
+    6px;
+
+  color:
+    var(--ess-gold-light);
+
+  font-size:
+    8px;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    .17em;
+}
+
+
+.ess-about-panel-title strong {
+  max-width:
+    300px;
+
+  color:
+    #FFFFFF;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    17px;
+
+  line-height:
+    1.4;
+}
+
+
+/* =========================================================
+   ASSURANCE LIST
+========================================================= */
+
+.ess-assurance-list {
+  position: relative;
+
+  z-index: 2;
+
+  margin-top:
+    11px;
+}
+
+
+.ess-assurance-item {
+  display:
+    grid;
+
+  grid-template-columns:
+    44px
+    1fr;
+
+  gap:
+    16px;
+
+  padding:
+    18px 0;
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.09);
+}
+
+
+.ess-assurance-icon {
+  width:
+    44px;
+
+  height:
+    44px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  color:
+    var(--ess-gold);
+
+  border:
+    1px solid
+    rgba(210,170,82,.28);
+
+  font-size:
+    16px;
+}
+
+
+.ess-assurance-item strong {
+  display:
+    block;
+
+  color:
+    #FFFFFF;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    11px;
+
+  font-weight:
+    700;
+}
+
+
+.ess-assurance-item p {
+  max-width:
+    360px;
+
+  margin:
+    5px 0 0;
+
+  color:
+    rgba(255,255,255,.53);
+
+  font-size:
+    9px;
+
+  line-height:
+    1.6;
+}
+
+
+/* =========================================================
+   PANEL FOOTER
+========================================================= */
+
+.ess-about-panel-footer {
+  position: relative;
+
+  z-index: 2;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  gap:
+    15px;
+
+  padding-top:
+    24px;
+}
+
+
+.ess-about-panel-footer span,
+.ess-about-panel-footer strong {
+  display:
+    block;
+}
+
+
+.ess-about-panel-footer span {
+  color:
+    rgba(255,255,255,.42);
+
+  font-size:
+    7px;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    .17em;
+}
+
+
+.ess-about-panel-footer strong {
+  margin-top:
+    4px;
+
+  color:
+    var(--ess-gold-light);
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    10px;
+}
+
+
+.ess-about-panel-footer img {
+  width:
+    48px;
+
+  height:
+    48px;
+
+  object-fit:
+    contain;
+
+  background:
+    #000000;
+
+  border-radius:
+    9px;
+}
+
+
+/* =========================================================
+   RESPONSIVE TABLET
+========================================================= */
+
+@media
+(max-width: 991.98px) {
+
+  .ess-about {
+    padding:
+      80px 0;
+  }
+
+
+  .ess-about-grid {
+    grid-template-columns:
+      1fr;
+
+    gap:
+      52px;
+  }
+
+
+  .ess-about-panel {
+    max-width:
+      720px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media
+(max-width: 767.98px) {
+
+  .ess-about {
+    padding:
+      65px 0;
+  }
+
+
+  .ess-about-content h2 {
+    font-size:
+      clamp(
+        34px,
+        9vw,
+        44px
+      );
+  }
+
+
+  .ess-about-lead {
+    font-size:
+      15px;
+  }
+
+
+  .ess-about-values {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .ess-about-values > div,
+  .ess-about-values > div:not(:first-child) {
+    min-height:
+      auto;
+
+    padding:
+      17px 0;
+
+    border-right:
+      0;
+
+    border-bottom:
+      1px solid
+      var(--ess-border);
+  }
+
+
+  .ess-about-values > div:last-child {
+    border-bottom:
+      0;
+  }
+
+
+  .ess-about-panel {
+    padding:
+      25px 20px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media
+(max-width: 480px) {
+
+  .ess-about-panel-top {
+    align-items:
+      flex-start;
+  }
+
+
+  .ess-about-panel-number {
+    width:
+      56px;
+
+    height:
+      56px;
+
+    flex-basis:
+      56px;
+
+    font-size:
+      16px;
+  }
+
+
+  .ess-about-panel-title strong {
+    font-size:
+      14px;
+  }
+
+
+  .ess-assurance-item {
+    grid-template-columns:
+      38px
+      1fr;
+
+    gap:
+      12px;
+  }
+
+
+  .ess-assurance-icon {
+    width:
+      38px;
+
+    height:
+      38px;
+  }
+
+}

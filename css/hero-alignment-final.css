@@ -1,0 +1,174 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   FINAL GLOBAL HERO ALIGNMENT
+   Same horizontal alignment on every page
+========================================================= */
+
+
+/* =========================================================
+   STANDARD HERO CONTAINER
+
+   Desktop:
+   max content width = 1380px
+   side padding      = 24px
+========================================================= */
+
+main section[class*="hero"] > .container,
+
+.ess-hero .ess-hero-content,
+
+.ess-about-page-hero > .container,
+.ess-about-new-hero > .container,
+
+.ess-service-page-hero > .container,
+
+.ess-industry-page-hero > .container,
+
+.ess-training-page-hero > .container,
+.ess-training-hero > .container,
+
+.ess-gallery-hero > .container,
+
+.ess-contact-page-hero > .container,
+.ess-contact-hero > .container,
+
+.ess-assessment-page-hero > .container,
+.ess-assessment-hero > .container,
+
+.ess-price-hero > .container {
+
+  width: 100% !important;
+
+  max-width: 1380px !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   HOMEPAGE HERO
+   Its container sits inside each slide
+========================================================= */
+
+.ess-hero .container.ess-hero-content {
+
+  width: 100% !important;
+  max-width: 1380px !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  main section[class*="hero"] > .container,
+
+  .ess-hero .ess-hero-content,
+
+  .ess-about-page-hero > .container,
+  .ess-about-new-hero > .container,
+
+  .ess-service-page-hero > .container,
+
+  .ess-industry-page-hero > .container,
+
+  .ess-training-page-hero > .container,
+  .ess-training-hero > .container,
+
+  .ess-gallery-hero > .container,
+
+  .ess-contact-page-hero > .container,
+  .ess-contact-hero > .container,
+
+  .ess-assessment-page-hero > .container,
+  .ess-assessment-hero > .container,
+
+  .ess-price-hero > .container {
+
+    max-width: 100% !important;
+
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  main section[class*="hero"] > .container,
+
+  .ess-hero .ess-hero-content,
+
+  .ess-about-page-hero > .container,
+  .ess-about-new-hero > .container,
+
+  .ess-service-page-hero > .container,
+
+  .ess-industry-page-hero > .container,
+
+  .ess-training-page-hero > .container,
+  .ess-training-hero > .container,
+
+  .ess-gallery-hero > .container,
+
+  .ess-contact-page-hero > .container,
+  .ess-contact-hero > .container,
+
+  .ess-assessment-page-hero > .container,
+  .ess-assessment-hero > .container,
+
+  .ess-price-hero > .container {
+
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+}
+
+
+/* =========================================================
+   PREVENT INNER HERO GRIDS FROM CREATING EXTRA SIDE SPACE
+========================================================= */
+
+main section[class*="hero"]
+> .container
+> [class*="grid"],
+
+.ess-hero-content {
+
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+
+/* =========================================================
+   PRICING HERO
+   Explicitly match rest of website
+========================================================= */
+
+.ess-price-hero-grid {
+
+  width: 100% !important;
+
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}

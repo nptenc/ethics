@@ -1,0 +1,480 @@
+﻿/* =========================================================
+   ETHICS - FINAL MOBILE NAV FIX
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  html.menu-open,
+  body.menu-open {
+    overflow: hidden !important;
+    height: 100% !important;
+  }
+
+  body {
+    overflow-x: hidden !important;
+  }
+
+  /* -----------------------------------------
+     universal mobile container spacing
+  ----------------------------------------- */
+  body .container {
+    max-width: 100% !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* -----------------------------------------
+     mobile nav overlay
+  ----------------------------------------- */
+  .ess-mobile-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(4, 18, 31, 0.58);
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all .25s ease;
+    z-index: 9998;
+  }
+
+  body.menu-open .ess-mobile-overlay {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  /* -----------------------------------------
+     mobile nav panel
+  ----------------------------------------- */
+  .ess-mobile-nav,
+  .mobile-menu,
+  .ess-mobile-menu {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: min(92vw, 420px) !important;
+    height: 100dvh !important;
+    max-height: 100dvh !important;
+    background: #ffffff !important;
+    z-index: 9999 !important;
+    transform: translateX(-105%) !important;
+    transition: transform .28s ease !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    padding: 18px 18px 22px !important;
+    box-shadow: 0 18px 60px rgba(7, 27, 46, 0.22) !important;
+    border-right: 1px solid #E3E8EC !important;
+  }
+
+  body.menu-open .ess-mobile-nav,
+  body.menu-open .mobile-menu,
+  body.menu-open .ess-mobile-menu {
+    transform: translateX(0) !important;
+  }
+
+  /* -----------------------------------------
+     mobile nav header
+  ----------------------------------------- */
+  .ess-mobile-nav-header,
+  .mobile-menu-header,
+  .ess-mobile-menu-header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 12px !important;
+    margin-bottom: 14px !important;
+    padding-bottom: 14px !important;
+    border-bottom: 1px solid #DDE3E8 !important;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    z-index: 2;
+  }
+
+  .ess-mobile-close,
+  .mobile-menu-close,
+  .ess-mobile-menu-close {
+    width: 50px !important;
+    height: 50px !important;
+    min-width: 50px !important;
+    border: 0 !important;
+    border-radius: 14px !important;
+    background: #F3F5F7 !important;
+    color: #071B2E !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 26px !important;
+    cursor: pointer !important;
+  }
+
+  /* -----------------------------------------
+     mobile nav list
+  ----------------------------------------- */
+  .ess-mobile-nav ul,
+  .mobile-menu ul,
+  .ess-mobile-menu ul {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .ess-mobile-nav li,
+  .mobile-menu li,
+  .ess-mobile-menu li {
+    margin: 0 !important;
+    padding: 0 !important;
+    border-bottom: 1px solid #E7EBEF !important;
+  }
+
+  .ess-mobile-nav a,
+  .mobile-menu a,
+  .ess-mobile-menu a {
+    min-height: 56px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 12px !important;
+    padding: 0 4px !important;
+    color: #1B2A3A !important;
+    font-size: 17px !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    letter-spacing: .01em !important;
+  }
+
+  .ess-mobile-nav a:hover,
+  .mobile-menu a:hover,
+  .ess-mobile-menu a:hover {
+    color: #B88A32 !important;
+  }
+
+  /* -----------------------------------------
+     submenu
+  ----------------------------------------- */
+  .ess-mobile-nav .menu-item-has-children > a,
+  .mobile-menu .menu-item-has-children > a,
+  .ess-mobile-menu .menu-item-has-children > a {
+    cursor: pointer;
+  }
+
+  .ess-mobile-nav .sub-menu,
+  .mobile-menu .sub-menu,
+  .ess-mobile-menu .sub-menu,
+  .ess-mobile-nav .dropdown-menu,
+  .mobile-menu .dropdown-menu,
+  .ess-mobile-menu .dropdown-menu {
+    display: none !important;
+    padding: 6px 0 10px 14px !important;
+    background: #FAFBFC !important;
+    border-top: 1px solid #EEF2F5 !important;
+  }
+
+  .ess-mobile-nav .menu-item-has-children.open > .sub-menu,
+  .mobile-menu .menu-item-has-children.open > .sub-menu,
+  .ess-mobile-menu .menu-item-has-children.open > .sub-menu,
+  .ess-mobile-nav .menu-item-has-children.open > .dropdown-menu,
+  .mobile-menu .menu-item-has-children.open > .dropdown-menu,
+  .ess-mobile-menu .menu-item-has-children.open > .dropdown-menu {
+    display: block !important;
+  }
+
+  .ess-mobile-nav .sub-menu a,
+  .mobile-menu .sub-menu a,
+  .ess-mobile-menu .sub-menu a,
+  .ess-mobile-nav .dropdown-menu a,
+  .mobile-menu .dropdown-menu a,
+  .ess-mobile-menu .dropdown-menu a {
+    min-height: 44px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #465462 !important;
+  }
+
+  /* -----------------------------------------
+     CTA button in drawer
+  ----------------------------------------- */
+  .ess-mobile-nav .ess-mobile-cta,
+  .mobile-menu .ess-mobile-cta,
+  .ess-mobile-menu .ess-mobile-cta,
+  .ess-mobile-nav .request-btn,
+  .mobile-menu .request-btn,
+  .ess-mobile-menu .request-btn {
+    display: block !important;
+    width: 100% !important;
+    margin-top: 18px !important;
+    padding: 16px 18px !important;
+    text-align: center !important;
+    border-radius: 14px !important;
+    background: #D2AA52 !important;
+    color: #071B2E !important;
+    font-weight: 800 !important;
+    text-decoration: none !important;
+    border: 0 !important;
+  }
+
+  /* -----------------------------------------
+     optional promo box inside mobile menu
+  ----------------------------------------- */
+  .ess-mobile-promo,
+  .mobile-menu-promo,
+  .ess-mobile-menu-promo {
+    margin-top: 16px !important;
+    padding: 18px !important;
+    border: 1px solid rgba(255,255,255,.08) !important;
+    background: linear-gradient(135deg, #071B2E, #0B2A47) !important;
+    color: #ffffff !important;
+    border-radius: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .ess-mobile-promo h4,
+  .mobile-menu-promo h4,
+  .ess-mobile-menu-promo h4 {
+    margin: 0 0 8px !important;
+    color: #ffffff !important;
+    font-size: 28px !important;
+    line-height: 1.18 !important;
+  }
+
+  .ess-mobile-promo-grid,
+  .mobile-menu-promo-grid,
+  .ess-mobile-menu-promo-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    border-top: 1px solid rgba(255,255,255,.08);
+    margin-top: 14px;
+  }
+
+  .ess-mobile-promo-grid > div,
+  .mobile-menu-promo-grid > div,
+  .ess-mobile-menu-promo-grid > div {
+    padding: 16px 12px !important;
+    border-right: 1px solid rgba(255,255,255,.08);
+    border-bottom: 1px solid rgba(255,255,255,.08);
+  }
+
+  .ess-mobile-promo-grid > div:nth-child(2n),
+  .mobile-menu-promo-grid > div:nth-child(2n),
+  .ess-mobile-menu-promo-grid > div:nth-child(2n) {
+    border-right: 0 !important;
+  }
+
+  /* -----------------------------------------
+     page sections on mobile
+  ----------------------------------------- */
+  main,
+  section {
+    overflow-x: hidden !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ess-mobile-nav,
+  .mobile-menu,
+  .ess-mobile-menu {
+    width: 100vw !important;
+    border-right: 0 !important;
+    padding: 16px 14px 20px !important;
+  }
+
+  body .container {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .ess-mobile-nav a,
+  .mobile-menu a,
+  .ess-mobile-menu a {
+    font-size: 16px !important;
+  }
+
+  .ess-mobile-promo h4,
+  .mobile-menu-promo h4,
+  .ess-mobile-menu-promo h4 {
+    font-size: 22px !important;
+  }
+}
+
+/* =========================================================
+   MOBILE SERVICES ALIGNMENT FIX
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  /* Services row */
+  .ess-mobile-nav .ess-services-trigger,
+  .ess-mobile-nav .ess-services-toggle,
+  .ess-mobile-nav a[href*="service"],
+  .mobile-menu .ess-services-trigger,
+  .mobile-menu .ess-services-toggle,
+  .mobile-menu a[href*="service"],
+  .ess-mobile-menu .ess-services-trigger,
+  .ess-mobile-menu .ess-services-toggle,
+  .ess-mobile-menu a[href*="service"] {
+    width: 100% !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    text-align: left !important;
+
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+
+    margin: 0 !important;
+  }
+
+
+  /* Keep dropdown arrow on far right */
+  .ess-mobile-nav .ess-services-trigger i,
+  .ess-mobile-nav .ess-services-toggle i,
+  .mobile-menu .ess-services-trigger i,
+  .mobile-menu .ess-services-toggle i,
+  .ess-mobile-menu .ess-services-trigger i,
+  .ess-mobile-menu .ess-services-toggle i {
+    margin-left: auto !important;
+  }
+
+
+  /* If services item itself has centering */
+  .ess-mobile-nav li:has(.ess-services-trigger),
+  .ess-mobile-nav li:has(.ess-services-toggle),
+  .mobile-menu li:has(.ess-services-trigger),
+  .mobile-menu li:has(.ess-services-toggle),
+  .ess-mobile-menu li:has(.ess-services-trigger),
+  .ess-mobile-menu li:has(.ess-services-toggle) {
+    text-align: left !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE SERVICES - REAL SELECTOR FIX
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  /* Make SERVICES identical to the other left-aligned nav items */
+  #essNavbar .ess-nav-services > .ess-services-toggle {
+    width: 100% !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    text-align: left !important;
+
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    margin: 0 !important;
+
+    color: #1B2A3A !important;
+
+    font-size: inherit !important;
+    font-weight: 700 !important;
+  }
+
+
+  /* Arrow stays on far right */
+  #essNavbar .ess-nav-services > .ess-services-toggle::after {
+    margin-left: auto !important;
+  }
+
+
+  #essNavbar .ess-nav-services > .ess-services-toggle i,
+  #essNavbar .ess-nav-services > .ess-services-toggle svg {
+    margin-left: auto !important;
+  }
+
+
+  /* Remove the strange boxed active state around SERVICES */
+  #essNavbar .ess-nav-services.is-open > .ess-services-toggle,
+  #essNavbar .ess-nav-services > .ess-services-toggle[aria-expanded="true"] {
+    justify-content: flex-start !important;
+
+    text-align: left !important;
+
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    background: transparent !important;
+
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-top: 0 !important;
+
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
+
+    outline: 0 !important;
+  }
+
+
+  /* Keep same horizontal position as HOME / ABOUT / INDUSTRIES */
+  #essNavbar .ess-nav-list > .nav-item {
+    width: 100% !important;
+  }
+
+
+  #essNavbar .ess-nav-list > .nav-item > .nav-link {
+    width: 100% !important;
+
+    text-align: left !important;
+
+    justify-content: flex-start !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE NAV - SAME FONT SIZE FOR ALL ITEMS
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  #essNavbar .ess-nav-list > .nav-item > .nav-link,
+  #essNavbar .ess-nav-services > .ess-services-toggle {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    letter-spacing: .01em !important;
+
+    text-transform: uppercase !important;
+  }
+
+
+  /* Services must not inherit any larger desktop typography */
+  #essNavbar
+  .ess-nav-services
+  > button.ess-services-toggle {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+
+    min-height: 52px !important;
+  }
+
+
+  /* Same height for every main menu row */
+  #essNavbar
+  .ess-nav-list
+  > .nav-item
+  > .nav-link {
+    min-height: 52px !important;
+
+    display: flex !important;
+    align-items: center !important;
+  }
+
+}
+

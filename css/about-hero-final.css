@@ -1,0 +1,583 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   ABOUT HERO - EDITORIAL FINAL
+========================================================= */
+
+.ess-about-new-hero {
+  position: relative;
+
+  min-height: 615px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 78% 20%,
+      rgba(210,170,82,.10),
+      transparent 25%
+    ),
+    linear-gradient(
+      122deg,
+      #04121F 0%,
+      #071B2E 54%,
+      #0B2946 100%
+    );
+}
+
+
+.ess-about-new-hero > .container {
+  position: relative;
+
+  z-index: 3;
+
+  width: 100%;
+  max-width: 1380px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+
+/* =========================================================
+   BIG BACKGROUND WORD
+========================================================= */
+
+.ess-about-new-hero-word {
+  position: absolute;
+
+  right: -35px;
+  bottom: -45px;
+
+  z-index: 1;
+
+  color: rgba(255,255,255,.025);
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(170px,20vw,330px);
+
+  font-weight: 800;
+
+  line-height: .75;
+
+  letter-spacing: -.075em;
+
+  pointer-events: none;
+}
+
+
+/* subtle architecture lines */
+
+.ess-about-new-hero::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+
+  left: 57%;
+
+  width: 1px;
+
+  background:
+    rgba(255,255,255,.06);
+}
+
+
+.ess-about-new-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  right: 6%;
+  top: 50%;
+
+  transform:
+    translateY(-50%);
+
+  border:
+    1px solid rgba(210,170,82,.08);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.ess-about-new-hero-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0,1.12fr)
+    minmax(390px,.68fr);
+
+  gap:
+    clamp(65px,8vw,120px);
+
+  align-items: center;
+
+  padding:
+    76px 0 70px;
+}
+
+
+/* =========================================================
+   LEFT
+========================================================= */
+
+.ess-about-new-hero-main {
+  min-width: 0;
+}
+
+
+.ess-about-new-eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  margin-bottom: 21px;
+
+  color: #E9CF8A;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: .18em;
+}
+
+
+.ess-about-new-eyebrow span {
+  width: 34px;
+  height: 2px;
+
+  background: #D2AA52;
+}
+
+
+.ess-about-new-hero h1 {
+  max-width: 790px;
+
+  margin: 0;
+
+  color: #FFFFFF;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(50px,5.6vw,78px);
+
+  font-weight: 700;
+
+  line-height: .99;
+
+  letter-spacing: -.058em;
+}
+
+
+.ess-about-new-hero h1 > strong {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #E9CF8A;
+
+  font-weight: 700;
+}
+
+
+.ess-about-new-hero h1 em {
+  display: block;
+
+  color: #FFFFFF;
+
+  font-style: normal;
+}
+
+
+.ess-about-new-intro {
+  max-width: 650px;
+
+  margin:
+    26px 0 0;
+
+  color:
+    rgba(255,255,255,.59);
+
+  font-size: 12px;
+
+  line-height: 1.85;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.ess-about-new-actions {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 29px;
+}
+
+
+.ess-about-new-primary,
+.ess-about-new-secondary {
+  min-height: 48px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding:
+    11px 18px;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  text-decoration: none !important;
+}
+
+
+.ess-about-new-primary {
+  color: #071B2E !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #E9CF8A,
+      #D2AA52
+    );
+}
+
+
+.ess-about-new-secondary {
+  color: #FFFFFF !important;
+
+  border:
+    1px solid rgba(255,255,255,.22);
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.ess-about-new-breadcrumb {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 28px;
+
+  color:
+    rgba(255,255,255,.35);
+
+  font-size: 7px;
+}
+
+
+.ess-about-new-breadcrumb a {
+  color: #E9CF8A !important;
+}
+
+
+/* =========================================================
+   RIGHT EDITORIAL PANEL
+========================================================= */
+
+.ess-about-new-side {
+  position: relative;
+
+  z-index: 5;
+
+  border-top:
+    1px solid rgba(255,255,255,.14);
+
+  border-bottom:
+    1px solid rgba(255,255,255,.14);
+}
+
+
+.ess-about-new-side-top {
+  padding:
+    27px 0 29px;
+
+  border-bottom:
+    1px solid rgba(255,255,255,.10);
+}
+
+
+.ess-about-new-side-top > span {
+  display: block;
+
+  color: #D2AA52;
+
+  font-size: 6px;
+
+  font-weight: 800;
+
+  letter-spacing: .16em;
+}
+
+
+.ess-about-new-side-top h2 {
+  margin:
+    10px 0 0;
+
+  color: #FFFFFF;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(22px,2vw,29px);
+
+  line-height: 1.32;
+
+  letter-spacing: -.025em;
+}
+
+
+/* =========================================================
+   FACTS
+========================================================= */
+
+.ess-about-new-facts > div {
+  display: grid;
+
+  grid-template-columns:
+    35px 1fr;
+
+  gap: 15px;
+
+  min-height: 82px;
+
+  align-items: center;
+
+  padding:
+    14px 0;
+
+  border-bottom:
+    1px solid rgba(255,255,255,.08);
+}
+
+
+.ess-about-new-facts > div > span {
+  color: #D2AA52;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 9px;
+
+  font-weight: 800;
+}
+
+
+.ess-about-new-facts strong,
+.ess-about-new-facts small {
+  display: block;
+}
+
+
+.ess-about-new-facts strong {
+  color: #FFFFFF;
+
+  font-size: 10px;
+}
+
+
+.ess-about-new-facts small {
+  max-width: 360px;
+
+  margin-top: 4px;
+
+  color:
+    rgba(255,255,255,.42);
+
+  font-size: 7px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   SIGNATURE
+========================================================= */
+
+.ess-about-new-signature {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 9px;
+
+  padding:
+    19px 0 3px;
+
+  color:
+    rgba(255,255,255,.48);
+
+  font-size: 6px;
+
+  font-weight: 800;
+
+  letter-spacing: .1em;
+}
+
+
+.ess-about-new-signature i {
+  width: 4px;
+  height: 4px;
+
+  flex: 0 0 4px;
+
+  background: #D2AA52;
+
+  border-radius: 50%;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  .ess-about-new-hero > .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  .ess-about-new-hero-grid {
+    grid-template-columns:
+      1fr;
+
+    gap: 44px;
+  }
+
+
+  .ess-about-new-hero::before {
+    display: none;
+  }
+
+
+  .ess-about-new-side {
+    max-width: 720px;
+  }
+
+}
+
+
+/* =========================================================
+   PHONE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  .ess-about-new-hero {
+    min-height: 0;
+  }
+
+
+  .ess-about-new-hero > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  .ess-about-new-hero-grid {
+    gap: 36px;
+
+    padding:
+      52px 0 48px;
+  }
+
+
+  .ess-about-new-hero h1 {
+    font-size:
+      clamp(40px,11vw,53px);
+  }
+
+
+  .ess-about-new-intro {
+    font-size: 11px;
+
+    line-height: 1.75;
+  }
+
+
+  .ess-about-new-actions {
+    display: grid;
+
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .ess-about-new-primary,
+  .ess-about-new-secondary {
+    width: 100%;
+  }
+
+
+  .ess-about-new-side-top {
+    padding-top: 22px;
+  }
+
+
+  .ess-about-new-facts > div {
+    min-height: 75px;
+  }
+
+
+  .ess-about-new-hero-word {
+    right: -25px;
+    bottom: -20px;
+
+    font-size: 115px;
+  }
+
+
+  .ess-about-new-hero::after {
+    width: 260px;
+    height: 260px;
+
+    right: -80px;
+  }
+
+}
+

@@ -1,0 +1,649 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   FINAL HOMEPAGE SECTIONS
+========================================================= */
+
+
+/* =========================================================
+   WHY US
+========================================================= */
+
+.ess-why {
+  padding: 105px 0;
+  background: #F5F7F9;
+}
+
+.ess-why-layout {
+  display: grid;
+  grid-template-columns: .75fr 1.25fr;
+  gap: clamp(55px,6vw,90px);
+  align-items: start;
+}
+
+.ess-why-intro {
+  position: sticky;
+  top: 150px;
+}
+
+.ess-why-intro h2,
+.ess-training-head h2,
+.ess-industries-head h2,
+.ess-clients-heading h2,
+.ess-contact-main h2 {
+  margin: 0;
+  font-family: var(--ess-font-heading);
+  font-size: clamp(37px,3.8vw,54px);
+  line-height: 1.08;
+  letter-spacing: -.045em;
+}
+
+.ess-why-intro h2 {
+  color: var(--ess-navy-dark);
+}
+
+.ess-why-intro h2 strong,
+.ess-training-head h2 strong,
+.ess-clients-heading h2 strong {
+  display: block;
+  color: #B88A32;
+}
+
+.ess-why-intro > p {
+  margin: 24px 0 0;
+  max-width: 520px;
+  color: var(--ess-muted);
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.ess-why-commitment {
+  margin-top: 32px;
+  padding: 22px;
+  background: #FFFFFF;
+  border-left: 3px solid var(--ess-gold);
+  box-shadow: 0 14px 34px rgba(7,27,46,.06);
+}
+
+.ess-why-commitment span,
+.ess-why-commitment strong {
+  display: block;
+}
+
+.ess-why-commitment span {
+  color: var(--ess-gold-dark);
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: .15em;
+}
+
+.ess-why-commitment strong {
+  margin-top: 6px;
+  color: var(--ess-navy-dark);
+  font-family: var(--ess-font-heading);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.ess-why-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 14px;
+}
+
+.ess-why-card {
+  position: relative;
+  min-height: 225px;
+  padding: 27px;
+  background: #FFFFFF;
+  border: 1px solid var(--ess-border);
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(7,27,46,.04);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.ess-why-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 42px rgba(7,27,46,.09);
+}
+
+.ess-why-card > span {
+  position: absolute;
+  right: 22px;
+  top: 20px;
+  color: rgba(7,27,46,.15);
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.ess-why-card > i {
+  color: var(--ess-gold-dark);
+  font-size: 23px;
+}
+
+.ess-why-card h3 {
+  margin: 22px 0 0;
+  color: var(--ess-navy-dark);
+  font-family: var(--ess-font-heading);
+  font-size: 15px;
+}
+
+.ess-why-card p {
+  margin: 10px 0 0;
+  color: var(--ess-muted);
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   TRAINING
+========================================================= */
+
+.ess-training {
+  padding: 105px 0;
+  background: #FFFFFF;
+}
+
+.ess-training-head {
+  display: grid;
+  grid-template-columns: 1fr .65fr;
+  gap: 65px;
+  align-items: end;
+}
+
+.ess-training-head h2 {
+  color: var(--ess-navy-dark);
+}
+
+.ess-training-head > p {
+  margin: 0 0 5px;
+  color: var(--ess-muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.ess-training-process {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  margin-top: 55px;
+}
+
+.ess-training-process::before {
+  content: "";
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  top: 56px;
+  height: 1px;
+  background: var(--ess-border);
+}
+
+.ess-training-process article {
+  position: relative;
+  z-index: 2;
+  padding: 0 18px;
+  text-align: center;
+}
+
+.ess-process-number {
+  display: block;
+  margin-bottom: 11px;
+  color: var(--ess-gold-dark);
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.ess-process-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ess-gold-dark);
+  background: #FFFFFF;
+  border: 1px solid rgba(210,170,82,.45);
+  border-radius: 50%;
+  font-size: 19px;
+}
+
+.ess-training-process h3 {
+  margin: 20px 0 0;
+  color: var(--ess-navy-dark);
+  font-family: var(--ess-font-heading);
+  font-size: 12px;
+}
+
+.ess-training-process p {
+  margin: 8px 0 0;
+  color: var(--ess-muted);
+  font-size: 9px;
+  line-height: 1.65;
+}
+
+.ess-training-bottom {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin-top: 55px;
+  border: 1px solid var(--ess-border);
+}
+
+.ess-training-bottom > div {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 16px;
+  border-right: 1px solid var(--ess-border);
+  color: var(--ess-text);
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.ess-training-bottom > div:last-child {
+  border-right: 0;
+}
+
+.ess-training-bottom i {
+  color: var(--ess-gold-dark);
+}
+
+
+/* =========================================================
+   INDUSTRIES
+========================================================= */
+
+.ess-industries {
+  padding: 110px 0;
+  background: linear-gradient(145deg,#061725,#0B2A47);
+}
+
+.ess-industries-head {
+  max-width: 730px;
+}
+
+.ess-industries-head h2 {
+  margin: 0;
+  color: #FFFFFF;
+  font-family: var(--ess-font-heading);
+  font-size: clamp(38px,3.8vw,55px);
+  line-height: 1.08;
+  letter-spacing: -.045em;
+}
+
+.ess-industries-head h2 strong {
+  display: block;
+  color: var(--ess-gold-light);
+}
+
+.ess-industries-head > p {
+  max-width: 620px;
+  margin: 22px 0 0;
+  color: rgba(255,255,255,.58);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.ess-industries-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 14px;
+  margin-top: 48px;
+}
+
+.ess-industries-grid article {
+  position: relative;
+  min-height: 235px;
+  padding: 27px;
+  border: 1px solid rgba(255,255,255,.11);
+  border-radius: 12px;
+  background: rgba(255,255,255,.035);
+  transition: .25s ease;
+}
+
+.ess-industries-grid article:hover {
+  transform: translateY(-5px);
+  border-color: rgba(210,170,82,.40);
+  background: rgba(255,255,255,.06);
+}
+
+.ess-industries-grid article > span {
+  position: absolute;
+  right: 22px;
+  top: 20px;
+  color: rgba(255,255,255,.25);
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.ess-industry-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ess-gold);
+  border: 1px solid rgba(210,170,82,.30);
+  border-radius: 9px;
+}
+
+.ess-industries-grid h3 {
+  margin: 24px 0 0;
+  color: #FFFFFF;
+  font-family: var(--ess-font-heading);
+  font-size: 15px;
+}
+
+.ess-industries-grid p {
+  margin: 10px 0 0;
+  color: rgba(255,255,255,.52);
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   CLIENTS
+========================================================= */
+
+.ess-clients {
+  padding: 105px 0;
+  background: #FFFFFF;
+}
+
+.ess-clients-heading {
+  display: grid;
+  grid-template-columns: 1fr .55fr;
+  gap: 60px;
+  align-items: end;
+}
+
+.ess-clients-heading h2 {
+  color: var(--ess-navy-dark);
+}
+
+.ess-clients-heading > p {
+  margin: 0 0 5px;
+  color: var(--ess-muted);
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+.ess-client-wall {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin-top: 45px;
+  border-top: 1px solid var(--ess-border);
+  border-left: 1px solid var(--ess-border);
+}
+
+.ess-client-wall > div {
+  min-height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  color: var(--ess-navy-dark);
+  font-family: var(--ess-font-heading);
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  border-right: 1px solid var(--ess-border);
+  border-bottom: 1px solid var(--ess-border);
+  transition: .25s ease;
+}
+
+.ess-client-wall > div:hover {
+  color: var(--ess-gold-dark);
+  background: #FAFBFC;
+}
+
+.ess-client-note {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+  color: var(--ess-muted);
+  font-size: 9px;
+}
+
+.ess-client-note i {
+  color: var(--ess-gold-dark);
+}
+
+
+/* =========================================================
+   CONTACT CTA
+========================================================= */
+
+.ess-contact-cta {
+  padding: 90px 0;
+  background: #F5F7F9;
+}
+
+.ess-contact-card {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  background: linear-gradient(135deg,#071B2E,#0B2A47);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 30px 70px rgba(7,27,46,.17);
+}
+
+.ess-contact-main {
+  padding: clamp(38px,5vw,65px);
+}
+
+.ess-contact-main h2 {
+  color: #FFFFFF;
+}
+
+.ess-contact-main h2 strong {
+  display: block;
+  color: var(--ess-gold-light);
+}
+
+.ess-contact-main > p {
+  max-width: 610px;
+  margin: 22px 0 0;
+  color: rgba(255,255,255,.58);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.ess-contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 27px;
+}
+
+.ess-contact-primary,
+.ess-contact-secondary {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 11px 18px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.ess-contact-primary {
+  color: var(--ess-navy-dark) !important;
+  background: linear-gradient(135deg,#EBD189,#CFA249);
+}
+
+.ess-contact-secondary {
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255,255,255,.25);
+}
+
+.ess-contact-info {
+  display: grid;
+  align-content: center;
+  padding: 35px;
+  background: rgba(0,0,0,.13);
+  border-left: 1px solid rgba(255,255,255,.09);
+}
+
+.ess-contact-info > div {
+  position: relative;
+  padding: 20px 0 20px 38px;
+  border-bottom: 1px solid rgba(255,255,255,.10);
+}
+
+.ess-contact-info > div:last-child {
+  border-bottom: 0;
+}
+
+.ess-contact-info i {
+  position: absolute;
+  left: 0;
+  top: 22px;
+  color: var(--ess-gold);
+  font-size: 16px;
+}
+
+.ess-contact-info span,
+.ess-contact-info strong {
+  display: block;
+}
+
+.ess-contact-info span {
+  color: var(--ess-gold-light);
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: .15em;
+}
+
+.ess-contact-info strong {
+  margin-top: 5px;
+  color: rgba(255,255,255,.78);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  .ess-why-layout,
+  .ess-training-head,
+  .ess-clients-heading,
+  .ess-contact-card {
+    grid-template-columns: 1fr;
+  }
+
+  .ess-why-intro {
+    position: static;
+  }
+
+  .ess-training-process {
+    grid-template-columns: repeat(2,1fr);
+    gap: 28px;
+  }
+
+  .ess-training-process::before {
+    display: none;
+  }
+
+  .ess-industries-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .ess-client-wall {
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .ess-contact-info {
+    border-left: 0;
+    border-top: 1px solid rgba(255,255,255,.09);
+  }
+}
+
+
+@media (max-width: 767.98px) {
+
+  .ess-why,
+  .ess-training,
+  .ess-industries,
+  .ess-clients {
+    padding: 70px 0;
+  }
+
+  .ess-why-grid,
+  .ess-training-process,
+  .ess-industries-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ess-training-process article {
+    text-align: left;
+    padding: 0;
+  }
+
+  .ess-process-icon {
+    margin: 0;
+  }
+
+  .ess-training-bottom {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ess-training-bottom > div:nth-child(2) {
+    border-right: 0;
+  }
+
+  .ess-training-bottom > div:nth-child(-n+2) {
+    border-bottom: 1px solid var(--ess-border);
+  }
+
+  .ess-client-wall {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .ess-contact-cta {
+    padding: 65px 0;
+  }
+
+  .ess-contact-actions {
+    display: grid;
+  }
+
+  .ess-contact-primary,
+  .ess-contact-secondary {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 440px) {
+
+  .ess-client-wall {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ess-client-wall > div {
+    min-height: 78px;
+    padding: 12px;
+    font-size: 9px;
+  }
+
+  .ess-training-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .ess-training-bottom > div {
+    border-right: 0;
+    border-bottom: 1px solid var(--ess-border);
+  }
+
+}

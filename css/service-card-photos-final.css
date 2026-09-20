@@ -1,0 +1,249 @@
+﻿/* =========================================================
+   HOMEPAGE SERVICE CARD PHOTOS
+   FINAL RESPONSIVE FIT
+========================================================= */
+
+.ess-services-grid .ess-service-card {
+  position: relative !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  padding: 0 !important;
+
+  overflow: hidden !important;
+
+  background: #FFFFFF !important;
+}
+
+
+/* =========================================================
+   DESKTOP IMAGE
+   Recommended: 1200 x 675
+========================================================= */
+
+.ess-service-card-photo {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+
+  height: auto !important;
+
+  overflow: hidden;
+
+  background: #071B2E;
+}
+
+
+.ess-service-card-photo picture {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+}
+
+
+.ess-service-card-photo img {
+  display: block;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: cover !important;
+
+  /* IMPORTANT:
+     keep heads visible
+  */
+  object-position: center top !important;
+
+  transition:
+    transform .35s ease;
+}
+
+
+.ess-service-card:hover
+.ess-service-card-photo img {
+  transform: scale(1.02);
+}
+
+
+/* subtle professional overlay */
+
+.ess-service-card-photo::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 2;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(7,27,46,.18) 0%,
+      transparent 42%
+    );
+}
+
+
+/* =========================================================
+   SERVICE-SPECIFIC CROP
+========================================================= */
+
+/* GENERAL SECURITY */
+.ess-service-card-photo[data-service="general-security"] img {
+  object-position: center 18% !important;
+}
+
+
+/* ARMED SECURITY */
+.ess-service-card-photo[data-service="armed-security"] img {
+  object-position: center 15% !important;
+}
+
+
+/* VIP */
+.ess-service-card-photo[data-service="vip-protection"] img {
+  object-position: center 12% !important;
+}
+
+
+/* EVENT */
+.ess-service-card-photo[data-service="event-security"] img {
+  object-position: center 20% !important;
+}
+
+
+/* HOUSEKEEPING */
+.ess-service-card-photo[data-service="housekeeping-support"] img {
+  object-position: center center !important;
+}
+
+
+/* INDUSTRIAL */
+.ess-service-card-photo[data-service="industrial-manpower"] img {
+  object-position: center 20% !important;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.ess-service-card .ess-service-top {
+  padding:
+    21px 26px 0 !important;
+
+  margin: 0 !important;
+}
+
+
+.ess-service-card > h3 {
+  margin:
+    20px 26px 0 !important;
+}
+
+
+.ess-service-card > p {
+  margin:
+    14px 26px 0 !important;
+
+  line-height:
+    1.7 !important;
+}
+
+
+.ess-service-card .ess-service-tags {
+  margin:
+    17px 26px 0 !important;
+}
+
+
+.ess-service-card > a {
+  margin:
+    auto 26px 27px !important;
+
+  padding-top:
+    24px !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  .ess-service-card-photo {
+    aspect-ratio:
+      16 / 9;
+  }
+
+}
+
+
+/* =========================================================
+   PHONE
+   Recommended image: 1080 x 1350
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  .ess-service-card-photo {
+    width: 100%;
+
+    aspect-ratio:
+      4 / 5 !important;
+
+    height: auto !important;
+  }
+
+
+  .ess-service-card-photo img {
+    width: 100% !important;
+    height: 100% !important;
+
+    object-fit:
+      cover !important;
+
+    object-position:
+      center top !important;
+  }
+
+
+  .ess-service-card .ess-service-top {
+    padding:
+      18px 19px 0 !important;
+  }
+
+
+  .ess-service-card > h3 {
+    margin:
+      18px 19px 0 !important;
+  }
+
+
+  .ess-service-card > p {
+    margin:
+      12px 19px 0 !important;
+  }
+
+
+  .ess-service-card .ess-service-tags {
+    margin:
+      15px 19px 0 !important;
+  }
+
+
+  .ess-service-card > a {
+    margin:
+      auto 19px 22px !important;
+  }
+
+}
+

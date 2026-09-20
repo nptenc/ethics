@@ -1,0 +1,54 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   FINAL GLOBAL VISUAL SCALE
+
+   Purpose:
+   Make browser 100% view feel slightly closer to 110%
+   without making the site excessively large.
+========================================================= */
+
+:root {
+  --ess-visual-scale: 1.06;
+}
+
+
+/* =========================================================
+   DESKTOP / LARGE TABLET
+========================================================= */
+
+@media (min-width: 992px) {
+
+  body {
+    zoom: var(--ess-visual-scale);
+  }
+
+}
+
+
+/* =========================================================
+   IMPORTANT
+   Do not enlarge tablet/mobile.
+   Their layouts are already designed for small screens.
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  body {
+    zoom: 1 !important;
+  }
+
+}
+
+
+/* =========================================================
+   SAFETY
+========================================================= */
+
+html,
+body {
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}

@@ -1,0 +1,52 @@
+﻿:root {
+  --ess-navy-dark: #071B2E;
+  --ess-navy: #0B2A47;
+  --ess-navy-light: #123B61;
+
+  --ess-gold: #D2AA52;
+  --ess-gold-dark: #B88A32;
+  --ess-gold-light: #E9CF8A;
+
+  --ess-white: #FFFFFF;
+  --ess-bg: #F5F7F9;
+
+  --ess-text: #263746;
+  --ess-muted: #6D7883;
+  --ess-border: #E2E7EB;
+
+  --ess-font-heading: "Montserrat", Arial, sans-serif;
+  --ess-font-body: "Inter", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--ess-white);
+  color: var(--ess-text);
+  font-family: var(--ess-font-body);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+

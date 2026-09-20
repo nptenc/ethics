@@ -1,0 +1,2258 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   ABOUT PAGE - PREMIUM FINAL REDESIGN
+========================================================= */
+
+body.ess-about-page *,
+body.ess-about-page *::before,
+body.ess-about-page *::after {
+  box-sizing: border-box;
+}
+
+
+body.ess-about-page main {
+  overflow: hidden;
+}
+
+
+body.ess-about-page
+.ess-about-page-hero > .container,
+
+body.ess-about-page
+.ess-about-index > .container,
+
+body.ess-about-page
+.ess-about-story > .container,
+
+body.ess-about-page
+.ess-about-mission > .container,
+
+body.ess-about-page
+.ess-leadership-showcase > .container,
+
+body.ess-about-page
+.ess-management-gallery > .container,
+
+body.ess-about-page
+.ess-about-standards > .container,
+
+body.ess-about-page
+.ess-about-assurance > .container,
+
+body.ess-about-page
+.ess-about-closing > .container {
+  width: 100% !important;
+  max-width: 1380px !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+
+/* =========================================================
+   HERO
+   No repeated homepage photo.
+   Premium editorial identity.
+========================================================= */
+
+body.ess-about-page
+.ess-about-page-hero {
+  min-height: 520px !important;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  background:
+    radial-gradient(
+      circle at 77% 28%,
+      rgba(210,170,82,.12),
+      transparent 23%
+    ),
+    radial-gradient(
+      circle at 88% 76%,
+      rgba(18,59,97,.44),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #04121F 0%,
+      #071B2E 58%,
+      #0B2946 100%
+    ) !important;
+
+  overflow: hidden;
+}
+
+
+body.ess-about-page
+.ess-about-page-hero::before {
+  content: "ETHICS";
+
+  position: absolute;
+
+  right: -38px;
+  bottom: -48px;
+
+  color:
+    rgba(255,255,255,.025);
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(150px,18vw,285px);
+
+  font-weight: 800;
+
+  line-height: .8;
+
+  letter-spacing: -.08em;
+
+  pointer-events: none;
+}
+
+
+body.ess-about-page
+.ess-about-page-hero-bg {
+  display: none !important;
+}
+
+
+body.ess-about-page
+.ess-about-page-hero-grid {
+  position: relative;
+
+  z-index: 2;
+
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(0,1fr)
+    minmax(380px,.68fr) !important;
+
+  gap: 75px !important;
+
+  align-items: center !important;
+
+  padding:
+    70px 0 !important;
+}
+
+
+body.ess-about-page
+.ess-about-page-hero-copy {
+  min-width: 0;
+}
+
+
+body.ess-about-page
+.ess-about-page-hero h1 {
+  max-width: 760px !important;
+
+  font-size:
+    clamp(48px,5.4vw,74px) !important;
+
+  line-height: 1.01 !important;
+
+  letter-spacing: -.055em !important;
+}
+
+
+body.ess-about-page
+.ess-about-page-hero-copy > p {
+  max-width: 650px !important;
+
+  margin-top: 23px !important;
+
+  font-size: 12px !important;
+
+  line-height: 1.85 !important;
+}
+
+
+/* premium fact panel */
+
+body.ess-about-page
+.ess-about-hero-panel {
+  padding: 0 !important;
+
+  background:
+    rgba(255,255,255,.025) !important;
+
+  border:
+    1px solid rgba(255,255,255,.12) !important;
+
+  border-radius: 0 !important;
+
+  backdrop-filter: none !important;
+}
+
+
+body.ess-about-page
+.ess-about-hero-panel-head {
+  padding:
+    25px 25px 22px !important;
+}
+
+
+body.ess-about-page
+.ess-about-hero-panel-head strong {
+  max-width: 400px;
+
+  font-size: 16px !important;
+}
+
+
+body.ess-about-page
+.ess-about-hero-facts {
+  margin-top: 0 !important;
+}
+
+
+body.ess-about-page
+.ess-about-hero-facts > div {
+  min-height: 105px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding:
+    19px 20px !important;
+}
+
+
+body.ess-about-page
+.ess-about-hero-facts strong {
+  font-size: 16px !important;
+}
+
+
+body.ess-about-page
+.ess-about-hero-facts span {
+  font-size: 8px !important;
+}
+
+
+/* =========================================================
+   ABOUT INDEX
+========================================================= */
+
+.ess-about-index {
+  position: relative;
+
+  z-index: 20;
+
+  background: #FFFFFF;
+
+  border-bottom:
+    1px solid #E1E6EA;
+}
+
+
+.ess-about-index-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(6,minmax(0,1fr));
+}
+
+
+.ess-about-index-grid > a {
+  min-height: 72px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  color: #42525E !important;
+
+  border-right:
+    1px solid #E3E8EC;
+
+  font-size: 8px;
+
+  text-decoration: none !important;
+
+  transition:
+    background .2s ease,
+    color .2s ease;
+}
+
+
+.ess-about-index-grid > a:first-child {
+  border-left:
+    1px solid #E3E8EC;
+}
+
+
+.ess-about-index-grid > a:hover {
+  color: #071B2E !important;
+
+  background: #F6F8FA;
+}
+
+
+.ess-about-index-grid span {
+  color: #B88A32;
+
+  font-size: 7px;
+
+  font-weight: 800;
+}
+
+
+.ess-about-index-grid strong {
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   STORY
+========================================================= */
+
+body.ess-about-page
+.ess-about-story {
+  padding:
+    95px 0 82px !important;
+
+  background: #F6F8FA !important;
+}
+
+
+body.ess-about-page
+.ess-about-story-grid {
+  grid-template-columns:
+    minmax(0,.82fr)
+    minmax(0,1.18fr) !important;
+
+  gap:
+    clamp(60px,8vw,115px) !important;
+
+  align-items: start;
+}
+
+
+body.ess-about-page
+.ess-about-story-title {
+  position: sticky;
+
+  top: 145px;
+}
+
+
+body.ess-about-page
+.ess-about-story-title h2 {
+  max-width: 520px;
+}
+
+
+body.ess-about-page
+.ess-about-story-copy {
+  position: relative;
+
+  padding-left: 32px;
+
+  border-left:
+    1px solid #D7DEE4;
+}
+
+
+body.ess-about-page
+.ess-about-story-copy::before {
+  content: "";
+
+  position: absolute;
+
+  left: -2px;
+  top: 0;
+
+  width: 3px;
+  height: 82px;
+
+  background: #D2AA52;
+}
+
+
+body.ess-about-page
+.ess-about-story-copy p {
+  font-size: 12px !important;
+
+  line-height: 1.9 !important;
+}
+
+
+body.ess-about-page
+.ess-about-story-copy
+.ess-about-story-lead {
+  font-size: 17px !important;
+
+  line-height: 1.7 !important;
+}
+
+
+/* proof row becomes architectural strip */
+
+body.ess-about-page
+.ess-about-proof-row {
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(4,minmax(0,1fr)) !important;
+
+  gap: 0 !important;
+
+  margin-top: 58px !important;
+
+  background: #FFFFFF;
+
+  border-top:
+    1px solid #DDE3E8;
+
+  border-bottom:
+    1px solid #DDE3E8;
+}
+
+
+body.ess-about-page
+.ess-about-proof-row article {
+  min-height: 225px !important;
+
+  padding:
+    27px 24px !important;
+
+  background: transparent !important;
+
+  border: 0 !important;
+
+  border-right:
+    1px solid #DDE3E8 !important;
+
+  border-radius: 0 !important;
+
+  box-shadow: none !important;
+}
+
+
+body.ess-about-page
+.ess-about-proof-row article:first-child {
+  border-left:
+    1px solid #DDE3E8 !important;
+}
+
+
+body.ess-about-page
+.ess-about-proof-row article > span {
+  display: block;
+
+  color: #B88A32;
+
+  font-size: 8px;
+
+  font-weight: 800;
+}
+
+
+body.ess-about-page
+.ess-about-proof-row article > i {
+  display: block;
+
+  margin-top: 30px;
+
+  color: #071B2E;
+
+  font-size: 24px;
+}
+
+
+body.ess-about-page
+.ess-about-proof-row article > strong {
+  display: block;
+
+  margin-top: 20px;
+
+  color: #071B2E;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 12px;
+}
+
+
+body.ess-about-page
+.ess-about-proof-row article > p {
+  margin-top: 8px;
+
+  font-size: 8px !important;
+
+  line-height: 1.65 !important;
+}
+
+
+/* =========================================================
+   MISSION
+========================================================= */
+
+body.ess-about-page
+.ess-about-mission {
+  padding:
+    0 0 95px !important;
+
+  background: #F6F8FA !important;
+}
+
+
+body.ess-about-page
+.ess-about-mission-shell {
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(0,.9fr)
+    minmax(0,1.1fr) !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #061725,
+      #0B2A47
+    ) !important;
+
+  overflow: hidden;
+}
+
+
+body.ess-about-page
+.ess-about-mission-main {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding:
+    55px clamp(38px,5vw,72px) !important;
+
+  border-right:
+    1px solid rgba(255,255,255,.09);
+}
+
+
+body.ess-about-page
+.ess-about-mission-main h2 {
+  max-width: 600px;
+
+  font-size:
+    clamp(31px,3vw,43px) !important;
+}
+
+
+body.ess-about-page
+.ess-about-mission-points {
+  display: grid !important;
+
+  grid-template-columns:
+    1fr 1fr !important;
+}
+
+
+body.ess-about-page
+.ess-about-mission-points article {
+  min-height: 210px !important;
+
+  padding:
+    29px 27px !important;
+
+  background: transparent !important;
+}
+
+
+body.ess-about-page
+.ess-about-mission-points article strong {
+  margin-top: 28px !important;
+}
+
+
+/* values is now signature strip */
+
+body.ess-about-page
+.ess-about-values-band {
+  min-height: 82px;
+
+  margin-top: 0 !important;
+
+  padding:
+    18px 28px !important;
+
+  background: #FFFFFF !important;
+
+  border:
+    1px solid #E0E5EA;
+
+  border-top: 0;
+}
+
+
+body.ess-about-page
+.ess-about-values-band > span {
+  color: #B88A32 !important;
+}
+
+
+body.ess-about-page
+.ess-about-values-band > div strong {
+  color: #071B2E !important;
+}
+
+
+/* =========================================================
+   LEADERSHIP
+========================================================= */
+
+body.ess-about-page
+.ess-leadership-showcase {
+  padding:
+    95px 0 80px !important;
+
+  background: #F6F8FA !important;
+}
+
+
+body.ess-about-page
+.ess-leadership-editorial-head {
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(0,1fr)
+    minmax(300px,.48fr) !important;
+
+  gap: 70px !important;
+
+  align-items: end !important;
+
+  margin-bottom:
+    42px !important;
+}
+
+
+body.ess-about-page
+.ess-leadership-editorial-head h2 {
+  max-width: 760px;
+}
+
+
+/* chairman */
+
+body.ess-about-page
+.ess-chairman-feature {
+  grid-template-columns:
+    minmax(330px,.38fr)
+    minmax(0,.62fr) !important;
+
+  min-height: 525px !important;
+
+  margin: 0 !important;
+
+  border-radius: 0 !important;
+
+  box-shadow:
+    0 22px 55px
+    rgba(7,27,46,.09);
+}
+
+
+body.ess-about-page
+.ess-chairman-portrait {
+  min-height: 525px !important;
+}
+
+
+body.ess-about-page
+.ess-chairman-portrait > img {
+  object-position:
+    center top !important;
+}
+
+
+body.ess-about-page
+.ess-chairman-content {
+  padding:
+    50px clamp(42px,5vw,75px) !important;
+}
+
+
+/* MD */
+
+body.ess-about-page
+.ess-md-feature {
+  grid-template-columns:
+    minmax(0,.62fr)
+    minmax(330px,.38fr) !important;
+
+  min-height: 500px !important;
+
+  margin-top:
+    20px !important;
+
+  box-shadow:
+    0 18px 48px
+    rgba(7,27,46,.045);
+}
+
+
+body.ess-about-page
+.ess-md-portrait {
+  min-height: 500px !important;
+}
+
+
+body.ess-about-page
+.ess-md-portrait > img {
+  object-position:
+    center top !important;
+}
+
+
+body.ess-about-page
+.ess-md-content {
+  padding:
+    50px clamp(42px,5vw,75px) !important;
+}
+
+
+/* =========================================================
+   MANAGEMENT
+========================================================= */
+
+body.ess-about-page
+.ess-management-gallery {
+  padding:
+    85px 0 100px !important;
+
+  background: #FFFFFF !important;
+}
+
+
+body.ess-about-page
+.ess-management-head {
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(0,1fr)
+    minmax(300px,.45fr) !important;
+
+  gap: 65px !important;
+
+  align-items: end !important;
+
+  margin-bottom:
+    48px !important;
+}
+
+
+body.ess-about-page
+.ess-management-group {
+  display: grid;
+
+  grid-template-columns:
+    190px minmax(0,1fr);
+
+  gap: 30px;
+
+  align-items: start;
+}
+
+
+body.ess-about-page
+.ess-management-group-second {
+  margin-top:
+    65px !important;
+}
+
+
+body.ess-about-page
+.ess-management-group-title {
+  position: sticky;
+
+  top: 145px;
+
+  padding-top: 4px;
+}
+
+
+body.ess-about-page
+.ess-management-group-title span {
+  display: block;
+
+  color: #B88A32;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 35px;
+
+  font-weight: 800;
+}
+
+
+body.ess-about-page
+.ess-management-group-title strong {
+  display: block;
+
+  max-width: 150px;
+
+  margin-top: 8px;
+
+  color: #071B2E;
+
+  font-size: 10px;
+
+  line-height: 1.5;
+}
+
+
+/* Directors */
+
+body.ess-about-page
+.ess-management-grid {
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(4,minmax(0,1fr)) !important;
+
+  gap:
+    38px 18px !important;
+}
+
+
+body.ess-about-page
+.ess-team-profile {
+  position: relative;
+
+  min-width: 0;
+
+  padding: 0 !important;
+
+  background: transparent !important;
+
+  border: 0 !important;
+
+  box-shadow: none !important;
+}
+
+
+body.ess-about-page
+.ess-team-photo {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 4 / 5;
+
+  max-height: 295px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      145deg,
+      #EEF1F3,
+      #DDE3E7
+    );
+}
+
+
+body.ess-about-page
+.ess-team-photo::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 3px;
+
+  background: #D2AA52;
+
+  transform:
+    scaleX(.25);
+
+  transform-origin: left;
+
+  transition:
+    transform .25s ease;
+}
+
+
+body.ess-about-page
+.ess-team-profile:hover
+.ess-team-photo::after {
+  transform:
+    scaleX(1);
+}
+
+
+body.ess-about-page
+.ess-team-photo img {
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: cover !important;
+  object-position: center top !important;
+
+  transition:
+    transform .35s ease;
+}
+
+
+body.ess-about-page
+.ess-team-profile:hover
+.ess-team-photo img {
+  transform:
+    scale(1.025);
+}
+
+
+body.ess-about-page
+.ess-team-profile > span {
+  display: block;
+
+  margin-top:
+    15px !important;
+
+  color: #B88A32 !important;
+
+  font-size: 7px !important;
+
+  font-weight: 800 !important;
+
+  letter-spacing: .1em !important;
+
+  text-transform: uppercase;
+}
+
+
+body.ess-about-page
+.ess-team-profile > h3 {
+  margin:
+    6px 0 0 !important;
+
+  color: #071B2E !important;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 13px !important;
+
+  line-height: 1.35 !important;
+}
+
+
+/* =========================================================
+   PEOPLE STANDARD
+========================================================= */
+
+body.ess-about-page
+.ess-about-standards {
+  padding:
+    90px 0 !important;
+
+  background: #F6F8FA !important;
+}
+
+
+body.ess-about-page
+.ess-about-standards-grid {
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(0,.72fr)
+    minmax(0,1.28fr) !important;
+
+  gap: 70px !important;
+
+  align-items: start !important;
+}
+
+
+body.ess-about-page
+.ess-about-standards-copy {
+  position: sticky;
+
+  top: 145px;
+}
+
+
+body.ess-about-page
+.ess-about-standards-copy > a {
+  margin-top: 24px !important;
+
+  color: #071B2E !important;
+
+  font-weight: 800;
+}
+
+
+body.ess-about-page
+.ess-about-process {
+  border-top:
+    1px solid #DCE2E7;
+
+  border-bottom:
+    1px solid #DCE2E7;
+}
+
+
+body.ess-about-page
+.ess-about-process article {
+  display: grid !important;
+
+  grid-template-columns:
+    64px 1fr !important;
+
+  gap: 18px !important;
+
+  min-height: 105px !important;
+
+  align-items: center;
+
+  padding:
+    19px 22px !important;
+
+  background: #FFFFFF !important;
+
+  border-bottom:
+    1px solid #E1E6EA !important;
+}
+
+
+body.ess-about-page
+.ess-about-process article:last-child {
+  border-bottom: 0 !important;
+}
+
+
+body.ess-about-page
+.ess-about-process article > span {
+  color: #B88A32;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 20px;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   ASSURANCE
+========================================================= */
+
+body.ess-about-page
+.ess-about-assurance {
+  padding:
+    95px 0 !important;
+
+  background: #FFFFFF !important;
+}
+
+
+body.ess-about-page
+.ess-about-assurance
+.ess-about-section-head {
+  margin-bottom:
+    42px !important;
+}
+
+
+/* replace cards with clean operations matrix */
+
+body.ess-about-page
+.ess-assurance-cards {
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(3,minmax(0,1fr)) !important;
+
+  gap: 0 !important;
+
+  border-top:
+    1px solid #DCE2E7;
+
+  border-left:
+    1px solid #DCE2E7;
+}
+
+
+body.ess-about-page
+.ess-assurance-cards article {
+  min-height: 205px !important;
+
+  padding:
+    27px 25px !important;
+
+  background: #FFFFFF !important;
+
+  border: 0 !important;
+
+  border-right:
+    1px solid #DCE2E7 !important;
+
+  border-bottom:
+    1px solid #DCE2E7 !important;
+
+  border-radius: 0 !important;
+
+  box-shadow: none !important;
+}
+
+
+body.ess-about-page
+.ess-assurance-cards article i {
+  color: #B88A32 !important;
+
+  font-size: 21px !important;
+}
+
+
+body.ess-about-page
+.ess-assurance-cards article strong {
+  display: block;
+
+  margin-top:
+    28px !important;
+
+  color: #071B2E;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 11px;
+}
+
+
+body.ess-about-page
+.ess-assurance-cards article p {
+  margin-top: 8px !important;
+
+  color: #74808A;
+
+  font-size: 8px !important;
+
+  line-height: 1.65 !important;
+}
+
+
+/* compliance */
+
+body.ess-about-page
+.ess-about-compliance {
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(270px,.72fr)
+    minmax(0,1.28fr) !important;
+
+  margin-top:
+    45px !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071B2E,
+      #0B2A47
+    ) !important;
+
+  border: 0 !important;
+}
+
+
+body.ess-about-page
+.ess-about-compliance-title {
+  padding:
+    30px 32px !important;
+
+  border-right:
+    1px solid rgba(255,255,255,.09);
+}
+
+
+body.ess-about-page
+.ess-about-compliance-list {
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(3,minmax(0,1fr)) !important;
+
+  align-items: stretch;
+}
+
+
+body.ess-about-page
+.ess-about-compliance-list > div {
+  min-height: 135px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start !important;
+  justify-content: center;
+
+  gap: 12px !important;
+
+  padding:
+    23px !important;
+
+  border-right:
+    1px solid rgba(255,255,255,.08);
+}
+
+
+body.ess-about-page
+.ess-about-compliance-list > div:last-child {
+  border-right: 0;
+}
+
+
+body.ess-about-page
+.ess-about-compliance-list i {
+  color: #D2AA52 !important;
+}
+
+
+body.ess-about-page
+.ess-about-compliance-list span {
+  color:
+    rgba(255,255,255,.72) !important;
+
+  font-size: 8px !important;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   CLOSING
+========================================================= */
+
+body.ess-about-page
+.ess-about-closing {
+  padding:
+    0 0 95px !important;
+
+  background: #FFFFFF !important;
+}
+
+
+body.ess-about-page
+.ess-about-closing-card {
+  position: relative;
+
+  display: grid !important;
+
+  grid-template-columns:
+    105px minmax(0,1fr) auto !important;
+
+  align-items: center;
+
+  gap: 34px !important;
+
+  padding:
+    40px 44px !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071B2E,
+      #0B2A47
+    ) !important;
+
+  border: 0 !important;
+
+  overflow: hidden;
+}
+
+
+body.ess-about-page
+.ess-about-closing-card::after {
+  content: "RESPECT";
+
+  position: absolute;
+
+  right: 15px;
+  bottom: -18px;
+
+  color:
+    rgba(255,255,255,.035);
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(70px,9vw,130px);
+
+  font-weight: 800;
+
+  pointer-events: none;
+}
+
+
+body.ess-about-page
+.ess-about-closing-card > img {
+  width: 90px !important;
+  height: 90px !important;
+
+  object-fit: contain;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+
+body.ess-about-page
+.ess-about-closing-card > div,
+body.ess-about-page
+.ess-about-closing-card > a {
+  position: relative;
+
+  z-index: 2;
+}
+
+
+body.ess-about-page
+.ess-about-closing-card h2 {
+  max-width: 760px;
+
+  font-size:
+    clamp(23px,2.7vw,36px) !important;
+
+  line-height: 1.25 !important;
+}
+
+
+body.ess-about-page
+.ess-about-closing-card > a {
+  min-height: 50px;
+
+  display: inline-flex !important;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding:
+    11px 18px !important;
+
+  color: #071B2E !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #E9CF8A,
+      #D2AA52
+    );
+
+  border: 0 !important;
+
+  white-space: nowrap;
+
+  font-size: 8px;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   SECTION ANCHORS
+========================================================= */
+
+#story,
+#mission,
+#leadership,
+#management,
+#standards,
+#assurance {
+  scroll-margin-top: 130px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  body.ess-about-page
+  .ess-about-page-hero > .container,
+
+  body.ess-about-page
+  .ess-about-index > .container,
+
+  body.ess-about-page
+  .ess-about-story > .container,
+
+  body.ess-about-page
+  .ess-about-mission > .container,
+
+  body.ess-about-page
+  .ess-leadership-showcase > .container,
+
+  body.ess-about-page
+  .ess-management-gallery > .container,
+
+  body.ess-about-page
+  .ess-about-standards > .container,
+
+  body.ess-about-page
+  .ess-about-assurance > .container,
+
+  body.ess-about-page
+  .ess-about-closing > .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+
+  body.ess-about-page
+  .ess-about-page-hero-grid,
+
+  body.ess-about-page
+  .ess-about-story-grid,
+
+  body.ess-about-page
+  .ess-about-mission-shell,
+
+  body.ess-about-page
+  .ess-leadership-editorial-head,
+
+  body.ess-about-page
+  .ess-chairman-feature,
+
+  body.ess-about-page
+  .ess-md-feature,
+
+  body.ess-about-page
+  .ess-management-head,
+
+  body.ess-about-page
+  .ess-about-standards-grid,
+
+  body.ess-about-page
+  .ess-about-compliance {
+    grid-template-columns:
+      1fr !important;
+  }
+
+
+  body.ess-about-page
+  .ess-about-story-title,
+
+  body.ess-about-page
+  .ess-management-group-title,
+
+  body.ess-about-page
+  .ess-about-standards-copy {
+    position: static !important;
+  }
+
+
+  .ess-about-index-grid {
+    grid-template-columns:
+      repeat(3,1fr);
+  }
+
+
+  body.ess-about-page
+  .ess-management-group {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  body.ess-about-page
+  .ess-management-grid {
+    grid-template-columns:
+      repeat(3,minmax(0,1fr)) !important;
+  }
+
+
+  body.ess-about-page
+  .ess-md-portrait {
+    order: -1;
+  }
+
+
+  body.ess-about-page
+  .ess-about-compliance-list {
+    grid-template-columns:
+      repeat(3,1fr) !important;
+  }
+
+
+  body.ess-about-page
+  .ess-about-closing-card {
+    grid-template-columns:
+      80px 1fr !important;
+  }
+
+
+  body.ess-about-page
+  .ess-about-closing-card > a {
+    grid-column:
+      2 !important;
+
+    width: fit-content;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  body.ess-about-page
+  .ess-about-page-hero > .container,
+
+  body.ess-about-page
+  .ess-about-index > .container,
+
+  body.ess-about-page
+  .ess-about-story > .container,
+
+  body.ess-about-page
+  .ess-about-mission > .container,
+
+  body.ess-about-page
+  .ess-leadership-showcase > .container,
+
+  body.ess-about-page
+  .ess-management-gallery > .container,
+
+  body.ess-about-page
+  .ess-about-standards > .container,
+
+  body.ess-about-page
+  .ess-about-assurance > .container,
+
+  body.ess-about-page
+  .ess-about-closing > .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+
+  body.ess-about-page
+  .ess-about-page-hero {
+    min-height: 0 !important;
+  }
+
+
+  body.ess-about-page
+  .ess-about-page-hero-grid {
+    padding:
+      50px 0 !important;
+
+    gap:
+      35px !important;
+  }
+
+
+  body.ess-about-page
+  .ess-about-page-hero h1 {
+    font-size:
+      clamp(39px,10vw,49px) !important;
+  }
+
+
+  .ess-about-index-grid {
+    grid-template-columns:
+      1fr 1fr;
+  }
+
+
+  .ess-about-index-grid > a {
+    min-height: 58px;
+  }
+
+
+  body.ess-about-page
+  .ess-about-story {
+    padding:
+      65px 0 !important;
+  }
+
+
+  body.ess-about-page
+  .ess-about-story-copy {
+    padding-left: 20px;
+  }
+
+
+  body.ess-about-page
+  .ess-about-proof-row {
+    grid-template-columns:
+      1fr 1fr !important;
+  }
+
+
+  body.ess-about-page
+  .ess-about-proof-row article {
+    min-height: 195px !important;
+  }
+
+
+  body.ess-about-page
+  .ess-about-mission {
+    padding-bottom:
+      65px !important;
+  }
+
+
+  body.ess-about-page
+  .ess-about-mission-main {
+    padding:
+      33px 23px !important;
+  }
+
+
+  body.ess-about-page
+  .ess-about-mission-points {
+    grid-template-columns:
+      1fr !important;
+  }
+
+
+  body.ess-about-page
+  .ess-about-mission-points article {
+    min-height: auto !important;
+  }
+
+
+  body.ess-about-page
+  .ess-leadership-showcase {
+    padding:
+      65px 0 !important;
+  }
+
+
+  body.ess-about-page
+  .ess-chairman-portrait,
+  body.ess-about-page
+  .ess-md-portrait {
+    min-height: 390px !important;
+  }
+
+
+  body.ess-about-page
+  .ess-chairman-content,
+  body.ess-about-page
+  .ess-md-content {
+    padding:
+      31px 22px !important;
+  }
+
+
+  body.ess-about-page
+  .ess-management-gallery {
+    padding:
+      65px 0 !important;
+  }
+
+
+  body.ess-about-page
+  .ess-management-grid {
+    grid-template-columns:
+      1fr 1fr !important;
+
+    gap:
+      30px 12px !important;
+  }
+
+
+  body.ess-about-page
+  .ess-team-photo {
+    max-height: none;
+  }
+
+
+  body.ess-about-page
+  .ess-about-standards {
+    padding:
+      65px 0 !important;
+  }
+
+
+  body.ess-about-page
+  .ess-about-assurance {
+    padding:
+      65px 0 !important;
+  }
+
+
+  body.ess-about-page
+  .ess-assurance-cards {
+    grid-template-columns:
+      1fr !important;
+  }
+
+
+  body.ess-about-page
+  .ess-about-compliance-list {
+    grid-template-columns:
+      1fr !important;
+  }
+
+
+  body.ess-about-page
+  .ess-about-compliance-list > div {
+    min-height: auto;
+  }
+
+
+  body.ess-about-page
+  .ess-about-closing {
+    padding-bottom:
+      65px !important;
+  }
+
+
+  body.ess-about-page
+  .ess-about-closing-card {
+    grid-template-columns:
+      1fr !important;
+
+    padding:
+      28px 22px !important;
+  }
+
+
+  body.ess-about-page
+  .ess-about-closing-card > img {
+    width: 70px !important;
+    height: 70px !important;
+  }
+
+
+  body.ess-about-page
+  .ess-about-closing-card > a {
+    grid-column:
+      auto !important;
+
+    width: 100%;
+  }
+
+
+  #story,
+  #mission,
+  #leadership,
+  #management,
+  #standards,
+  #assurance {
+    scroll-margin-top: 82px;
+  }
+
+}
+
+
+/* =========================================================
+   ABOUT - LICENSES & COMPLIANCE
+========================================================= */
+
+body.ess-about-page
+.ess-about-certificates {
+  padding: 90px 0 95px;
+
+  background: #071B2E;
+}
+
+
+body.ess-about-page
+.ess-about-certificates > .container {
+  width: 100%;
+  max-width: 1380px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+
+.ess-certificates-head {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0,1fr)
+    minmax(300px,.48fr);
+
+  gap: 70px;
+
+  align-items: end;
+
+  margin-bottom: 42px;
+}
+
+
+.ess-about-certificates
+.ess-section-label {
+  color: #D2AA52 !important;
+}
+
+
+.ess-certificates-head h2 {
+  max-width: 760px;
+
+  margin: 0;
+
+  color: #FFFFFF;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(36px,4vw,54px);
+
+  line-height: 1.07;
+
+  letter-spacing: -.045em;
+}
+
+
+.ess-certificates-head h2 strong {
+  display: block;
+
+  color: #E9CF8A;
+}
+
+
+.ess-certificates-head > p {
+  margin: 0;
+
+  color:
+    rgba(255,255,255,.51);
+
+  font-size: 10px;
+
+  line-height: 1.8;
+}
+
+
+/* layout */
+
+.ess-certificates-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0,1.35fr)
+    minmax(320px,.65fr);
+
+  gap: 18px;
+}
+
+
+/* document register */
+
+.ess-certificates-register {
+  border-top:
+    1px solid rgba(255,255,255,.12);
+
+  border-left:
+    1px solid rgba(255,255,255,.12);
+}
+
+
+.ess-certificates-register article {
+  min-height: 132px;
+
+  display: grid;
+
+  grid-template-columns:
+    60px
+    56px
+    minmax(0,1fr)
+    145px;
+
+  align-items: center;
+
+  background:
+    rgba(255,255,255,.025);
+
+  border-right:
+    1px solid rgba(255,255,255,.12);
+
+  border-bottom:
+    1px solid rgba(255,255,255,.12);
+}
+
+
+.ess-certificate-number {
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #D2AA52;
+
+  border-right:
+    1px solid rgba(255,255,255,.09);
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 17px;
+
+  font-weight: 800;
+}
+
+
+.ess-certificate-icon {
+  display: flex;
+
+  justify-content: center;
+
+  color: #E9CF8A;
+
+  font-size: 19px;
+}
+
+
+.ess-certificate-copy {
+  padding: 22px;
+}
+
+
+.ess-certificate-copy > span {
+  display: block;
+
+  color: #D2AA52;
+
+  font-size: 6px;
+
+  font-weight: 800;
+
+  letter-spacing: .15em;
+}
+
+
+.ess-certificate-copy h3 {
+  margin: 6px 0 0;
+
+  color: #FFFFFF;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 13px;
+}
+
+
+.ess-certificate-copy p {
+  max-width: 560px;
+
+  margin: 7px 0 0;
+
+  color:
+    rgba(255,255,255,.45);
+
+  font-size: 8px;
+
+  line-height: 1.6;
+}
+
+
+.ess-certificate-status {
+  height: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 18px;
+
+  text-align: center;
+
+  border-left:
+    1px solid rgba(255,255,255,.09);
+}
+
+
+.ess-certificate-status i {
+  color: #D2AA52;
+
+  font-size: 12px;
+}
+
+
+.ess-certificate-status span {
+  color:
+    rgba(255,255,255,.48);
+
+  font-size: 7px;
+
+  font-weight: 700;
+}
+
+
+/* side note */
+
+.ess-certificates-note {
+  padding: 30px;
+
+  background: #FFFFFF;
+}
+
+
+.ess-certificates-note-mark {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #071B2E;
+
+  background:
+    linear-gradient(
+      135deg,
+      #E9CF8A,
+      #D2AA52
+    );
+
+  font-size: 19px;
+}
+
+
+.ess-certificates-note > span {
+  display: block;
+
+  margin-top: 25px;
+
+  color: #B88A32;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: .15em;
+}
+
+
+.ess-certificates-note h3 {
+  margin: 8px 0 0;
+
+  color: #071B2E;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 20px;
+
+  line-height: 1.35;
+}
+
+
+.ess-certificates-note > p {
+  margin: 15px 0 0;
+
+  color: #697681;
+
+  font-size: 9px;
+
+  line-height: 1.75;
+}
+
+
+.ess-certificates-practices {
+  margin-top: 24px;
+
+  border-top:
+    1px solid #E2E7EB;
+}
+
+
+.ess-certificates-practices > div {
+  display: flex;
+
+  gap: 10px;
+
+  align-items: center;
+
+  padding: 12px 0;
+
+  color: #455662;
+
+  border-bottom:
+    1px solid #E2E7EB;
+
+  font-size: 8px;
+
+  font-weight: 700;
+}
+
+
+.ess-certificates-practices i {
+  color: #B88A32;
+}
+
+
+/* update about index to 7 columns */
+
+.ess-about-index-grid {
+  grid-template-columns:
+    repeat(7,minmax(0,1fr)) !important;
+}
+
+
+/* anchors */
+
+#certificates {
+  scroll-margin-top: 130px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  body.ess-about-page
+  .ess-about-certificates > .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  .ess-certificates-head,
+  .ess-certificates-layout {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .ess-about-index-grid {
+    grid-template-columns:
+      repeat(4,minmax(0,1fr)) !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  body.ess-about-page
+  .ess-about-certificates {
+    padding:
+      65px 0;
+  }
+
+
+  body.ess-about-page
+  .ess-about-certificates > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  .ess-certificates-head {
+    gap: 25px;
+  }
+
+
+  .ess-certificates-register article {
+    grid-template-columns:
+      48px 44px minmax(0,1fr);
+
+    min-height: 0;
+  }
+
+
+  .ess-certificate-number {
+    grid-row:
+      1 / 3;
+  }
+
+
+  .ess-certificate-icon {
+    grid-row:
+      1 / 3;
+  }
+
+
+  .ess-certificate-copy {
+    padding:
+      20px 15px;
+  }
+
+
+  .ess-certificate-status {
+    grid-column:
+      1 / -1;
+
+    height: auto;
+
+    flex-direction: row;
+
+    justify-content: flex-start;
+
+    padding:
+      11px 15px;
+
+    border-left: 0;
+
+    border-top:
+      1px solid rgba(255,255,255,.09);
+  }
+
+
+  .ess-certificates-note {
+    padding:
+      25px 22px;
+  }
+
+
+  .ess-about-index-grid {
+    grid-template-columns:
+      1fr 1fr !important;
+  }
+
+
+  #certificates {
+    scroll-margin-top: 82px;
+  }
+
+}
+

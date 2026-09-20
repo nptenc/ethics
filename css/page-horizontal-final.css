@@ -1,0 +1,288 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   FINAL HERO vs BODY HORIZONTAL RHYTHM
+
+   HERO = wider
+   BODY = slightly more inset
+========================================================= */
+
+:root {
+  --ess-hero-pad-desktop: 24px;
+  --ess-body-pad-desktop: 36px;
+
+  --ess-hero-pad-tablet: 20px;
+  --ess-body-pad-tablet: 28px;
+
+  --ess-hero-pad-mobile: 15px;
+  --ess-body-pad-mobile: 18px;
+
+  --ess-page-max: 1380px;
+}
+
+
+/* =========================================================
+   HERO
+   Keep wider
+========================================================= */
+
+main > div[data-include] > section[class*="hero"] > .container,
+body > main > section[class*="hero"] > .container,
+
+.ess-service-final-hero > .ess-service-final-wrap,
+.ess-price-hero > .ess-price-hero-container,
+
+.ess-about-new-hero > .container,
+.ess-about-page-hero > .container,
+
+.ess-gallery-hero > .container,
+.ess-training-hero > .container,
+.ess-training-page-hero > .container,
+.ess-industry-page-hero > .container,
+.ess-service-page-hero > .container,
+.ess-contact-page-hero > .container,
+.ess-contact-hero > .container,
+.ess-assessment-page-hero > .container,
+.ess-assessment-hero > .container {
+
+  width: 100% !important;
+
+  max-width: var(--ess-page-max) !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  padding-left:
+    var(--ess-hero-pad-desktop) !important;
+
+  padding-right:
+    var(--ess-hero-pad-desktop) !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* homepage hero */
+
+.ess-hero .ess-hero-content,
+.ess-hero .container.ess-hero-content {
+
+  width: 100% !important;
+
+  max-width: var(--ess-page-max) !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  padding-left:
+    var(--ess-hero-pad-desktop) !important;
+
+  padding-right:
+    var(--ess-hero-pad-desktop) !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   NORMAL BODY SECTIONS
+   Slightly more inset than hero
+========================================================= */
+
+main > div[data-include]
+> section:not([class*="hero"])
+> .container,
+
+body > main
+> section:not([class*="hero"])
+> .container {
+
+  width: 100% !important;
+
+  max-width: var(--ess-page-max) !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  padding-left:
+    var(--ess-body-pad-desktop) !important;
+
+  padding-right:
+    var(--ess-body-pad-desktop) !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   CUSTOM SERVICE PAGE WRAPPER
+========================================================= */
+
+main > div[data-include]
+> section:not([class*="hero"])
+> .ess-service-final-wrap {
+
+  width: 100% !important;
+
+  max-width: var(--ess-page-max) !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  padding-left:
+    var(--ess-body-pad-desktop) !important;
+
+  padding-right:
+    var(--ess-body-pad-desktop) !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   PRICING BODY
+========================================================= */
+
+body.ess-pricing-page
+main
+section:not(.ess-price-hero)
+> .container {
+
+  width: 100% !important;
+
+  max-width: var(--ess-page-max) !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  padding-left:
+    var(--ess-body-pad-desktop) !important;
+
+  padding-right:
+    var(--ess-body-pad-desktop) !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  main > div[data-include] > section[class*="hero"] > .container,
+  body > main > section[class*="hero"] > .container,
+
+  .ess-service-final-hero > .ess-service-final-wrap,
+  .ess-price-hero > .ess-price-hero-container,
+
+  .ess-about-new-hero > .container,
+  .ess-about-page-hero > .container,
+
+  .ess-gallery-hero > .container,
+  .ess-training-hero > .container,
+  .ess-training-page-hero > .container,
+  .ess-industry-page-hero > .container,
+  .ess-service-page-hero > .container,
+  .ess-contact-page-hero > .container,
+  .ess-contact-hero > .container,
+  .ess-assessment-page-hero > .container,
+  .ess-assessment-hero > .container,
+
+  .ess-hero .ess-hero-content {
+
+    padding-left:
+      var(--ess-hero-pad-tablet) !important;
+
+    padding-right:
+      var(--ess-hero-pad-tablet) !important;
+  }
+
+
+  main > div[data-include]
+  > section:not([class*="hero"])
+  > .container,
+
+  body > main
+  > section:not([class*="hero"])
+  > .container,
+
+  main > div[data-include]
+  > section:not([class*="hero"])
+  > .ess-service-final-wrap,
+
+  body.ess-pricing-page
+  main
+  section:not(.ess-price-hero)
+  > .container {
+
+    padding-left:
+      var(--ess-body-pad-tablet) !important;
+
+    padding-right:
+      var(--ess-body-pad-tablet) !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  main > div[data-include] > section[class*="hero"] > .container,
+  body > main > section[class*="hero"] > .container,
+
+  .ess-service-final-hero > .ess-service-final-wrap,
+  .ess-price-hero > .ess-price-hero-container,
+
+  .ess-about-new-hero > .container,
+  .ess-about-page-hero > .container,
+
+  .ess-gallery-hero > .container,
+  .ess-training-hero > .container,
+  .ess-training-page-hero > .container,
+  .ess-industry-page-hero > .container,
+  .ess-service-page-hero > .container,
+  .ess-contact-page-hero > .container,
+  .ess-contact-hero > .container,
+  .ess-assessment-page-hero > .container,
+  .ess-assessment-hero > .container,
+
+  .ess-hero .ess-hero-content {
+
+    padding-left:
+      var(--ess-hero-pad-mobile) !important;
+
+    padding-right:
+      var(--ess-hero-pad-mobile) !important;
+  }
+
+
+  main > div[data-include]
+  > section:not([class*="hero"])
+  > .container,
+
+  body > main
+  > section:not([class*="hero"])
+  > .container,
+
+  main > div[data-include]
+  > section:not([class*="hero"])
+  > .ess-service-final-wrap,
+
+  body.ess-pricing-page
+  main
+  section:not(.ess-price-hero)
+  > .container {
+
+    padding-left:
+      var(--ess-body-pad-mobile) !important;
+
+    padding-right:
+      var(--ess-body-pad-mobile) !important;
+  }
+
+}

@@ -1,0 +1,296 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   PRICING HERO - ABSOLUTE FINAL FIX
+
+   Desktop content width : 1380px
+   Desktop side padding  : 24px
+   Tablet side padding   : 20px
+   Mobile side padding   : 15px
+========================================================= */
+
+
+/* OUTER HERO */
+
+body.ess-pricing-page .ess-price-hero {
+
+  position: relative !important;
+
+  width: 100% !important;
+
+  min-height: 440px !important;
+
+  display: flex !important;
+  align-items: center !important;
+
+  margin: 0 !important;
+
+  padding: 0 !important;
+
+  box-sizing: border-box !important;
+
+  overflow: hidden !important;
+}
+
+
+/* =========================================================
+   CUSTOM HERO CONTAINER
+   NO BOOTSTRAP .container
+========================================================= */
+
+body.ess-pricing-page
+.ess-price-hero-container {
+
+  position: relative !important;
+
+  z-index: 2 !important;
+
+  width: 100% !important;
+
+  max-width: 1380px !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   HERO GRID
+========================================================= */
+
+body.ess-pricing-page
+.ess-price-hero-grid {
+
+  width: 100% !important;
+
+  min-height: 440px !important;
+
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(0,1.3fr)
+    minmax(350px,.7fr) !important;
+
+  column-gap: 64px !important;
+
+  align-items: center !important;
+
+  margin: 0 !important;
+
+  padding: 48px 0 !important;
+
+  box-sizing: border-box !important;
+}
+
+
+/* LEFT */
+
+body.ess-pricing-page
+.ess-price-hero-copy {
+
+  width: 100% !important;
+
+  max-width: 820px !important;
+
+  min-width: 0 !important;
+
+  margin: 0 !important;
+
+  padding: 0 !important;
+}
+
+
+body.ess-pricing-page
+.ess-price-hero h1 {
+
+  max-width: 820px !important;
+
+  margin:
+    18px 0 18px !important;
+
+  font-size:
+    clamp(
+      44px,
+      4vw,
+      60px
+    ) !important;
+
+  line-height:
+    1.05 !important;
+}
+
+
+body.ess-pricing-page
+.ess-price-hero-copy > p {
+
+  max-width: 700px !important;
+
+  margin:
+    0 !important;
+}
+
+
+/* =========================================================
+   RIGHT PANEL
+========================================================= */
+
+body.ess-pricing-page
+.ess-price-hero-side {
+
+  width: 100% !important;
+
+  max-width: 100% !important;
+
+  min-width: 0 !important;
+
+  margin: 0 !important;
+
+  padding:
+    27px 28px !important;
+
+  align-self:
+    center !important;
+
+  box-sizing:
+    border-box !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  body.ess-pricing-page
+  .ess-price-hero {
+
+    min-height:
+      auto !important;
+  }
+
+
+  body.ess-pricing-page
+  .ess-price-hero-container {
+
+    max-width:
+      none !important;
+
+    padding-left:
+      20px !important;
+
+    padding-right:
+      20px !important;
+  }
+
+
+  body.ess-pricing-page
+  .ess-price-hero-grid {
+
+    min-height:
+      0 !important;
+
+    grid-template-columns:
+      1fr !important;
+
+    gap:
+      32px !important;
+
+    padding:
+      54px 0 !important;
+  }
+
+
+  body.ess-pricing-page
+  .ess-price-hero-copy {
+
+    max-width:
+      760px !important;
+  }
+
+
+  body.ess-pricing-page
+  .ess-price-hero-side {
+
+    max-width:
+      650px !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  body.ess-pricing-page
+  .ess-price-hero-container {
+
+    padding-left:
+      15px !important;
+
+    padding-right:
+      15px !important;
+  }
+
+
+  body.ess-pricing-page
+  .ess-price-hero-grid {
+
+    gap:
+      26px !important;
+
+    padding:
+      44px 0 !important;
+  }
+
+
+  body.ess-pricing-page
+  .ess-price-hero h1 {
+
+    max-width:
+      100% !important;
+
+    margin:
+      15px 0 !important;
+
+    font-size:
+      clamp(
+        36px,
+        10vw,
+        46px
+      ) !important;
+
+    line-height:
+      1.07 !important;
+  }
+
+
+  body.ess-pricing-page
+  .ess-price-hero-copy > p {
+
+    font-size:
+      13px !important;
+
+    line-height:
+      1.7 !important;
+  }
+
+
+  body.ess-pricing-page
+  .ess-price-hero-side {
+
+    max-width:
+      none !important;
+
+    padding:
+      22px 19px !important;
+  }
+
+}

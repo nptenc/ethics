@@ -1,0 +1,495 @@
+﻿/* =========================================================
+   ABOUT - LICENSE REGISTER FINAL
+========================================================= */
+
+body.ess-about-page
+.ess-license-section {
+  padding: 92px 0;
+
+  background:
+    linear-gradient(
+      145deg,
+      #061725,
+      #0B2A47
+    );
+}
+
+
+body.ess-about-page
+.ess-license-section > .container {
+  width: 100%;
+  max-width: 1380px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.ess-license-head {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0,1fr)
+    minmax(300px,.46fr);
+
+  gap: 70px;
+
+  align-items: end;
+
+  margin-bottom: 42px;
+}
+
+
+.ess-license-label {
+  color: #D2AA52 !important;
+}
+
+
+.ess-license-head h2 {
+  max-width: 760px;
+
+  margin: 0;
+
+  color: #FFFFFF;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(36px,4vw,54px);
+
+  line-height: 1.07;
+
+  letter-spacing: -.045em;
+}
+
+
+.ess-license-head h2 strong {
+  display: block;
+
+  color: #E9CF8A;
+}
+
+
+.ess-license-head > p {
+  margin: 0;
+
+  color:
+    rgba(255,255,255,.52);
+
+  font-size: 10px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   DOCUMENT GRID
+========================================================= */
+
+.ess-license-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,minmax(0,1fr));
+
+  border-top:
+    1px solid rgba(255,255,255,.12);
+
+  border-left:
+    1px solid rgba(255,255,255,.12);
+}
+
+
+.ess-license-card {
+  min-height: 270px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  padding: 27px;
+
+  background:
+    rgba(255,255,255,.025);
+
+  border-right:
+    1px solid rgba(255,255,255,.12);
+
+  border-bottom:
+    1px solid rgba(255,255,255,.12);
+
+  transition:
+    background .2s ease,
+    transform .2s ease;
+}
+
+
+.ess-license-card:hover {
+  background:
+    rgba(255,255,255,.055);
+}
+
+
+.ess-license-card-top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 28px;
+}
+
+
+.ess-license-card-top > span {
+  color: #D2AA52;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 17px;
+
+  font-weight: 800;
+}
+
+
+.ess-license-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #071B2E;
+
+  background:
+    linear-gradient(
+      135deg,
+      #E9CF8A,
+      #D2AA52
+    );
+
+  font-size: 16px;
+}
+
+
+.ess-license-card > small {
+  color: #D2AA52;
+
+  font-size: 6px;
+
+  font-weight: 800;
+
+  letter-spacing: .16em;
+}
+
+
+.ess-license-card h3 {
+  margin: 7px 0 0;
+
+  color: #FFFFFF;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 17px;
+}
+
+
+.ess-license-card > p {
+  margin: 10px 0 0;
+
+  color:
+    rgba(255,255,255,.48);
+
+  font-size: 8px;
+
+  line-height: 1.7;
+}
+
+
+.ess-license-meta {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: auto;
+
+  padding-top: 20px;
+
+  color:
+    rgba(255,255,255,.55);
+
+  font-size: 7px;
+
+  font-weight: 700;
+}
+
+
+.ess-license-meta i {
+  color: #D2AA52;
+}
+
+
+/* =========================================================
+   COMPLIANCE CARD
+========================================================= */
+
+.ess-license-compliance-card {
+  background:
+    rgba(210,170,82,.07);
+}
+
+
+.ess-license-practices {
+  margin-top: 18px;
+}
+
+
+.ess-license-practices > div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 9px 0;
+
+  color:
+    rgba(255,255,255,.64);
+
+  border-bottom:
+    1px solid rgba(255,255,255,.08);
+
+  font-size: 8px;
+
+  line-height: 1.45;
+}
+
+
+.ess-license-practices > div:last-child {
+  border-bottom: 0;
+}
+
+
+.ess-license-practices i {
+  color: #D2AA52;
+}
+
+
+/* =========================================================
+   DISCLOSURE STRIP
+========================================================= */
+
+.ess-license-disclosure {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0,1fr)
+    minmax(300px,.45fr);
+
+  gap: 40px;
+
+  align-items: center;
+
+  padding: 25px 27px;
+
+  background: #FFFFFF;
+}
+
+
+.ess-license-disclosure > div {
+  display: grid;
+
+  grid-template-columns:
+    40px 1fr;
+
+  gap: 13px;
+
+  align-items: center;
+}
+
+
+.ess-license-disclosure > div > i {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #071B2E;
+
+  background: #D2AA52;
+}
+
+
+.ess-license-disclosure span,
+.ess-license-disclosure strong {
+  display: block;
+}
+
+
+.ess-license-disclosure span {
+  color: #B88A32;
+
+  font-size: 6px;
+
+  font-weight: 800;
+
+  letter-spacing: .15em;
+}
+
+
+.ess-license-disclosure strong {
+  max-width: 650px;
+
+  margin-top: 5px;
+
+  color: #071B2E;
+
+  font-size: 10px;
+
+  line-height: 1.5;
+}
+
+
+.ess-license-disclosure > p {
+  margin: 0;
+
+  color: #74808A;
+
+  font-size: 8px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   REMOVE OLD MISSION SAFETY
+========================================================= */
+
+body.ess-about-page
+.ess-about-mission {
+  display: none !important;
+}
+
+
+/* About navigation now 6 items */
+
+body.ess-about-page
+.ess-about-index-grid {
+  grid-template-columns:
+    repeat(6,minmax(0,1fr)) !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  .ess-license-head,
+  .ess-license-disclosure {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .ess-license-grid {
+    grid-template-columns:
+      1fr 1fr;
+  }
+
+
+  body.ess-about-page
+  .ess-about-index-grid {
+    grid-template-columns:
+      repeat(3,1fr) !important;
+  }
+
+}
+
+
+/* =========================================================
+   PHONE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  body.ess-about-page
+  .ess-license-section {
+    padding:
+      62px 0;
+  }
+
+
+  body.ess-about-page
+  .ess-license-section > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  .ess-license-head {
+    gap: 23px;
+
+    margin-bottom: 30px;
+  }
+
+
+  .ess-license-grid {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .ess-license-card {
+    min-height: 0;
+
+    padding:
+      23px 21px;
+  }
+
+
+  .ess-license-card-top {
+    margin-bottom:
+      20px;
+  }
+
+
+  .ess-license-meta {
+    margin-top:
+      20px;
+  }
+
+
+  .ess-license-disclosure {
+    gap: 18px;
+
+    padding:
+      22px 20px;
+  }
+
+
+  body.ess-about-page
+  .ess-about-index-grid {
+    grid-template-columns:
+      1fr 1fr !important;
+  }
+
+}
+

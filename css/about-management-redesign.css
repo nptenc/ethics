@@ -1,0 +1,827 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   LEADERSHIP & MANAGEMENT REDESIGN
+========================================================= */
+
+
+/* =========================================================
+   LEADERSHIP SECTION
+========================================================= */
+
+.ess-leadership-showcase {
+  padding: 78px 0 38px;
+
+  background: #F6F8FA;
+}
+
+
+.ess-leadership-showcase > .container,
+.ess-management-gallery > .container {
+  width: 100%;
+  max-width: 1380px;
+
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+
+/* editorial heading */
+
+.ess-leadership-editorial-head {
+  display: grid;
+
+  grid-template-columns:
+    1fr .5fr;
+
+  gap: 60px;
+
+  align-items: end;
+
+  margin-bottom: 38px;
+}
+
+
+.ess-leadership-kicker,
+.ess-management-head > div > span {
+  display: block;
+
+  margin-bottom: 11px;
+
+  color: #B88A32;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: .18em;
+}
+
+
+.ess-leadership-editorial-head h2,
+.ess-management-head h2 {
+  max-width: 720px;
+
+  margin: 0;
+
+  color: #071B2E;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(38px,4vw,55px);
+
+  line-height: 1.06;
+
+  letter-spacing: -.045em;
+}
+
+
+.ess-leadership-editorial-head h2 strong,
+.ess-management-head h2 strong {
+  display: block;
+
+  color: #B88A32;
+}
+
+
+.ess-leadership-editorial-head > p,
+.ess-management-head > p {
+  margin: 0 0 4px;
+
+  color: #6D7883;
+
+  font-size: 11px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   CHAIRMAN - DARK EDITORIAL FEATURE
+========================================================= */
+
+.ess-chairman-feature {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(320px,.42fr)
+    minmax(0,.58fr);
+
+  min-height: 535px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #061725,
+      #0B2A47
+    );
+
+  overflow: hidden;
+
+  box-shadow:
+    0 25px 55px
+    rgba(7,27,46,.13);
+}
+
+
+.ess-chairman-feature::after {
+  content: "CHAIRMAN";
+
+  position: absolute;
+
+  right: -16px;
+  bottom: -20px;
+
+  color:
+    rgba(255,255,255,.025);
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(70px,9vw,135px);
+
+  font-weight: 800;
+
+  letter-spacing: -.06em;
+
+  pointer-events: none;
+}
+
+
+.ess-chairman-portrait {
+  position: relative;
+
+  min-height: 535px;
+
+  margin: 0;
+
+  background: #E9EDF1;
+
+  overflow: hidden;
+}
+
+
+.ess-chairman-portrait > img {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+
+  inset: 0;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.ess-leader-photo-caption {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 2;
+
+  padding: 60px 27px 25px;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(5,23,36,.97),
+      rgba(5,23,36,.72),
+      transparent
+    );
+}
+
+
+.ess-leader-photo-caption span,
+.ess-leader-photo-caption strong,
+.ess-leader-photo-caption small {
+  display: block;
+}
+
+
+.ess-leader-photo-caption span {
+  color: #D2AA52;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: .18em;
+}
+
+
+.ess-leader-photo-caption strong {
+  margin-top: 6px;
+
+  color: #FFFFFF;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 18px;
+
+  line-height: 1.25;
+}
+
+
+.ess-leader-photo-caption small {
+  margin-top: 4px;
+
+  color:
+    rgba(255,255,255,.58);
+
+  font-size: 8px;
+}
+
+
+.ess-chairman-content {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding:
+    48px clamp(38px,5vw,70px);
+}
+
+
+.ess-leader-message-label {
+  display: block;
+
+  color: #D2AA52;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: .18em;
+}
+
+
+.ess-chairman-content h3,
+.ess-md-content h3 {
+  max-width: 620px;
+
+  margin: 15px 0 0;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(27px,3vw,42px);
+
+  line-height: 1.12;
+
+  letter-spacing: -.035em;
+}
+
+
+.ess-chairman-content h3 {
+  color: #FFFFFF;
+}
+
+
+.ess-leader-rule {
+  width: 50px;
+  height: 2px;
+
+  margin: 23px 0;
+
+  background: #D2AA52;
+}
+
+
+.ess-chairman-content p,
+.ess-md-content p {
+  max-width: 650px;
+
+  margin: 0 0 14px;
+
+  font-size: 11px;
+
+  line-height: 1.85;
+}
+
+
+.ess-chairman-content p {
+  color:
+    rgba(255,255,255,.61);
+}
+
+
+.ess-leader-principles {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 16px;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: .11em;
+}
+
+
+.ess-chairman-content
+.ess-leader-principles {
+  color: #E9CF8A;
+}
+
+
+.ess-leader-principles i {
+  width: 4px;
+  height: 4px;
+
+  display: block;
+
+  background: #D2AA52;
+
+  border-radius: 50%;
+}
+
+
+/* =========================================================
+   MANAGING DIRECTOR - REVERSED LIGHT FEATURE
+========================================================= */
+
+.ess-md-feature {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0,.58fr)
+    minmax(320px,.42fr);
+
+  min-height: 500px;
+
+  margin-top: 18px;
+
+  background: #FFFFFF;
+
+  border:
+    1px solid #E0E5EA;
+
+  overflow: hidden;
+}
+
+
+.ess-md-content {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding:
+    48px clamp(38px,5vw,70px);
+
+  border-left:
+    4px solid #D2AA52;
+}
+
+
+.ess-md-content
+.ess-leader-message-label {
+  color: #B88A32;
+}
+
+
+.ess-md-content h3 {
+  color: #071B2E;
+}
+
+
+.ess-md-content p {
+  color: #64727D;
+}
+
+
+.ess-md-content
+.ess-leader-principles {
+  color: #071B2E;
+}
+
+
+.ess-md-portrait {
+  position: relative;
+
+  min-height: 500px;
+
+  background: #E9EDF1;
+
+  overflow: hidden;
+}
+
+
+.ess-md-portrait > img {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+
+  inset: 0;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.ess-md-nameplate {
+  position: absolute;
+
+  left: 22px;
+  right: 22px;
+  bottom: 22px;
+
+  padding: 17px 19px;
+
+  background:
+    rgba(7,27,46,.94);
+
+  border-left:
+    3px solid #D2AA52;
+}
+
+
+.ess-md-nameplate span,
+.ess-md-nameplate strong {
+  display: block;
+}
+
+
+.ess-md-nameplate span {
+  color: #D2AA52;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: .15em;
+}
+
+
+.ess-md-nameplate strong {
+  margin-top: 5px;
+
+  color: #FFFFFF;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 17px;
+}
+
+
+/* =========================================================
+   MANAGEMENT PHOTO GALLERY
+========================================================= */
+
+.ess-management-gallery {
+  padding: 72px 0 82px;
+
+  background: #F6F8FA;
+}
+
+
+.ess-management-head {
+  display: grid;
+
+  grid-template-columns:
+    1fr .5fr;
+
+  gap: 60px;
+
+  align-items: end;
+
+  padding-top: 10px;
+
+  margin-bottom: 42px;
+}
+
+
+.ess-management-group {
+  padding-top: 25px;
+
+  border-top:
+    1px solid #DCE2E7;
+}
+
+
+.ess-management-group-second {
+  margin-top: 50px;
+}
+
+
+.ess-management-group-title {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  margin-bottom: 23px;
+}
+
+
+.ess-management-group-title > span {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #071B2E;
+
+  background: #D2AA52;
+
+  font-size: 8px;
+
+  font-weight: 800;
+}
+
+
+.ess-management-group-title > strong {
+  color: #071B2E;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 14px;
+}
+
+
+.ess-management-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+  gap:
+    34px 18px;
+}
+
+
+/* intentionally not card style */
+
+.ess-team-profile {
+  position: relative;
+
+  min-width: 0;
+}
+
+
+.ess-team-photo {
+  position: relative;
+
+  aspect-ratio: 4 / 5;
+
+  background: #E9EDF1;
+
+  border:
+    1px solid #DDE3E8;
+
+  overflow: hidden;
+}
+
+
+.ess-team-photo::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 4px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #B88A32,
+      #E9CF8A
+    );
+
+  transform:
+    scaleX(.22);
+
+  transform-origin: left;
+
+  transition:
+    transform .25s ease;
+}
+
+
+.ess-team-profile:hover
+.ess-team-photo::after {
+  transform:
+    scaleX(1);
+}
+
+
+.ess-team-photo img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform .35s ease;
+}
+
+
+.ess-team-profile:hover
+.ess-team-photo img {
+  transform:
+    scale(1.025);
+}
+
+
+.ess-team-profile > span {
+  display: block;
+
+  margin-top: 15px;
+
+  color: #B88A32;
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: .11em;
+
+  text-transform: uppercase;
+}
+
+
+.ess-team-profile > h3 {
+  margin: 6px 0 0;
+
+  color: #071B2E;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 14px;
+
+  line-height: 1.35;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  .ess-leadership-showcase > .container,
+  .ess-management-gallery > .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  .ess-leadership-editorial-head,
+  .ess-management-head {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+
+  .ess-chairman-feature,
+  .ess-md-feature {
+    grid-template-columns:
+      .46fr .54fr;
+  }
+
+
+  .ess-management-grid {
+    grid-template-columns:
+      repeat(3,1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  .ess-leadership-showcase {
+    padding:
+      58px 0 28px;
+  }
+
+
+  .ess-management-gallery {
+    padding:
+      55px 0 65px;
+  }
+
+
+  .ess-leadership-showcase > .container,
+  .ess-management-gallery > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  .ess-chairman-feature,
+  .ess-md-feature {
+    grid-template-columns:
+      1fr;
+
+    min-height: 0;
+  }
+
+
+  .ess-chairman-portrait,
+  .ess-md-portrait {
+    min-height: 0;
+
+    aspect-ratio:
+      4 / 5;
+  }
+
+
+  .ess-md-portrait {
+    order: -1;
+  }
+
+
+  .ess-chairman-content,
+  .ess-md-content {
+    padding:
+      32px 23px;
+  }
+
+
+  .ess-chairman-content h3,
+  .ess-md-content h3 {
+    font-size:
+      clamp(27px,8vw,36px);
+  }
+
+
+  .ess-management-grid {
+    grid-template-columns:
+      repeat(2,1fr);
+
+    gap:
+      30px 12px;
+  }
+
+
+  .ess-team-profile > h3 {
+    font-size: 12px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONE
+========================================================= */
+
+@media (max-width: 390px) {
+
+  .ess-management-grid {
+    grid-template-columns:
+      1fr 1fr;
+  }
+
+
+  .ess-team-profile > span {
+    font-size: 6px;
+  }
+
+
+  .ess-team-profile > h3 {
+    font-size: 11px;
+  }
+
+}

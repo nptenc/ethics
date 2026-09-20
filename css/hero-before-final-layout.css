@@ -1,0 +1,1652 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   PREMIUM RESPONSIVE HERO
+========================================================= */
+
+.ess-hero {
+  position: relative;
+  background: #061725;
+}
+
+
+/* =========================================================
+   STAGE
+========================================================= */
+
+.ess-hero-stage {
+  position: relative;
+  height: clamp(630px, 76vh, 820px);
+  min-height: 630px;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   SLIDES
+========================================================= */
+
+.ess-hero-slide {
+  position: absolute;
+  inset: 0;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition:
+    opacity .9s ease,
+    visibility .9s ease;
+}
+
+
+.ess-hero-slide.is-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.ess-hero-photo {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+
+.ess-hero-photo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  transform: scale(1.035);
+
+  transition:
+    transform 7s ease;
+}
+
+
+.ess-hero-slide.is-active .ess-hero-photo img {
+  transform: scale(1);
+}
+
+
+/* =========================================================
+   OVERLAY
+
+   Image stays visible on the right.
+   Text stays extremely readable on the left.
+========================================================= */
+
+.ess-hero-shade {
+  position: absolute;
+  inset: 0;
+
+  background:
+
+    linear-gradient(
+      90deg,
+      rgba(4,18,31,.98) 0%,
+      rgba(4,22,38,.95) 33%,
+      rgba(6,29,49,.77) 55%,
+      rgba(5,25,42,.30) 76%,
+      rgba(5,25,42,.18) 100%
+    ),
+
+    linear-gradient(
+      0deg,
+      rgba(4,17,28,.55) 0%,
+      transparent 35%
+    );
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.ess-hero-content {
+  position: relative;
+  z-index: 10;
+
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+
+.ess-hero-copy {
+  width: min(730px, 64vw);
+
+  padding-top: 10px;
+}
+
+
+/* EYEBROW */
+
+.ess-hero-kicker {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 20px;
+
+  color: var(--ess-gold-light);
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: .21em;
+
+  text-transform: uppercase;
+}
+
+
+.ess-hero-kicker span {
+  width: 34px;
+  height: 2px;
+
+  background: var(--ess-gold);
+}
+
+
+/* MAIN TITLE */
+
+.ess-hero-copy h1 {
+  max-width: 760px;
+
+  margin: 0;
+
+  color: #FFFFFF;
+
+  font-family: var(--ess-font-heading);
+
+  font-size:
+    clamp(45px, 5vw, 72px);
+
+  font-weight: 700;
+
+  line-height: 1.045;
+
+  letter-spacing: -.047em;
+}
+
+
+.ess-hero-copy h1 em {
+  display: block;
+
+  margin-top: 5px;
+
+  color: var(--ess-gold-light);
+
+  font-style: normal;
+  font-weight: 800;
+}
+
+
+/* TEXT */
+
+.ess-hero-copy > p {
+  max-width: 640px;
+
+  margin:
+    27px 0 0;
+
+  color:
+    rgba(255,255,255,.72);
+
+  font-size: 15px;
+
+  line-height: 1.85;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.ess-hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 11px;
+
+  margin-top: 32px;
+}
+
+
+.ess-button-primary,
+.ess-button-secondary {
+  min-height: 52px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  padding:
+    13px 21px;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: .03em;
+
+  transition:
+    transform .25s ease,
+    background .25s ease,
+    border-color .25s ease;
+}
+
+
+.ess-button-primary {
+  color: var(--ess-navy-dark) !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #EACF84,
+      #CFA54B
+    );
+
+  border:
+    1px solid
+    var(--ess-gold);
+}
+
+
+.ess-button-primary:hover {
+  transform:
+    translateY(-2px);
+
+  background:
+    linear-gradient(
+      135deg,
+      #F2DB9A,
+      #DCB75D
+    );
+}
+
+
+.ess-button-secondary {
+  color: #FFFFFF !important;
+
+  border:
+    1px solid
+    rgba(255,255,255,.34);
+
+  background:
+    rgba(255,255,255,.025);
+}
+
+
+.ess-button-secondary:hover {
+  background:
+    rgba(255,255,255,.09);
+
+  border-color:
+    rgba(255,255,255,.58);
+}
+
+
+/* =========================================================
+   MINI PROOF
+========================================================= */
+
+.ess-hero-proof {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 22px;
+
+  margin-top: 26px;
+
+  color:
+    rgba(255,255,255,.64);
+
+  font-size: 10px;
+
+  font-weight: 600;
+}
+
+
+.ess-hero-proof div {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+}
+
+
+.ess-hero-proof i {
+  color: var(--ess-gold);
+}
+
+
+/* =========================================================
+   COUNTER
+========================================================= */
+
+.ess-hero-counter {
+  position: absolute;
+
+  z-index: 15;
+
+  right: 48px;
+  top: 45px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  color:
+    rgba(255,255,255,.45);
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: .12em;
+}
+
+
+.ess-hero-counter span:first-child {
+  color: var(--ess-gold-light);
+
+  font-size: 18px;
+}
+
+
+.ess-hero-counter i {
+  width: 28px;
+  height: 1px;
+
+  background:
+    rgba(255,255,255,.35);
+}
+
+
+/* =========================================================
+   ARROWS
+========================================================= */
+
+.ess-hero-arrows {
+  position: absolute;
+
+  z-index: 15;
+
+  right: 48px;
+  bottom: 42px;
+
+  display: flex;
+
+  gap: 8px;
+}
+
+
+.ess-hero-arrows button {
+  width: 47px;
+  height: 47px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  color: #FFFFFF;
+
+  background:
+    rgba(5,23,38,.62);
+
+  border:
+    1px solid
+    rgba(255,255,255,.20);
+
+  cursor: pointer;
+
+  transition:
+    .25s ease;
+}
+
+
+.ess-hero-arrows button:hover {
+  color: var(--ess-navy-dark);
+
+  background:
+    var(--ess-gold);
+
+  border-color:
+    var(--ess-gold);
+}
+
+
+.ess-hero-arrows i {
+  font-size: 24px;
+}
+
+
+/* =========================================================
+   SLIDE NAVIGATION
+========================================================= */
+
+.ess-hero-navigation {
+  position: relative;
+
+  background:
+    #081D30;
+
+  border-top:
+    1px solid
+    rgba(255,255,255,.08);
+}
+
+
+.ess-hero-nav-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+}
+
+
+.ess-hero-nav-item {
+  position: relative;
+
+  min-height: 92px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  padding:
+    18px 22px;
+
+  text-align: left;
+
+  color: #FFFFFF;
+
+  background: transparent;
+
+  border: 0;
+  border-right:
+    1px solid
+    rgba(255,255,255,.08);
+
+  cursor: pointer;
+
+  overflow: hidden;
+}
+
+
+.ess-hero-nav-item:last-child {
+  border-right: 0;
+}
+
+
+.ess-hero-nav-item > span {
+  color:
+    rgba(255,255,255,.28);
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+
+.ess-hero-nav-item strong,
+.ess-hero-nav-item small {
+  display: block;
+}
+
+
+.ess-hero-nav-item strong {
+  color:
+    rgba(255,255,255,.72);
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 11px;
+
+  font-weight: 700;
+}
+
+
+.ess-hero-nav-item small {
+  margin-top: 3px;
+
+  color:
+    rgba(255,255,255,.36);
+
+  font-size: 8px;
+}
+
+
+.ess-hero-nav-item > i {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 3px;
+
+  background:
+    var(--ess-gold);
+}
+
+
+.ess-hero-nav-item.is-active > span {
+  color:
+    var(--ess-gold);
+}
+
+
+.ess-hero-nav-item.is-active strong {
+  color:
+    #FFFFFF;
+}
+
+
+.ess-hero-nav-item.is-active > i {
+  width: 100%;
+
+  animation:
+    essHeroProgress
+    6s linear;
+}
+
+
+@keyframes essHeroProgress {
+
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   TRUST BAR
+========================================================= */
+
+.ess-trust-bar {
+  background:
+    #FFFFFF;
+
+  border-bottom:
+    1px solid
+    var(--ess-border);
+}
+
+
+.ess-trust-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+}
+
+
+.ess-trust-item {
+  min-height: 105px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  padding:
+    18px 22px;
+
+  border-right:
+    1px solid
+    var(--ess-border);
+}
+
+
+.ess-trust-item:last-child {
+  border-right: 0;
+}
+
+
+.ess-trust-item > i {
+  color:
+    var(--ess-gold);
+
+  font-size: 25px;
+}
+
+
+.ess-trust-item strong,
+.ess-trust-item span {
+  display: block;
+}
+
+
+.ess-trust-item strong {
+  color:
+    var(--ess-navy-dark);
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 15px;
+}
+
+
+.ess-trust-item span {
+  margin-top: 2px;
+
+  color:
+    var(--ess-muted);
+
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  .ess-hero-stage {
+    height: 690px;
+    min-height: 690px;
+  }
+
+
+  .ess-hero-copy {
+    width: 76%;
+  }
+
+
+  .ess-hero-copy h1 {
+    font-size:
+      clamp(43px, 7vw, 59px);
+  }
+
+
+  .ess-hero-counter {
+    right: 25px;
+  }
+
+
+  .ess-hero-arrows {
+    right: 25px;
+  }
+
+
+  .ess-hero-nav-grid {
+    grid-template-columns:
+      repeat(2,1fr);
+  }
+
+
+  .ess-hero-nav-item:nth-child(2) {
+    border-right: 0;
+  }
+
+
+  .ess-hero-nav-item:nth-child(-n+2) {
+    border-bottom:
+      1px solid
+      rgba(255,255,255,.08);
+  }
+
+
+  .ess-trust-grid {
+    grid-template-columns:
+      repeat(2,1fr);
+  }
+
+
+  .ess-trust-item:nth-child(2) {
+    border-right: 0;
+  }
+
+
+  .ess-trust-item:nth-child(-n+2) {
+    border-bottom:
+      1px solid
+      var(--ess-border);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  .ess-hero-stage {
+    height: 670px;
+    min-height: 670px;
+  }
+
+
+  .ess-hero-photo img {
+    object-position:
+      64% center;
+  }
+
+
+  .ess-hero-shade {
+    background:
+
+      linear-gradient(
+        90deg,
+        rgba(4,18,31,.96) 0%,
+        rgba(4,22,38,.84) 70%,
+        rgba(5,24,41,.56) 100%
+      ),
+
+      linear-gradient(
+        0deg,
+        rgba(3,15,26,.70),
+        transparent 45%
+      );
+  }
+
+
+  .ess-hero-copy {
+    width: 100%;
+
+    padding-right: 15px;
+  }
+
+
+  .ess-hero-copy h1 {
+    max-width: 500px;
+
+    font-size:
+      clamp(38px, 10vw, 48px);
+  }
+
+
+  .ess-hero-copy > p {
+    max-width: 520px;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+  }
+
+
+  .ess-hero-kicker {
+    font-size: 8px;
+
+    letter-spacing: .15em;
+  }
+
+
+  .ess-hero-proof {
+    display: grid;
+
+    gap: 7px;
+  }
+
+
+  .ess-hero-counter {
+    top: 22px;
+    right: 18px;
+  }
+
+
+  .ess-hero-arrows {
+    right: 18px;
+    bottom: 20px;
+  }
+
+
+  .ess-hero-arrows button {
+    width: 42px;
+    height: 42px;
+  }
+
+
+  .ess-hero-nav-grid {
+    grid-template-columns:
+      repeat(4,1fr);
+  }
+
+
+  .ess-hero-nav-item {
+    min-height: 60px;
+
+    justify-content: center;
+
+    padding:
+      12px 5px;
+
+    border-bottom: 0 !important;
+  }
+
+
+  .ess-hero-nav-item > div {
+    display: none;
+  }
+
+
+  .ess-hero-nav-item > span {
+    font-size: 10px;
+  }
+
+
+  .ess-trust-item {
+    min-height: 88px;
+
+    padding:
+      14px 13px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+
+  .ess-hero-stage {
+    height: 720px;
+    min-height: 720px;
+  }
+
+
+  .ess-hero-content {
+    align-items: flex-start;
+
+    padding-top: 85px;
+  }
+
+
+  .ess-hero-copy h1 {
+    font-size:
+      clamp(35px, 10.5vw, 43px);
+  }
+
+
+  .ess-hero-buttons {
+    display: grid;
+  }
+
+
+  .ess-button-primary,
+  .ess-button-secondary {
+    width: 100%;
+  }
+
+
+  .ess-hero-arrows {
+    bottom: 18px;
+  }
+
+
+  .ess-trust-item {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 7px;
+  }
+
+
+  .ess-trust-item > i {
+    font-size: 21px;
+  }
+
+}
+
+/* =========================================================
+   HERO FINAL POLISH
+========================================================= */
+
+.ess-hero-stage::after {
+  content: "";
+
+  position: absolute;
+  z-index: 4;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 130px;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(4,18,31,.44),
+      transparent
+    );
+}
+
+
+.ess-hero-copy {
+  position: relative;
+}
+
+
+.ess-hero-copy::before {
+  content: "";
+
+  position: absolute;
+
+  left: -34px;
+  top: -24px;
+
+  width: 2px;
+  height: 72px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      var(--ess-gold),
+      transparent
+    );
+}
+
+
+.ess-hero-photo::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at 75% 42%,
+      transparent 0,
+      transparent 30%,
+      rgba(4,18,31,.10) 62%,
+      rgba(4,18,31,.26) 100%
+    );
+}
+
+
+@media (min-width: 1400px) {
+
+  .ess-hero-stage {
+    height: min(790px, 76vh);
+  }
+
+}
+
+
+@media (max-width: 1199.98px) {
+
+  .ess-hero-copy {
+    width: 70%;
+  }
+
+
+  .ess-hero-copy h1 {
+    font-size:
+      clamp(46px, 5.5vw, 62px);
+  }
+
+}
+
+
+@media (max-width: 991.98px) {
+
+  .ess-hero-copy {
+    width: 82%;
+  }
+
+
+  .ess-hero-stage {
+    min-height: 650px;
+    height: 68vh;
+  }
+
+
+  .ess-hero-copy::before {
+    display: none;
+  }
+
+
+  .ess-hero-counter {
+    top: 24px;
+  }
+
+}
+
+
+@media (max-width: 767.98px) {
+
+  .ess-hero-stage {
+    height: auto;
+    min-height: 650px;
+  }
+
+
+  .ess-hero-content {
+    min-height: 650px;
+
+    padding-top: 64px;
+    padding-bottom: 90px;
+
+    align-items: center;
+  }
+
+
+  .ess-hero-copy {
+    width: 100%;
+  }
+
+
+  .ess-hero-copy h1 {
+    max-width: 92%;
+
+    font-size:
+      clamp(37px, 9.6vw, 48px);
+
+    line-height: 1.07;
+  }
+
+
+  .ess-hero-copy > p {
+    max-width: 92%;
+
+    margin-top: 20px;
+  }
+
+
+  .ess-hero-buttons {
+    margin-top: 25px;
+  }
+
+
+  .ess-hero-proof {
+    margin-top: 20px;
+  }
+
+
+  .ess-hero-counter {
+    display: none;
+  }
+
+
+  .ess-hero-arrows {
+    left: auto;
+    right: 17px;
+    bottom: 16px;
+  }
+
+}
+
+
+@media (max-width: 575.98px) {
+
+  .ess-hero-content {
+    min-height: 680px;
+
+    padding-top: 55px;
+    padding-bottom: 95px;
+  }
+
+
+  .ess-hero-stage {
+    min-height: 680px;
+  }
+
+
+  .ess-hero-photo img {
+    object-position:
+      60% center;
+  }
+
+
+  .ess-hero-copy h1 {
+    max-width: 100%;
+
+    font-size:
+      clamp(34px, 10vw, 42px);
+  }
+
+
+  .ess-hero-copy > p {
+    max-width: 100%;
+
+    font-size: 13px;
+  }
+
+
+  .ess-hero-buttons {
+    width: 100%;
+  }
+
+
+  .ess-button-primary,
+  .ess-button-secondary {
+    min-height: 49px;
+
+    padding:
+      12px 16px;
+  }
+
+
+  .ess-trust-grid {
+    grid-template-columns:
+      repeat(2,1fr);
+  }
+
+}
+
+
+@media (max-width: 390px) {
+
+  .ess-hero-content {
+    min-height: 710px;
+  }
+
+
+  .ess-hero-stage {
+    min-height: 710px;
+  }
+
+
+  .ess-hero-copy h1 {
+    font-size: 33px;
+  }
+
+
+  .ess-hero-kicker {
+    font-size: 7px;
+  }
+
+}
+
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .ess-hero-slide,
+  .ess-hero-photo img,
+  .ess-hero-nav-item > i {
+    transition: none !important;
+    animation: none !important;
+  }
+
+}
+
+/* FINAL RESPONSIVE HERO IMAGES */
+
+.ess-hero-photo picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.ess-hero-photo picture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+
+  .ess-hero-photo picture img {
+    object-position: center center;
+  }
+
+}
+
+@media (max-width: 767.98px) {
+
+  .ess-hero-photo picture img {
+    object-position: center center;
+  }
+
+}
+
+/* =========================================================
+   ETHICS HERO - FINAL DESKTOP COMPOSITION FIX
+========================================================= */
+
+@media (min-width: 992px) {
+
+  .ess-hero-stage {
+    height: clamp(620px, 70vh, 760px);
+    min-height: 620px;
+  }
+
+
+  /* Keep text inside left side only */
+
+  .ess-hero-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .ess-hero-copy {
+    width: 46%;
+    max-width: 610px;
+    min-width: 520px;
+
+    padding-top: 0;
+    padding-right: 25px;
+  }
+
+
+  /* Better headline proportions */
+
+  .ess-hero-copy h1 {
+    max-width: 600px;
+
+    font-size: clamp(
+      48px,
+      4.35vw,
+      64px
+    );
+
+    line-height: 1.04;
+
+    letter-spacing: -.042em;
+  }
+
+
+  .ess-hero-copy h1 em {
+    margin-top: 4px;
+  }
+
+
+  /* Description stays controlled */
+
+  .ess-hero-copy > p {
+    max-width: 560px;
+
+    margin-top: 24px;
+
+    font-size: 14px;
+
+    line-height: 1.75;
+  }
+
+
+  /* Cleaner button spacing */
+
+  .ess-hero-buttons {
+    margin-top: 28px;
+  }
+
+
+  .ess-button-primary,
+  .ess-button-secondary {
+    min-height: 50px;
+
+    padding: 12px 20px;
+  }
+
+
+  .ess-hero-proof {
+    margin-top: 23px;
+
+    gap: 18px;
+  }
+
+
+  /* -----------------------------------------------------
+     IMAGE COMPOSITION
+  ----------------------------------------------------- */
+
+  .ess-hero-photo picture,
+  .ess-hero-photo picture img {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .ess-hero-photo picture img {
+    object-fit: cover;
+
+    transform: scale(1.015);
+  }
+
+
+  /* Individual slide focal points */
+
+  .ess-hero-slide[data-slide="0"] .ess-hero-photo img {
+    object-position: 66% center;
+  }
+
+
+  .ess-hero-slide[data-slide="1"] .ess-hero-photo img {
+    object-position: 64% center;
+  }
+
+
+  .ess-hero-slide[data-slide="2"] .ess-hero-photo img {
+    object-position: 67% center;
+  }
+
+
+  .ess-hero-slide[data-slide="3"] .ess-hero-photo img {
+    object-position: 65% center;
+  }
+
+
+  /* -----------------------------------------------------
+     PROFESSIONAL LEFT-TO-RIGHT OVERLAY
+  ----------------------------------------------------- */
+
+  .ess-hero-shade {
+    background:
+
+      linear-gradient(
+        90deg,
+
+        rgba(4,18,31,.99) 0%,
+
+        rgba(4,20,35,.97) 24%,
+
+        rgba(5,25,43,.91) 39%,
+
+        rgba(5,27,46,.66) 51%,
+
+        rgba(5,27,46,.25) 66%,
+
+        rgba(5,27,46,.06) 82%,
+
+        rgba(5,27,46,.02) 100%
+      ),
+
+      linear-gradient(
+        0deg,
+
+        rgba(3,16,27,.38) 0%,
+
+        transparent 34%
+      );
+  }
+
+
+  /* Remove excessive image darkening */
+
+  .ess-hero-photo::after {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(4,18,31,.08),
+        transparent 58%
+      );
+  }
+
+
+  /* -----------------------------------------------------
+     SLIDE COUNTER
+  ----------------------------------------------------- */
+
+  .ess-hero-counter {
+    top: 38px;
+    right: 42px;
+  }
+
+
+  /* -----------------------------------------------------
+     ARROWS - vertically balanced
+  ----------------------------------------------------- */
+
+  .ess-hero-arrows {
+    right: 34px;
+
+    top: 50%;
+    bottom: auto;
+
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+
+  .ess-hero-arrows button {
+    width: 48px;
+    height: 48px;
+
+    background:
+      rgba(6,24,40,.72);
+
+    backdrop-filter: blur(8px);
+  }
+
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (
+  min-width: 992px
+)
+and (
+  max-width: 1399.98px
+) {
+
+  .ess-hero-copy {
+    width: 48%;
+
+    max-width: 570px;
+
+    min-width: 470px;
+  }
+
+
+  .ess-hero-copy h1 {
+    font-size:
+      clamp(45px, 4.4vw, 58px);
+  }
+
+
+  .ess-hero-copy > p {
+    max-width: 520px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (
+  min-width: 768px
+)
+and (
+  max-width: 991.98px
+) {
+
+  .ess-hero-stage {
+    min-height: 650px;
+  }
+
+
+  .ess-hero-copy {
+    width: 67%;
+
+    max-width: 570px;
+  }
+
+
+  .ess-hero-copy h1 {
+    font-size:
+      clamp(42px, 6vw, 54px);
+  }
+
+
+  .ess-hero-photo picture img {
+    object-position:
+      64% center;
+  }
+
+
+  .ess-hero-shade {
+    background:
+      linear-gradient(
+        90deg,
+
+        rgba(4,18,31,.98) 0%,
+
+        rgba(5,24,42,.92) 46%,
+
+        rgba(5,27,46,.52) 70%,
+
+        rgba(5,27,46,.18) 100%
+      );
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE FINAL BALANCE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  .ess-hero-stage {
+    min-height: 680px;
+  }
+
+
+  .ess-hero-content {
+    min-height: 680px;
+
+    align-items: flex-end;
+
+    padding-top: 75px;
+    padding-bottom: 105px;
+  }
+
+
+  .ess-hero-copy {
+    width: 100%;
+
+    padding-right: 0;
+  }
+
+
+  .ess-hero-copy h1 {
+    max-width: 100%;
+
+    font-size:
+      clamp(35px, 9.5vw, 45px);
+
+    line-height: 1.06;
+  }
+
+
+  .ess-hero-copy > p {
+    max-width: 96%;
+
+    font-size: 13px;
+
+    line-height: 1.68;
+  }
+
+
+  .ess-hero-photo picture img {
+    object-position:
+      center center;
+  }
+
+
+  .ess-hero-shade {
+    background:
+
+      linear-gradient(
+        0deg,
+
+        rgba(3,16,28,.98) 0%,
+
+        rgba(4,20,35,.91) 42%,
+
+        rgba(4,21,37,.50) 72%,
+
+        rgba(4,21,37,.18) 100%
+      );
+  }
+
+
+  .ess-hero-arrows {
+    right: 16px;
+    bottom: 18px;
+
+    top: auto;
+
+    transform: none;
+
+    flex-direction: row;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .ess-hero-stage,
+  .ess-hero-content {
+    min-height: 700px;
+  }
+
+
+  .ess-hero-content {
+    padding-top: 60px;
+
+    padding-bottom: 100px;
+  }
+
+
+  .ess-hero-copy h1 {
+    font-size:
+      clamp(32px, 9.8vw, 40px);
+  }
+
+
+  .ess-hero-copy > p {
+    margin-top: 17px;
+  }
+
+
+  .ess-hero-buttons {
+    margin-top: 21px;
+  }
+
+
+  .ess-hero-proof {
+    margin-top: 18px;
+  }
+
+}
+

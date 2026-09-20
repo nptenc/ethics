@@ -1,0 +1,1305 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   FINAL SITE-WIDE HOMEPAGE POLISH
+========================================================= */
+
+:root {
+  --ess-page-bg: #F6F8FA;
+  --ess-surface: #FFFFFF;
+  --ess-navy-final: #071B2E;
+  --ess-navy-soft: #0B2A47;
+  --ess-gold-final: #D2AA52;
+  --ess-gold-deep: #B88A32;
+  --ess-line: #E3E8ED;
+}
+
+
+/* =========================================================
+   CONSISTENT BODY BACKGROUND
+========================================================= */
+
+body {
+  background: var(--ess-page-bg);
+}
+
+
+.ess-about,
+.ess-services,
+.ess-why,
+.ess-training,
+.ess-industries,
+.ess-clients,
+.ess-contact-cta {
+  background: var(--ess-page-bg) !important;
+}
+
+
+/* =========================================================
+   UNIFIED WIDTH / LESS SIDE PADDING
+========================================================= */
+
+.ess-about > .container,
+.ess-services > .container,
+.ess-why > .container,
+.ess-training > .container,
+.ess-industries > .container,
+.ess-clients > .container,
+.ess-contact-cta > .container,
+.ess-footer > .container {
+  width: 100%;
+
+  max-width: 1380px;
+
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+
+/* =========================================================
+   CONSISTENT SECTION SPACING
+========================================================= */
+
+.ess-about,
+.ess-services,
+.ess-why,
+.ess-training,
+.ess-industries,
+.ess-clients {
+  padding-top: 88px !important;
+  padding-bottom: 88px !important;
+}
+
+
+.ess-contact-cta {
+  padding-top: 72px !important;
+  padding-bottom: 82px !important;
+}
+
+
+/* =========================================================
+   CONSISTENT HEADINGS
+========================================================= */
+
+.ess-about-content h2,
+.ess-services-heading h2,
+.ess-why-intro h2,
+.ess-training-head h2,
+.ess-industries-head h2,
+.ess-clients-heading h2 {
+  color: var(--ess-navy-final) !important;
+}
+
+
+.ess-about-content h2 strong,
+.ess-services-heading h2 strong,
+.ess-why-intro h2 strong,
+.ess-training-head h2 strong,
+.ess-industries-head h2 strong,
+.ess-clients-heading h2 strong {
+  color: var(--ess-gold-deep) !important;
+}
+
+
+/* all section labels */
+
+.ess-section-label,
+.ess-section-label-light {
+  color: var(--ess-gold-deep) !important;
+}
+
+
+.ess-section-label span,
+.ess-section-label-light span {
+  background: var(--ess-gold-final) !important;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.ess-about {
+  border-top: 0;
+}
+
+
+.ess-about-panel {
+  background:
+    linear-gradient(
+      145deg,
+      #071B2E,
+      #0B2A47
+    ) !important;
+}
+
+
+/* =========================================================
+   SERVICES - CHANGE FROM FULL DARK SECTION TO LIGHT PAGE
+========================================================= */
+
+.ess-services::before,
+.ess-services::after {
+  display: none !important;
+}
+
+
+.ess-services-heading > p {
+  color: #667481 !important;
+}
+
+
+.ess-services-grid {
+  gap: 14px !important;
+}
+
+
+.ess-service-card {
+  min-height: 360px;
+
+  background: #FFFFFF !important;
+
+  border:
+    1px solid var(--ess-line) !important;
+
+  box-shadow:
+    0 10px 28px rgba(7,27,46,.045) !important;
+}
+
+
+.ess-service-card:hover {
+  background: #FFFFFF !important;
+
+  border-color:
+    rgba(210,170,82,.48) !important;
+
+  box-shadow:
+    0 20px 42px rgba(7,27,46,.09) !important;
+}
+
+
+.ess-service-number {
+  color:
+    rgba(7,27,46,.28) !important;
+}
+
+
+.ess-service-card h3 {
+  color:
+    var(--ess-navy-final) !important;
+}
+
+
+.ess-service-card > p {
+  color:
+    #697681 !important;
+}
+
+
+.ess-service-tags span {
+  color:
+    #697681 !important;
+
+  background:
+    #F7F8F9 !important;
+
+  border-color:
+    #E2E7EB !important;
+}
+
+
+.ess-service-icon {
+  color:
+    var(--ess-gold-deep) !important;
+
+  background:
+    rgba(210,170,82,.06) !important;
+
+  border-color:
+    rgba(210,170,82,.35) !important;
+}
+
+
+.ess-service-card:hover .ess-service-icon {
+  color:
+    var(--ess-navy-final) !important;
+
+  background:
+    var(--ess-gold-final) !important;
+}
+
+
+.ess-service-card > a {
+  color:
+    var(--ess-gold-deep) !important;
+}
+
+
+/* service bottom CTA */
+
+.ess-services-footer {
+  background:
+    #FFFFFF !important;
+
+  border:
+    1px solid var(--ess-line) !important;
+}
+
+
+.ess-services-footer span {
+  color:
+    var(--ess-gold-deep) !important;
+}
+
+
+.ess-services-footer strong {
+  color:
+    var(--ess-navy-final) !important;
+}
+
+
+/* =========================================================
+   WHY US
+========================================================= */
+
+.ess-why-card {
+  background:
+    #FFFFFF !important;
+
+  border-color:
+    var(--ess-line) !important;
+}
+
+
+/* =========================================================
+   TRAINING
+========================================================= */
+
+.ess-training-process article {
+  background: transparent;
+}
+
+
+.ess-process-icon {
+  background:
+    var(--ess-page-bg) !important;
+}
+
+
+.ess-training-bottom {
+  background:
+    #FFFFFF;
+}
+
+
+/* =========================================================
+   INDUSTRIES - SAME BACKGROUND AS REST
+========================================================= */
+
+.ess-industries-head {
+  max-width:
+    none !important;
+}
+
+
+.ess-industries-title-row {
+  display: grid;
+
+  grid-template-columns:
+    1.05fr .65fr;
+
+  gap: 65px;
+
+  align-items: end;
+}
+
+
+.ess-industries-head h2 {
+  max-width: 690px;
+}
+
+
+.ess-industries-head > p,
+.ess-industries-title-row > p {
+  max-width: 500px;
+
+  margin: 0 0 5px;
+
+  color:
+    #697681 !important;
+
+  font-size: 12px;
+
+  line-height: 1.8;
+}
+
+
+.ess-industries-grid {
+  gap: 14px;
+}
+
+
+.ess-industries-grid article {
+  min-height: 225px;
+
+  background:
+    #FFFFFF !important;
+
+  border:
+    1px solid var(--ess-line) !important;
+
+  box-shadow:
+    0 10px 28px rgba(7,27,46,.04);
+}
+
+
+.ess-industries-grid article:hover {
+  background:
+    #FFFFFF !important;
+
+  border-color:
+    rgba(210,170,82,.48) !important;
+
+  box-shadow:
+    0 20px 42px rgba(7,27,46,.08);
+}
+
+
+.ess-industries-grid article > span {
+  color:
+    rgba(7,27,46,.18) !important;
+}
+
+
+.ess-industry-icon {
+  color:
+    var(--ess-gold-deep) !important;
+
+  background:
+    rgba(210,170,82,.05);
+
+  border-color:
+    rgba(210,170,82,.35) !important;
+}
+
+
+.ess-industries-grid h3 {
+  color:
+    var(--ess-navy-final) !important;
+}
+
+
+.ess-industries-grid p {
+  color:
+    #697681 !important;
+}
+
+
+/* =========================================================
+   CLIENTS
+========================================================= */
+
+.ess-client-wall {
+  background:
+    #FFFFFF;
+}
+
+
+.ess-client-wall > div {
+  background:
+    #FFFFFF;
+}
+
+
+/* =========================================================
+   CONTACT - DARK CARD ONLY
+========================================================= */
+
+.ess-contact-card {
+  border-radius:
+    14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071B2E,
+      #0B2A47
+    ) !important;
+
+  box-shadow:
+    0 24px 55px
+    rgba(7,27,46,.14) !important;
+}
+
+
+/* =========================================================
+   PROFESSIONAL FOOTER
+========================================================= */
+
+.ess-footer {
+  position: relative;
+
+  padding: 0 !important;
+
+  background:
+    #051724 !important;
+
+  color:
+    #FFFFFF;
+}
+
+
+.ess-footer-accent {
+  width: 100%;
+  height: 3px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      #B88A32 20%,
+      #E2C574 50%,
+      #B88A32 80%,
+      transparent 100%
+    );
+}
+
+
+/* top footer callout */
+
+.ess-footer-top {
+  min-height: 115px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 35px;
+
+  padding: 27px 0;
+
+  border-bottom:
+    1px solid rgba(255,255,255,.09);
+}
+
+
+.ess-footer-top-copy span,
+.ess-footer-top-copy strong {
+  display: block;
+}
+
+
+.ess-footer-top-copy span {
+  margin-bottom: 7px;
+
+  color:
+    var(--ess-gold-final);
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: .18em;
+}
+
+
+.ess-footer-top-copy strong {
+  max-width: 600px;
+
+  color:
+    #FFFFFF;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size:
+    clamp(17px,1.7vw,23px);
+
+  line-height: 1.4;
+}
+
+
+.ess-footer-call {
+  min-width: 235px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 13px 17px;
+
+  color:
+    #FFFFFF !important;
+
+  border:
+    1px solid rgba(210,170,82,.35);
+
+  border-radius: 9px;
+
+  background:
+    rgba(255,255,255,.025);
+}
+
+
+.ess-footer-call > i {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color:
+    var(--ess-navy-final);
+
+  background:
+    var(--ess-gold-final);
+
+  border-radius: 7px;
+}
+
+
+.ess-footer-call small,
+.ess-footer-call strong {
+  display: block;
+}
+
+
+.ess-footer-call small {
+  color:
+    rgba(255,255,255,.45);
+
+  font-size: 7px;
+
+  letter-spacing: .12em;
+}
+
+
+.ess-footer-call strong {
+  margin-top: 2px;
+
+  color:
+    #FFFFFF;
+
+  font-size: 11px;
+}
+
+
+/* footer main */
+
+.ess-footer-main {
+  display: grid;
+
+  grid-template-columns:
+    1.55fr .65fr .85fr 1.15fr;
+
+  gap: 45px;
+
+  padding:
+    48px 0 45px;
+}
+
+
+/* logo */
+
+.ess-footer-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+}
+
+
+.ess-footer-logo img {
+  width: 62px;
+  height: 62px;
+
+  object-fit: contain;
+
+  padding: 5px;
+
+  background: #000000;
+
+  border-radius: 10px;
+}
+
+
+.ess-footer-logo div > strong,
+.ess-footer-logo div > span {
+  display: block;
+}
+
+
+.ess-footer-logo div > strong {
+  color: #FFFFFF;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 16px;
+}
+
+
+.ess-footer-logo div > span {
+  margin-top: 4px;
+
+  color:
+    var(--ess-gold-final);
+
+  font-size: 7px;
+
+  font-weight: 700;
+
+  letter-spacing: .08em;
+}
+
+
+.ess-footer-brand > p {
+  max-width: 370px;
+
+  margin:
+    20px 0 0;
+
+  color:
+    rgba(255,255,255,.48);
+
+  font-size: 9px;
+
+  line-height: 1.75;
+}
+
+
+.ess-footer-values {
+  display: flex;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 18px;
+
+  color:
+    rgba(255,255,255,.45);
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: .09em;
+}
+
+
+.ess-footer-values i,
+.ess-footer-bottom div i {
+  width: 4px;
+  height: 4px;
+
+  display: block;
+
+  background:
+    var(--ess-gold-final);
+
+  border-radius: 50%;
+}
+
+
+/* navigation */
+
+.ess-footer-nav h3,
+.ess-footer-contact h3 {
+  position: relative;
+
+  margin:
+    6px 0 22px;
+
+  padding-bottom:
+    11px;
+
+  color:
+    #FFFFFF;
+
+  font-family:
+    var(--ess-font-heading);
+
+  font-size: 11px;
+}
+
+
+.ess-footer-nav h3::after,
+.ess-footer-contact h3::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 26px;
+  height: 2px;
+
+  background:
+    var(--ess-gold-final);
+}
+
+
+.ess-footer-nav > a {
+  display: block;
+
+  width: fit-content;
+
+  margin-bottom: 11px;
+
+  color:
+    rgba(255,255,255,.50) !important;
+
+  font-size: 9px;
+
+  transition:
+    color .2s ease,
+    transform .2s ease;
+}
+
+
+.ess-footer-nav > a:hover {
+  color:
+    var(--ess-gold-final) !important;
+
+  transform:
+    translateX(4px);
+}
+
+
+/* contact */
+
+.ess-footer-contact-item {
+  display: grid;
+
+  grid-template-columns:
+    22px 1fr;
+
+  gap: 8px;
+
+  margin-bottom: 15px;
+}
+
+
+.ess-footer-contact-item > i {
+  color:
+    var(--ess-gold-final);
+
+  font-size: 13px;
+
+  padding-top: 2px;
+}
+
+
+.ess-footer-contact-item p {
+  margin: 0;
+
+  color:
+    rgba(255,255,255,.50);
+
+  font-size: 9px;
+
+  line-height: 1.65;
+}
+
+
+.ess-footer-contact-item a {
+  display: block;
+
+  color:
+    rgba(255,255,255,.50) !important;
+}
+
+
+.ess-footer-contact-item a:hover {
+  color:
+    var(--ess-gold-final) !important;
+}
+
+
+/* bottom */
+
+.ess-footer-bottom {
+  min-height: 60px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  border-top:
+    1px solid rgba(255,255,255,.08);
+}
+
+
+.ess-footer-bottom p {
+  margin: 0;
+
+  color:
+    rgba(255,255,255,.32);
+
+  font-size: 8px;
+}
+
+
+.ess-footer-bottom > div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color:
+    rgba(255,255,255,.32);
+
+  font-size: 7px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  .ess-about > .container,
+  .ess-services > .container,
+  .ess-why > .container,
+  .ess-training > .container,
+  .ess-industries > .container,
+  .ess-clients > .container,
+  .ess-contact-cta > .container,
+  .ess-footer > .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  .ess-industries-title-row {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+
+  .ess-footer-main {
+    grid-template-columns:
+      1.35fr 1fr;
+
+    gap:
+      38px 50px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  .ess-about > .container,
+  .ess-services > .container,
+  .ess-why > .container,
+  .ess-training > .container,
+  .ess-industries > .container,
+  .ess-clients > .container,
+  .ess-contact-cta > .container,
+  .ess-footer > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  .ess-about,
+  .ess-services,
+  .ess-why,
+  .ess-training,
+  .ess-industries,
+  .ess-clients {
+    padding-top: 62px !important;
+    padding-bottom: 62px !important;
+  }
+
+
+  .ess-services-grid,
+  .ess-industries-grid {
+    gap: 11px !important;
+  }
+
+
+  .ess-footer-top {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+    padding:
+      25px 0;
+  }
+
+
+  .ess-footer-call {
+    width: 100%;
+
+    min-width: 0;
+  }
+
+
+  .ess-footer-main {
+    grid-template-columns:
+      1fr 1fr;
+
+    gap:
+      35px 25px;
+
+    padding:
+      40px 0;
+  }
+
+
+  .ess-footer-brand {
+    grid-column:
+      1 / -1;
+  }
+
+
+  .ess-footer-contact {
+    grid-column:
+      1 / -1;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .ess-footer-main {
+    grid-template-columns:
+      1fr;
+  }
+
+
+  .ess-footer-brand,
+  .ess-footer-contact {
+    grid-column:
+      auto;
+  }
+
+
+  .ess-footer-bottom {
+    align-items:
+      flex-start;
+
+    flex-direction:
+      column;
+
+    justify-content:
+      center;
+
+    padding:
+      18px 0;
+  }
+
+}
+
+/* =========================================================
+   HOMEPAGE SERVICES - PHOTO CARD ENHANCEMENT
+========================================================= */
+
+.ess-services-grid
+.ess-service-card {
+  position: relative;
+
+  padding: 0 !important;
+
+  overflow: hidden !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+
+  background: #FFFFFF !important;
+}
+
+
+/* =========================================================
+   PHOTO
+========================================================= */
+
+.ess-service-card-photo {
+  position: relative;
+
+  width: 100%;
+  height: 165px;
+
+  flex: 0 0 165px;
+
+  overflow: hidden;
+
+  background: #071B2E;
+}
+
+
+.ess-service-card-photo::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(7,27,46,.30) 0%,
+      rgba(7,27,46,.05) 43%,
+      rgba(7,27,46,0) 70%
+    );
+}
+
+
+.ess-service-card-photo img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition:
+    transform .45s ease;
+}
+
+
+.ess-service-card:hover
+.ess-service-card-photo img {
+  transform: scale(1.035);
+}
+
+
+/* =========================================================
+   EXISTING CARD CONTENT
+   Restore internal padding after adding photo
+========================================================= */
+
+.ess-service-card
+.ess-service-top {
+  margin:
+    0 !important;
+
+  padding:
+    22px 26px 0 !important;
+}
+
+
+.ess-service-card > h3 {
+  margin:
+    22px 26px 0 !important;
+}
+
+
+.ess-service-card > p {
+  margin:
+    15px 26px 0 !important;
+}
+
+
+.ess-service-card
+.ess-service-tags {
+  margin:
+    17px 26px 0 !important;
+}
+
+
+.ess-service-card > a {
+  margin:
+    auto 26px 27px !important;
+
+  padding-top:
+    25px !important;
+}
+
+
+/* =========================================================
+   NUMBER + ICON AREA
+========================================================= */
+
+.ess-service-card
+.ess-service-top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.ess-service-card
+.ess-service-number {
+  font-size: 8px !important;
+
+  font-weight: 800 !important;
+
+  letter-spacing: .10em;
+}
+
+
+.ess-service-card
+.ess-service-icon {
+  width: 44px !important;
+  height: 44px !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
+
+.ess-service-card > h3 {
+  max-width: 320px;
+
+  font-size: 21px !important;
+
+  line-height: 1.25 !important;
+}
+
+
+.ess-service-card > p {
+  line-height: 1.75 !important;
+}
+
+
+/* =========================================================
+   SPECIFIC CROP CONTROL
+========================================================= */
+
+/* General security */
+.ess-service-card:nth-child(1)
+.ess-service-card-photo img {
+  object-position: center 38%;
+}
+
+
+/* Armed security */
+.ess-service-card:nth-child(2)
+.ess-service-card-photo img {
+  object-position: center 30%;
+}
+
+
+/* VIP */
+.ess-service-card:nth-child(3)
+.ess-service-card-photo img {
+  object-position: center 23%;
+}
+
+
+/* Event */
+.ess-service-card:nth-child(4)
+.ess-service-card-photo img {
+  object-position: center 38%;
+}
+
+
+/* Housekeeping / office */
+.ess-service-card:nth-child(5)
+.ess-service-card-photo img {
+  object-position: center center;
+}
+
+
+/* Industrial */
+.ess-service-card:nth-child(6)
+.ess-service-card-photo img {
+  object-position: center 40%;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  .ess-service-card-photo {
+    height: 155px;
+
+    flex-basis: 155px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  .ess-service-card-photo {
+    height: 190px;
+
+    flex-basis: 190px;
+  }
+
+
+  .ess-service-card
+  .ess-service-top {
+    padding:
+      19px 20px 0 !important;
+  }
+
+
+  .ess-service-card > h3 {
+    margin:
+      19px 20px 0 !important;
+
+    font-size:
+      19px !important;
+  }
+
+
+  .ess-service-card > p {
+    margin:
+      13px 20px 0 !important;
+  }
+
+
+  .ess-service-card
+  .ess-service-tags {
+    margin:
+      15px 20px 0 !important;
+  }
+
+
+  .ess-service-card > a {
+    margin:
+      auto 20px 23px !important;
+  }
+
+}
+
