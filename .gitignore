@@ -5,3 +5,5 @@ images/services/cards-original/
 sections/*before*.html
 *.tmp
 *.tmp.*
+*.backup-*
+*.bak

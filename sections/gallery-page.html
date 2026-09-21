@@ -1,6 +1,6 @@
 ﻿<!-- =========================================================
      ETHICS SECURITY SERVICE
-     GALLERY
+     GALLERY - CLEAN FINAL
 ========================================================= -->
 
 
@@ -8,96 +8,23 @@
      HERO
 ========================================================= -->
 
-<section class="ess-gallery-hero">
+<section class="ess-gallery-clean-hero">
 
-  <div class="container">
+  <div class="ess-gallery-clean-hero-inner">
 
-    <div class="ess-gallery-hero-grid">
+    <span class="ess-gallery-clean-eyebrow">
+      PHOTO GALLERY
+    </span>
 
+    <h1>
+      Our people.
+      <strong>Our work in the field.</strong>
+    </h1>
 
-      <div class="ess-gallery-hero-copy">
-
-        <div class="ess-gallery-kicker">
-
-          <span></span>
-
-          ETHICS SECURITY SERVICE
-
-        </div>
-
-
-        <h1>
-          Our work.
-          <strong>Our people.</strong>
-          Our presence.
-        </h1>
-
-
-        <p>
-          A visual record of Ethics Security Service personnel,
-          operational assignments, training activities, industrial
-          deployments and professional security operations.
-        </p>
-
-
-        <div class="ess-gallery-breadcrumb">
-
-          <a href="index.html">
-            Home
-          </a>
-
-          <i class="fa fa-angle-right"></i>
-
-          <span>
-            Gallery
-          </span>
-
-        </div>
-
-      </div>
-
-
-
-      <div class="ess-gallery-hero-side">
-
-        <span>
-          FIELD OPERATIONS
-        </span>
-
-        <strong>
-          Professional service,
-          documented in action.
-        </strong>
-
-
-        <div class="ess-gallery-hero-points">
-
-          <div>
-            <b>01</b>
-            <span>Personnel</span>
-          </div>
-
-          <div>
-            <b>02</b>
-            <span>Training</span>
-          </div>
-
-          <div>
-            <b>03</b>
-            <span>Operations</span>
-          </div>
-
-          <div>
-            <b>04</b>
-            <span>Sites</span>
-          </div>
-
-        </div>
-
-      </div>
-
-
-    </div>
+    <p>
+      Photos from security operations, personnel,
+      training, industrial assignments and events.
+    </p>
 
   </div>
 
@@ -109,52 +36,65 @@
      GALLERY
 ========================================================= -->
 
-<section class="ess-gallery-section">
+<section class="ess-gallery-clean-section">
 
-  <div class="container">
+  <div class="ess-gallery-clean-body-wrap">
 
 
-    <div class="ess-gallery-head">
+    <!-- GALLERY HEADER -->
+
+    <header class="ess-gallery-clean-head">
 
       <div>
 
-        <div class="ess-section-label">
-          <span></span>
-          PHOTO GALLERY
-        </div>
+        <span>
+          FIELD OPERATIONS
+        </span>
 
         <h2>
-          Security operations
-          <strong>in the field.</strong>
+          Ethics Security Service
+          <strong>in action.</strong>
         </h2>
 
       </div>
 
 
-      <p>
-        Explore photos from our personnel, training,
-        site assignments, industrial operations and
-        security activities.
-      </p>
+      <div class="ess-gallery-clean-count">
 
-    </div>
+        <strong id="essGalleryCount">
+          —
+        </strong>
+
+        <span>
+          Photos
+        </span>
+
+      </div>
+
+    </header>
 
 
 
-    <!-- FILTERS -->
+    <!-- FILTER TOOLBAR -->
 
-    <div
-      class="ess-gallery-filters"
-      id="essGalleryFilters"
-    >
+    <div class="ess-gallery-clean-toolbar">
 
-      <button
-        class="is-active"
-        data-filter="all"
-        type="button"
+      <div
+        class="ess-gallery-clean-filters"
+        id="essGalleryFilters"
+        role="group"
+        aria-label="Filter gallery photos"
       >
-        All Photos
-      </button>
+
+        <button
+          class="is-active"
+          data-filter="all"
+          type="button"
+        >
+          All Photos
+        </button>
+
+      </div>
 
     </div>
 
@@ -163,19 +103,29 @@
     <!-- PHOTO GRID -->
 
     <div
-      class="ess-gallery-grid"
+      class="ess-gallery-clean-grid"
       id="essGalleryGrid"
+      aria-live="polite"
     >
 
-      <div class="ess-gallery-loading">
-        Loading gallery...
+      <div class="ess-gallery-clean-loading">
+
+        <i class="fa fa-picture-o"></i>
+
+        <span>
+          Loading gallery...
+        </span>
+
       </div>
 
     </div>
 
 
+
+    <!-- EMPTY -->
+
     <div
-      class="ess-gallery-empty"
+      class="ess-gallery-clean-empty"
       id="essGalleryEmpty"
       hidden
     >
@@ -183,12 +133,11 @@
       <i class="fa fa-picture-o"></i>
 
       <strong>
-        Gallery photos coming soon.
+        No photos available.
       </strong>
 
       <p>
-        Operational and company photography
-        will appear here.
+        Please select another category.
       </p>
 
     </div>
@@ -205,35 +154,45 @@
 ========================================================= -->
 
 <div
-  class="ess-gallery-lightbox"
+  class="ess-gallery-clean-lightbox"
   id="essGalleryLightbox"
   aria-hidden="true"
 >
 
   <div
-    class="ess-gallery-lightbox-backdrop"
+    class="ess-gallery-clean-lightbox-backdrop"
     data-gallery-close
   ></div>
 
 
   <div
-    class="ess-gallery-lightbox-shell"
+    class="ess-gallery-clean-lightbox-shell"
     role="dialog"
     aria-modal="true"
+    aria-labelledby="essGalleryLightboxTitle"
   >
 
 
-    <div class="ess-gallery-lightbox-head">
+    <header class="ess-gallery-clean-lightbox-head">
 
       <div>
 
-        <span>
-          ETHICS SECURITY SERVICE
+        <span id="essGalleryLightboxCategory">
+          GALLERY
         </span>
 
         <strong id="essGalleryLightboxTitle">
-          Gallery
+          Photo
         </strong>
+
+      </div>
+
+
+      <div class="ess-gallery-clean-lightbox-position">
+
+        <span id="essGalleryLightboxPosition">
+          1 / 1
+        </span>
 
       </div>
 
@@ -241,16 +200,16 @@
       <button
         type="button"
         data-gallery-close
-        aria-label="Close photo"
+        aria-label="Close photo viewer"
       >
         <i class="fa fa-times"></i>
       </button>
 
-    </div>
+    </header>
 
 
 
-    <div class="ess-gallery-lightbox-image">
+    <div class="ess-gallery-clean-lightbox-image">
 
       <img
         id="essGalleryLightboxImage"
@@ -264,7 +223,7 @@
 
     <button
       type="button"
-      class="ess-gallery-prev"
+      class="ess-gallery-clean-prev"
       id="essGalleryPrev"
       aria-label="Previous photo"
     >
@@ -274,7 +233,7 @@
 
     <button
       type="button"
-      class="ess-gallery-next"
+      class="ess-gallery-clean-next"
       id="essGalleryNext"
       aria-label="Next photo"
     >

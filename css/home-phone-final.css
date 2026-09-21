@@ -1,0 +1,988 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   HOMEPAGE PHONE FINAL POLISH
+   IMPORTANT: HERO SLIDER NOT MODIFIED
+========================================================= */
+
+
+/* =========================================================
+   PHONE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+
+  /* =======================================================
+     GLOBAL MOBILE RHYTHM
+  ======================================================= */
+
+  body.ess-home-page {
+    overflow-x: hidden;
+  }
+
+
+  body.ess-home-page
+  main {
+    overflow: hidden;
+  }
+
+
+  body.ess-home-page
+  .container {
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+
+  /* =======================================================
+     SERVICES
+     KEEP FULL ORIGINAL SECTION
+     MAKE PHONE CARDS CLEANER
+  ======================================================= */
+
+  body.ess-home-page
+  .ess-services {
+    padding:
+      48px 0 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-services-heading {
+    display: block !important;
+
+    margin-bottom: 25px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-services-heading h2 {
+    max-width: 100% !important;
+
+    margin: 0 !important;
+
+    font-size:
+      clamp(29px,8vw,38px) !important;
+
+    line-height: 1.1 !important;
+
+    letter-spacing: -.035em !important;
+  }
+
+
+  body.ess-home-page
+  .ess-services-heading > p {
+    max-width: 100% !important;
+
+    margin:
+      14px 0 0 !important;
+
+    font-size: 12px !important;
+
+    line-height: 1.65 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-services-grid {
+    display: grid !important;
+
+    grid-template-columns: 1fr !important;
+
+    gap: 15px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-services-grid
+  .ess-service-card {
+    width: 100% !important;
+
+    min-height: 0 !important;
+    height: auto !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    overflow: hidden !important;
+
+    background: #FFFFFF !important;
+
+    border:
+      1px solid #E0E5E9 !important;
+
+    border-radius: 0 !important;
+
+    box-shadow:
+      0 8px 25px
+      rgba(7,27,46,.035) !important;
+  }
+
+
+  /* =======================================================
+     SERVICE PHOTO
+     CRITICAL FIX:
+     FULL MOBILE PHOTO - NO FORCED 16:9 CROP
+  ======================================================= */
+
+  body.ess-home-page
+  .ess-services-grid
+  .ess-service-card-photo {
+    position: relative !important;
+
+    width: 100% !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    aspect-ratio: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    overflow: hidden !important;
+
+    background: #E8ECEF !important;
+  }
+
+
+  body.ess-home-page
+  .ess-services-grid
+  .ess-service-card-photo picture {
+    position: static !important;
+
+    width: 100% !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    aspect-ratio: auto !important;
+
+    display: block !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-services-grid
+  .ess-service-card-photo picture source {
+    width: auto !important;
+    height: auto !important;
+  }
+
+
+  body.ess-home-page
+  .ess-services-grid
+  .ess-service-card-photo img {
+    position: static !important;
+
+    inset: auto !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    display: block !important;
+
+    margin: 0 !important;
+
+    object-fit: contain !important;
+    object-position: center top !important;
+
+    transform: none !important;
+
+    background: #E8ECEF !important;
+  }
+
+
+  body.ess-home-page
+  .ess-service-card-photo::after {
+    background:
+      linear-gradient(
+        to top,
+        rgba(7,27,46,.20) 0%,
+        rgba(7,27,46,0) 42%
+      ) !important;
+  }
+
+
+  /* CARD BODY */
+
+  body.ess-home-page
+  .ess-service-card
+  .ess-service-top {
+    padding:
+      17px 20px 0 !important;
+
+    margin: 0 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-service-card
+  .ess-service-number {
+    font-size: 8px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-service-card
+  .ess-service-icon {
+    width: 48px !important;
+    height: 48px !important;
+
+    font-size: 17px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-service-card > h3 {
+    max-width: none !important;
+
+    margin:
+      18px 20px 0 !important;
+
+    font-size: 21px !important;
+
+    line-height: 1.25 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-service-card > p {
+    max-width: none !important;
+
+    margin:
+      11px 20px 0 !important;
+
+    color: #697782 !important;
+
+    font-size: 12px !important;
+
+    line-height: 1.7 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-service-tags {
+    gap: 6px !important;
+
+    margin:
+      15px 20px 0 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-service-tags span {
+    padding:
+      6px 8px !important;
+
+    font-size: 7px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-service-card > a {
+    margin:
+      0 20px 21px !important;
+
+    padding-top:
+      20px !important;
+
+    font-size: 9px !important;
+  }
+
+
+  /* =======================================================
+     CUSTOM SERVICE AREA
+  ======================================================= */
+
+  body.ess-home-page
+  .ess-services-footer {
+    display: block !important;
+
+    margin-top: 17px !important;
+
+    padding:
+      21px 0 0 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-services-footer span {
+    font-size: 7px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-services-footer strong {
+    max-width: 100% !important;
+
+    margin-top: 5px !important;
+
+    font-size: 17px !important;
+
+    line-height: 1.45 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-services-footer > a {
+    width: 100% !important;
+
+    min-height: 50px !important;
+
+    margin-top: 17px !important;
+  }
+
+
+  /* =======================================================
+     ABOUT
+  ======================================================= */
+
+  body.ess-home-page
+  .ess-about {
+    padding:
+      48px 0 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-about-grid {
+    display: block !important;
+  }
+
+
+  body.ess-home-page
+  .ess-about-content h2 {
+    font-size:
+      clamp(29px,8vw,38px) !important;
+
+    line-height: 1.1 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-about-lead {
+    margin-top:
+      15px !important;
+
+    font-size: 13px !important;
+
+    line-height: 1.7 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-about-text {
+    margin-top:
+      12px !important;
+
+    font-size: 11px !important;
+
+    line-height: 1.65 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-about-values {
+    margin-top:
+      22px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-about-panel {
+    margin-top:
+      27px !important;
+  }
+
+
+  /* =======================================================
+     WHY ETHICS
+  ======================================================= */
+
+  body.ess-home-page
+  .ess-why {
+    padding:
+      48px 0 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-why-layout {
+    display: block !important;
+  }
+
+
+  body.ess-home-page
+  .ess-why-intro {
+    position: static !important;
+  }
+
+
+  body.ess-home-page
+  .ess-why-intro h2 {
+    font-size:
+      clamp(29px,8vw,38px) !important;
+
+    line-height: 1.1 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-why-intro > p {
+    margin-top:
+      14px !important;
+
+    font-size: 12px !important;
+
+    line-height: 1.65 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-why-commitment {
+    margin-top:
+      19px !important;
+
+    padding:
+      17px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-why-grid {
+    grid-template-columns: 1fr !important;
+
+    gap: 9px !important;
+
+    margin-top:
+      23px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-why-card {
+    min-height: 0 !important;
+
+    padding:
+      18px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-why-card > i {
+    font-size: 19px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-why-card h3 {
+    margin-top:
+      13px !important;
+
+    font-size: 14px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-why-card p {
+    margin-top:
+      6px !important;
+
+    font-size: 10px !important;
+
+    line-height: 1.6 !important;
+  }
+
+
+  /* =======================================================
+     TRAINING
+     MAJOR PHONE UI FIX
+  ======================================================= */
+
+  body.ess-home-page
+  .ess-training {
+    padding:
+      47px 0 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-training-head {
+    display: block !important;
+
+    margin: 0 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-training-head h2 {
+    max-width: 100% !important;
+
+    margin: 0 !important;
+
+    font-size:
+      clamp(29px,8vw,38px) !important;
+
+    line-height: 1.1 !important;
+
+    letter-spacing: -.035em !important;
+  }
+
+
+  body.ess-home-page
+  .ess-training-head > p {
+    max-width: 100% !important;
+
+    margin:
+      14px 0 0 !important;
+
+    font-size: 12px !important;
+
+    line-height: 1.65 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-training-process {
+    display: grid !important;
+
+    grid-template-columns: 1fr !important;
+
+    gap: 9px !important;
+
+    margin-top:
+      25px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-training-process::before {
+    display: none !important;
+  }
+
+
+  body.ess-home-page
+  .ess-training-process article {
+    position: relative !important;
+
+    display: grid !important;
+
+    grid-template-columns:
+      54px minmax(0,1fr) !important;
+
+    grid-template-rows:
+      auto auto !important;
+
+    column-gap: 14px !important;
+
+    align-items: center !important;
+
+    min-height: 0 !important;
+
+    padding:
+      16px !important;
+
+    text-align: left !important;
+
+    background: #F8FAFB !important;
+
+    border:
+      1px solid #E0E5E9 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-process-number {
+    position: absolute !important;
+
+    top: 9px !important;
+    right: 11px !important;
+
+    margin: 0 !important;
+
+    font-size: 7px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-process-icon {
+    grid-column: 1 !important;
+    grid-row: 1 / 3 !important;
+
+    width: 48px !important;
+    height: 48px !important;
+
+    margin: 0 !important;
+
+    font-size: 16px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-training-process h3 {
+    grid-column: 2 !important;
+
+    margin: 0 !important;
+
+    padding-right: 20px !important;
+
+    font-size: 13px !important;
+
+    line-height: 1.35 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-training-process p {
+    grid-column: 2 !important;
+
+    margin:
+      4px 0 0 !important;
+
+    font-size: 9px !important;
+
+    line-height: 1.55 !important;
+  }
+
+
+  /* TRAINING BOTTOM */
+
+  body.ess-home-page
+  .ess-training-bottom {
+    display: grid !important;
+
+    grid-template-columns: 1fr !important;
+
+    margin-top:
+      17px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-training-bottom > div {
+    min-height: 49px !important;
+
+    justify-content: flex-start !important;
+
+    padding:
+      12px 15px !important;
+
+    border-right: 0 !important;
+
+    border-bottom:
+      1px solid #E0E5E9 !important;
+
+    font-size: 9px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-training-bottom > div:last-child {
+    border-bottom: 0 !important;
+  }
+
+
+  /* =======================================================
+     INDUSTRIES
+  ======================================================= */
+
+  body.ess-home-page
+  .ess-industries {
+    padding:
+      49px 0 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-industries-head {
+    max-width: none !important;
+  }
+
+
+  body.ess-home-page
+  .ess-industries-title-row {
+    display: block !important;
+  }
+
+
+  body.ess-home-page
+  .ess-industries-head h2 {
+    font-size:
+      clamp(29px,8vw,38px) !important;
+
+    line-height: 1.1 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-industries-head p {
+    margin-top:
+      13px !important;
+
+    font-size: 11px !important;
+
+    line-height: 1.65 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-industries-grid {
+    grid-template-columns: 1fr !important;
+
+    gap: 8px !important;
+
+    margin-top:
+      24px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-industries-grid article {
+    min-height: 0 !important;
+
+    padding:
+      18px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-industry-icon {
+    width: 43px !important;
+    height: 43px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-industries-grid h3 {
+    margin-top:
+      13px !important;
+
+    font-size: 14px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-industries-grid p {
+    margin-top:
+      6px !important;
+
+    font-size: 9px !important;
+
+    line-height: 1.55 !important;
+  }
+
+
+  /* =======================================================
+     CLIENTS
+  ======================================================= */
+
+  body.ess-home-page
+  .ess-clients {
+    padding:
+      47px 0 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-clients-heading {
+    display: block !important;
+  }
+
+
+  body.ess-home-page
+  .ess-clients-heading h2 {
+    font-size:
+      clamp(29px,8vw,38px) !important;
+
+    line-height: 1.1 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-clients-heading > p {
+    margin-top:
+      12px !important;
+
+    font-size: 10px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-client-wall {
+    grid-template-columns:
+      repeat(2,minmax(0,1fr)) !important;
+
+    margin-top:
+      24px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-client-wall > div {
+    min-width: 0 !important;
+
+    min-height: 68px !important;
+
+    padding:
+      10px !important;
+
+    overflow-wrap: anywhere !important;
+
+    font-size: 8px !important;
+
+    line-height: 1.4 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-client-note {
+    align-items: flex-start !important;
+
+    margin-top:
+      16px !important;
+
+    font-size: 8px !important;
+
+    line-height: 1.55 !important;
+  }
+
+
+  /* =======================================================
+     FINAL CONTACT / ASSESSMENT
+  ======================================================= */
+
+  body.ess-home-page
+  .ess-contact-cta {
+    padding:
+      47px 0 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-contact-card {
+    grid-template-columns: 1fr !important;
+
+    border-radius: 0 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-contact-main {
+    padding:
+      25px 20px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-contact-main h2 {
+    font-size:
+      clamp(27px,8vw,36px) !important;
+
+    line-height: 1.12 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-contact-main > p {
+    margin-top:
+      12px !important;
+
+    font-size: 11px !important;
+
+    line-height: 1.6 !important;
+  }
+
+
+  body.ess-home-page
+  .ess-contact-actions {
+    display: grid !important;
+
+    gap: 8px !important;
+
+    margin-top:
+      18px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-contact-actions a {
+    width: 100% !important;
+
+    min-height: 49px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-contact-info {
+    padding:
+      19px 20px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-contact-info > div {
+    padding:
+      14px 0 14px 31px !important;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL PHONE
+========================================================= */
+
+@media (max-width: 390px) {
+
+  body.ess-home-page
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-client-wall {
+    grid-template-columns:
+      1fr 1fr !important;
+  }
+
+
+  body.ess-home-page
+  .ess-service-card > h3 {
+    font-size: 19px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-training-process article {
+    grid-template-columns:
+      46px minmax(0,1fr) !important;
+
+    padding:
+      14px !important;
+  }
+
+
+  body.ess-home-page
+  .ess-process-icon {
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+}

@@ -1,0 +1,2176 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   HOMEPAGE - CLEAN FINAL
+========================================================= */
+
+:root {
+  --home-navy: #071B2E;
+  --home-navy-2: #0B2A47;
+  --home-gold: #D2AA52;
+  --home-gold-light: #E9CF8A;
+  --home-gold-dark: #B88A32;
+  --home-soft: #F6F8FA;
+  --home-text: #263746;
+  --home-muted: #667580;
+  --home-border: #DFE5E9;
+  --home-max: 1380px;
+}
+
+
+body.ess-home-page *,
+body.ess-home-page *::before,
+body.ess-home-page *::after {
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.ess-home-body-wrap {
+  width: 100%;
+  max-width: var(--home-max);
+
+  margin: 0 auto;
+
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+
+/* =========================================================
+   SHARED HEADINGS
+========================================================= */
+
+.ess-home-label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: var(--home-gold-dark);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: .15em;
+}
+
+
+.ess-home-section-head {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0,1fr)
+    minmax(280px,.40fr);
+
+  gap: 55px;
+
+  align-items: end;
+
+  margin-bottom: 31px;
+}
+
+
+.ess-home-section-head h2,
+.ess-home-simple-head h2,
+.ess-home-about h2 {
+  margin: 0;
+
+  color: var(--home-navy);
+
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size:
+    clamp(31px,3.5vw,48px);
+
+  font-weight: 700;
+
+  line-height: 1.08;
+
+  letter-spacing: -.04em;
+}
+
+
+.ess-home-section-head h2 strong,
+.ess-home-simple-head h2 strong,
+.ess-home-about h2 strong {
+  color: var(--home-gold-dark);
+}
+
+
+.ess-home-section-side p {
+  margin: 0;
+
+  color: var(--home-muted);
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+.ess-home-section-side > a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 12px;
+
+  color: var(--home-navy) !important;
+
+  text-decoration: none !important;
+
+  font-size: 9px;
+
+  font-weight: 800;
+}
+
+
+.ess-home-simple-head {
+  margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.ess-home-hero {
+  overflow: hidden;
+
+  background: var(--home-navy);
+}
+
+
+.ess-home-hero-stage {
+  position: relative;
+
+  width: 100%;
+
+  background: var(--home-navy);
+}
+
+
+.ess-home-hero-slide {
+  display: none;
+
+  width: 100%;
+  max-width: var(--home-max);
+
+  min-height: 470px;
+
+  grid-template-columns:
+    minmax(0,.82fr)
+    minmax(0,1.18fr);
+
+  grid-template-areas:
+    "copy photo";
+
+  margin: 0 auto;
+
+  background:
+    linear-gradient(
+      135deg,
+      #04121F,
+      var(--home-navy-2)
+    );
+}
+
+
+.ess-home-hero-slide.is-active {
+  display: grid;
+}
+
+
+.ess-home-hero-photo {
+  grid-area: photo;
+
+  min-width: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: #061725;
+}
+
+
+.ess-home-hero-photo picture {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+.ess-home-hero-photo img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+  object-position: center;
+
+  background: #061725;
+}
+
+
+.ess-home-hero-copy {
+  grid-area: copy;
+
+  min-width: 0;
+
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+
+  padding:
+    48px 44px 56px 24px;
+}
+
+
+.ess-home-hero-kicker {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: var(--home-gold-light);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: .15em;
+}
+
+
+.ess-home-hero-kicker::before {
+  content: "";
+
+  width: 30px;
+  height: 2px;
+
+  background: var(--home-gold);
+}
+
+
+.ess-home-hero-copy h1 {
+  max-width: 630px;
+
+  margin: 14px 0 0;
+
+  color: #FFFFFF;
+
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size:
+    clamp(40px,4.2vw,59px);
+
+  line-height: 1.04;
+
+  letter-spacing: -.045em;
+}
+
+
+.ess-home-hero-copy h1 strong {
+  display: block;
+
+  color: var(--home-gold-light);
+}
+
+
+.ess-home-hero-copy > p {
+  max-width: 540px;
+
+  margin: 16px 0 0;
+
+  color:
+    rgba(255,255,255,.67);
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+.ess-home-hero-actions {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 9px;
+
+  margin-top: 22px;
+}
+
+
+.ess-home-hero-actions a {
+  min-height: 47px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 11px 17px;
+
+  text-decoration: none !important;
+
+  font-size: 9px;
+
+  font-weight: 800;
+}
+
+
+.ess-home-hero-primary {
+  color: var(--home-navy) !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--home-gold-light),
+      var(--home-gold)
+    );
+}
+
+
+.ess-home-hero-secondary {
+  color: #FFFFFF !important;
+
+  border:
+    1px solid rgba(255,255,255,.25);
+}
+
+
+/* HERO CONTROLS */
+
+.ess-home-hero-counter {
+  position: absolute;
+
+  left: calc(50% - 675px);
+  bottom: 17px;
+
+  z-index: 20;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color:
+    rgba(255,255,255,.55);
+
+  font-size: 8px;
+}
+
+
+.ess-home-hero-counter
+span:first-child {
+  color: var(--home-gold-light);
+
+  font-weight: 800;
+}
+
+
+.ess-home-hero-counter i {
+  width: 30px;
+  height: 1px;
+
+  background:
+    rgba(255,255,255,.25);
+}
+
+
+.ess-home-hero-arrows {
+  position: absolute;
+
+  right: calc(50% - 675px);
+  bottom: 14px;
+
+  z-index: 20;
+
+  display: flex;
+
+  gap: 5px;
+}
+
+
+.ess-home-hero-arrows button {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #FFFFFF;
+
+  background:
+    rgba(7,27,46,.72);
+
+  border:
+    1px solid rgba(255,255,255,.17);
+
+  cursor: pointer;
+}
+
+
+/* HERO NAV */
+
+.ess-home-hero-nav {
+  background: #FFFFFF;
+
+  border-bottom:
+    1px solid var(--home-border);
+}
+
+
+.ess-home-hero-nav-scroll {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4,minmax(0,1fr));
+}
+
+
+.ess-home-hero-nav button {
+  position: relative;
+
+  min-height: 56px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  color: #52616D;
+
+  background: transparent;
+
+  border: 0;
+  border-right:
+    1px solid var(--home-border);
+
+  cursor: pointer;
+
+  font-family:
+    Inter, sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 700;
+}
+
+
+.ess-home-hero-nav button:first-child {
+  border-left:
+    1px solid var(--home-border);
+}
+
+
+.ess-home-hero-nav button span {
+  color: var(--home-gold-dark);
+
+  font-size: 7px;
+}
+
+
+.ess-home-hero-nav button::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: -1px;
+
+  height: 3px;
+
+  background: var(--home-gold);
+
+  transform: scaleX(0);
+
+  transition:
+    transform .2s ease;
+}
+
+
+.ess-home-hero-nav button.is-active {
+  color: var(--home-navy);
+
+  background: #FFFCF5;
+}
+
+
+.ess-home-hero-nav
+button.is-active::after {
+  transform: scaleX(1);
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.ess-home-services {
+  padding: 64px 0 !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      #061725,
+      var(--home-navy-2)
+    );
+}
+
+
+.ess-home-services
+.ess-home-label {
+  color: var(--home-gold-light);
+}
+
+
+.ess-home-services
+.ess-home-section-head h2 {
+  color: #FFFFFF;
+}
+
+
+.ess-home-services
+.ess-home-section-head h2 strong {
+  color: var(--home-gold-light);
+}
+
+
+.ess-home-services
+.ess-home-section-side p {
+  color:
+    rgba(255,255,255,.57);
+}
+
+
+.ess-home-services
+.ess-home-section-side > a {
+  color: var(--home-gold-light) !important;
+}
+
+
+.ess-home-service-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,minmax(0,1fr));
+
+  gap: 14px;
+}
+
+
+.ess-home-service-card {
+  min-width: 0;
+
+  overflow: hidden;
+
+  background: #FFFFFF;
+}
+
+
+.ess-home-service-photo {
+  position: relative;
+
+  display: block;
+
+  overflow: hidden;
+
+  background: #E8ECEF;
+}
+
+
+.ess-home-service-photo picture,
+.ess-home-service-photo img {
+  width: 100%;
+
+  display: block;
+}
+
+
+.ess-home-service-photo picture {
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+}
+
+
+.ess-home-service-photo img {
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center top;
+
+  transition:
+    transform .3s ease;
+}
+
+
+.ess-home-service-card:hover
+.ess-home-service-photo img {
+  transform: scale(1.018);
+}
+
+
+.ess-home-service-photo > span {
+  position: absolute;
+
+  left: 14px;
+  bottom: 12px;
+
+  z-index: 2;
+
+  color: #FFFFFF;
+
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size: 23px;
+
+  font-weight: 800;
+
+  text-shadow:
+    0 2px 12px rgba(0,0,0,.45);
+}
+
+
+.ess-home-service-photo::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(7,27,46,.32),
+      transparent 44%
+    );
+}
+
+
+.ess-home-service-content {
+  padding: 19px 20px 21px;
+}
+
+
+.ess-home-service-content h3 {
+  margin: 0;
+
+  color: var(--home-navy);
+
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size: 15px;
+
+  line-height: 1.3;
+}
+
+
+.ess-home-service-content p {
+  min-height: 40px;
+
+  margin: 7px 0 0;
+
+  color: var(--home-muted);
+
+  font-size: 10px;
+
+  line-height: 1.6;
+}
+
+
+.ess-home-service-content > a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 13px;
+
+  color: var(--home-navy) !important;
+
+  text-decoration: none !important;
+
+  font-size: 8px;
+
+  font-weight: 800;
+}
+
+
+/* CUSTOM SERVICE */
+
+.ess-home-custom-service {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-top: 16px;
+
+  padding: 22px 24px;
+
+  border:
+    1px solid rgba(255,255,255,.12);
+
+  background:
+    rgba(255,255,255,.035);
+}
+
+
+.ess-home-custom-service span,
+.ess-home-custom-service strong {
+  display: block;
+}
+
+
+.ess-home-custom-service span {
+  color: var(--home-gold);
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: .13em;
+}
+
+
+.ess-home-custom-service strong {
+  margin-top: 4px;
+
+  color: #FFFFFF;
+
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size: 14px;
+}
+
+
+.ess-home-custom-service p {
+  margin: 4px 0 0;
+
+  color:
+    rgba(255,255,255,.52);
+
+  font-size: 9px;
+}
+
+
+.ess-home-custom-service > a {
+  min-height: 44px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  flex-shrink: 0;
+
+  padding: 10px 16px;
+
+  color: var(--home-navy) !important;
+
+  background: var(--home-gold-light);
+
+  text-decoration: none !important;
+
+  font-size: 8px;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.ess-home-about {
+  padding: 62px 0 !important;
+
+  background: #FFFFFF;
+}
+
+
+.ess-home-about-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0,1.15fr)
+    minmax(360px,.85fr);
+
+  gap: 60px;
+
+  align-items: center;
+}
+
+
+.ess-home-about-main p {
+  max-width: 720px;
+
+  margin: 16px 0 0;
+
+  color: var(--home-muted);
+
+  font-size: 12px;
+
+  line-height: 1.75;
+}
+
+
+.ess-home-about-main > a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 18px;
+
+  color: var(--home-navy) !important;
+
+  text-decoration: none !important;
+
+  font-size: 9px;
+
+  font-weight: 800;
+}
+
+
+.ess-home-values {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,minmax(0,1fr));
+
+  border-top:
+    1px solid var(--home-border);
+
+  border-left:
+    1px solid var(--home-border);
+}
+
+
+.ess-home-values > div {
+  min-height: 112px;
+
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 17px;
+
+  border-right:
+    1px solid var(--home-border);
+
+  border-bottom:
+    1px solid var(--home-border);
+}
+
+
+.ess-home-values span {
+  color: var(--home-gold-dark);
+
+  font-size: 8px;
+
+  font-weight: 800;
+}
+
+
+.ess-home-values strong {
+  margin-top: 8px;
+
+  color: var(--home-navy);
+
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   WHY
+========================================================= */
+
+.ess-home-why {
+  padding: 58px 0 !important;
+
+  background: var(--home-soft);
+}
+
+
+.ess-home-why-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4,minmax(0,1fr));
+
+  border-top:
+    1px solid var(--home-border);
+
+  border-left:
+    1px solid var(--home-border);
+}
+
+
+.ess-home-why-grid article {
+  display: grid;
+
+  grid-template-columns:
+    38px minmax(0,1fr);
+
+  gap: 12px;
+
+  min-height: 145px;
+
+  padding: 22px;
+
+  background: #FFFFFF;
+
+  border-right:
+    1px solid var(--home-border);
+
+  border-bottom:
+    1px solid var(--home-border);
+}
+
+
+.ess-home-why-grid article > i {
+  color: var(--home-gold-dark);
+
+  font-size: 20px;
+}
+
+
+.ess-home-why-grid span {
+  color: var(--home-gold-dark);
+
+  font-size: 7px;
+
+  font-weight: 800;
+}
+
+
+.ess-home-why-grid strong {
+  display: block;
+
+  margin-top: 6px;
+
+  color: var(--home-navy);
+
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size: 12px;
+}
+
+
+.ess-home-why-grid p {
+  margin: 6px 0 0;
+
+  color: var(--home-muted);
+
+  font-size: 9px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   TRAINING
+========================================================= */
+
+.ess-home-training {
+  padding: 60px 0 !important;
+
+  background: #FFFFFF;
+}
+
+
+.ess-home-training-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4,minmax(0,1fr));
+
+  gap: 10px;
+}
+
+
+.ess-home-training-grid article {
+  position: relative;
+
+  min-height: 155px;
+
+  padding: 22px;
+
+  background: var(--home-soft);
+
+  border:
+    1px solid var(--home-border);
+}
+
+
+.ess-home-training-grid article > span {
+  position: absolute;
+
+  top: 15px;
+  right: 16px;
+
+  color:
+    rgba(7,27,46,.18);
+
+  font-size: 8px;
+
+  font-weight: 800;
+}
+
+
+.ess-home-training-grid i {
+  color: var(--home-gold-dark);
+
+  font-size: 22px;
+}
+
+
+.ess-home-training-grid strong {
+  display: block;
+
+  margin-top: 18px;
+
+  color: var(--home-navy);
+
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size: 12px;
+}
+
+
+.ess-home-training-grid p {
+  margin: 6px 0 0;
+
+  color: var(--home-muted);
+
+  font-size: 9px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   INDUSTRIES
+========================================================= */
+
+.ess-home-industries {
+  padding: 62px 0 !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      #061725,
+      var(--home-navy-2)
+    );
+}
+
+
+.ess-home-section-head-dark
+.ess-home-label {
+  color: var(--home-gold-light);
+}
+
+
+.ess-home-section-head-dark h2 {
+  color: #FFFFFF;
+}
+
+
+.ess-home-section-head-dark h2 strong {
+  color: var(--home-gold-light);
+}
+
+
+.ess-home-section-head-dark
+.ess-home-section-side > a {
+  color: var(--home-gold-light) !important;
+}
+
+
+.ess-home-industry-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3,minmax(0,1fr));
+
+  border-top:
+    1px solid rgba(255,255,255,.10);
+
+  border-left:
+    1px solid rgba(255,255,255,.10);
+}
+
+
+.ess-home-industry-grid > a {
+  position: relative;
+
+  min-height: 132px;
+
+  display: grid;
+
+  grid-template-columns:
+    42px minmax(0,1fr);
+
+  gap: 13px;
+
+  align-items: center;
+
+  padding: 21px;
+
+  color: #FFFFFF !important;
+
+  border-right:
+    1px solid rgba(255,255,255,.10);
+
+  border-bottom:
+    1px solid rgba(255,255,255,.10);
+
+  text-decoration: none !important;
+}
+
+
+.ess-home-industry-grid > a:hover {
+  background:
+    rgba(255,255,255,.04);
+}
+
+
+.ess-home-industry-grid i {
+  color: var(--home-gold);
+
+  font-size: 21px;
+}
+
+
+.ess-home-industry-grid span {
+  position: absolute;
+
+  top: 13px;
+  right: 14px;
+
+  color:
+    rgba(255,255,255,.25);
+
+  font-size: 7px;
+
+  font-weight: 800;
+}
+
+
+.ess-home-industry-grid strong {
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   CLIENTS
+========================================================= */
+
+.ess-home-clients {
+  padding: 60px 0 !important;
+
+  background: #FFFFFF;
+}
+
+
+.ess-home-client-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4,minmax(0,1fr));
+
+  border-top:
+    1px solid var(--home-border);
+
+  border-left:
+    1px solid var(--home-border);
+}
+
+
+.ess-home-client-grid > div {
+  min-height: 78px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 13px;
+
+  color: var(--home-navy);
+
+  border-right:
+    1px solid var(--home-border);
+
+  border-bottom:
+    1px solid var(--home-border);
+
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  line-height: 1.4;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   CONTACT CTA
+========================================================= */
+
+.ess-home-contact {
+  padding: 0 0 64px !important;
+
+  background: #FFFFFF;
+}
+
+
+.ess-home-contact-card {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0,1.2fr)
+    minmax(300px,.8fr);
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--home-navy),
+      var(--home-navy-2)
+    );
+}
+
+
+.ess-home-contact-card > div:first-child {
+  padding: 38px 40px;
+}
+
+
+.ess-home-contact-card
+> div:first-child > span {
+  color: var(--home-gold-light);
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: .14em;
+}
+
+
+.ess-home-contact h2 {
+  margin: 8px 0 0;
+
+  color: #FFFFFF;
+
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size:
+    clamp(28px,3vw,40px);
+
+  line-height: 1.12;
+}
+
+
+.ess-home-contact h2 strong {
+  color: var(--home-gold-light);
+}
+
+
+.ess-home-contact-card
+> div:first-child > p {
+  max-width: 600px;
+
+  margin: 11px 0 0;
+
+  color:
+    rgba(255,255,255,.58);
+
+  font-size: 11px;
+
+  line-height: 1.65;
+}
+
+
+.ess-home-contact-actions {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 9px;
+
+  margin-top: 20px;
+}
+
+
+.ess-home-contact-actions a {
+  min-height: 48px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 11px 17px;
+
+  text-decoration: none !important;
+
+  font-size: 9px;
+
+  font-weight: 800;
+}
+
+
+.ess-home-contact-main {
+  color: var(--home-navy) !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--home-gold-light),
+      var(--home-gold)
+    );
+}
+
+
+.ess-home-contact-call {
+  color: #FFFFFF !important;
+
+  border:
+    1px solid rgba(255,255,255,.25);
+}
+
+
+.ess-home-contact-office {
+  padding: 30px;
+
+  background:
+    rgba(0,0,0,.12);
+
+  border-left:
+    1px solid rgba(255,255,255,.09);
+}
+
+
+.ess-home-contact-office > div {
+  position: relative;
+
+  padding:
+    15px 0 15px 31px;
+
+  border-bottom:
+    1px solid rgba(255,255,255,.09);
+}
+
+
+.ess-home-contact-office i {
+  position: absolute;
+
+  left: 0;
+  top: 18px;
+
+  color: var(--home-gold);
+
+  font-size: 14px;
+}
+
+
+.ess-home-contact-office span,
+.ess-home-contact-office strong {
+  display: block;
+}
+
+
+.ess-home-contact-office span {
+  color: var(--home-gold-light);
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: .12em;
+}
+
+
+.ess-home-contact-office strong,
+.ess-home-contact-office a {
+  margin-top: 4px;
+
+  color:
+    rgba(255,255,255,.80) !important;
+
+  font-size: 9px;
+
+  line-height: 1.6;
+}
+
+
+.ess-home-office-link {
+  position: relative;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  margin-top: 17px !important;
+
+  padding-bottom: 4px;
+
+  color: var(--home-gold-light) !important;
+
+  border-bottom:
+    1px solid rgba(210,170,82,.55);
+
+  text-decoration: none !important;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   HOME ACTIVE NAV
+========================================================= */
+
+@media (min-width: 992px) {
+
+  body.ess-home-page
+  .ess-nav-list
+  a[href="index.html"] {
+    color: #B88A32 !important;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  .ess-home-body-wrap {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+
+  .ess-home-hero-slide {
+    min-height: 420px;
+
+    grid-template-columns:
+      minmax(0,.95fr)
+      minmax(0,1.05fr);
+  }
+
+
+  .ess-home-hero-copy {
+    padding:
+      38px 25px 48px 20px;
+  }
+
+
+  .ess-home-hero-counter {
+    left: 20px;
+  }
+
+
+  .ess-home-hero-arrows {
+    right: 20px;
+  }
+
+
+  .ess-home-service-grid {
+    grid-template-columns:
+      repeat(2,minmax(0,1fr));
+  }
+
+
+  .ess-home-about-grid {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+
+  .ess-home-why-grid,
+  .ess-home-training-grid {
+    grid-template-columns:
+      repeat(2,minmax(0,1fr));
+  }
+
+
+  .ess-home-industry-grid {
+    grid-template-columns:
+      repeat(2,minmax(0,1fr));
+  }
+
+
+  .ess-home-client-grid {
+    grid-template-columns:
+      repeat(3,minmax(0,1fr));
+  }
+
+
+  .ess-home-contact-card {
+    grid-template-columns: 1fr;
+  }
+
+
+  .ess-home-contact-office {
+    border-left: 0;
+
+    border-top:
+      1px solid rgba(255,255,255,.09);
+  }
+
+}
+
+
+/* =========================================================
+   PHONE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  .ess-home-body-wrap {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+
+  /* =======================================================
+     MOBILE HERO
+     Complete mobile photo is displayed naturally.
+  ======================================================= */
+
+  .ess-home-hero-stage {
+    background: var(--home-navy);
+  }
+
+
+  .ess-home-hero-slide,
+  .ess-home-hero-slide.is-active {
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+      "photo"
+      "copy";
+
+    min-height: 0;
+  }
+
+
+  .ess-home-hero-photo {
+    width: 100%;
+    height: auto;
+
+    min-height: 0;
+
+    background: #061725;
+  }
+
+
+  .ess-home-hero-photo picture {
+    width: 100%;
+    height: auto;
+
+    display: block;
+  }
+
+
+  .ess-home-hero-photo img {
+    position: static;
+
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+    object-position: center top;
+
+    background: #061725;
+  }
+
+
+  .ess-home-hero-copy {
+    padding:
+      26px 18px 58px;
+
+    background:
+      linear-gradient(
+        135deg,
+        #04121F,
+        var(--home-navy-2)
+      );
+  }
+
+
+  .ess-home-hero-kicker {
+    font-size: 8px;
+  }
+
+
+  .ess-home-hero-kicker::before {
+    width: 22px;
+  }
+
+
+  .ess-home-hero-copy h1 {
+    font-size:
+      clamp(32px,9.5vw,42px);
+
+    line-height: 1.08;
+  }
+
+
+  .ess-home-hero-copy > p {
+    font-size: 12px;
+  }
+
+
+  .ess-home-hero-actions {
+    display: grid;
+  }
+
+
+  .ess-home-hero-actions a {
+    width: 100%;
+
+    min-height: 49px;
+  }
+
+
+  .ess-home-hero-counter {
+    left: 18px;
+    bottom: 15px;
+  }
+
+
+  .ess-home-hero-arrows {
+    right: 18px;
+    bottom: 11px;
+  }
+
+
+  /* HERO SLIDE NAV */
+
+  .ess-home-hero-nav {
+    overflow: hidden;
+  }
+
+
+  .ess-home-hero-nav
+  .ess-home-body-wrap {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+  .ess-home-hero-nav-scroll {
+    display: flex;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+
+    -webkit-overflow-scrolling:
+      touch;
+  }
+
+
+  .ess-home-hero-nav-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  .ess-home-hero-nav button {
+    min-width: max-content;
+    min-height: 47px;
+
+    flex: 0 0 auto;
+
+    padding:
+      8px 17px;
+  }
+
+
+  /* SHARED HEAD */
+
+  .ess-home-section-head {
+    display: block;
+
+    margin-bottom: 25px;
+  }
+
+
+  .ess-home-section-side {
+    margin-top: 13px;
+  }
+
+
+  .ess-home-section-head h2,
+  .ess-home-simple-head h2,
+  .ess-home-about h2 {
+    font-size:
+      clamp(28px,8.4vw,38px);
+  }
+
+
+  /* SERVICES */
+
+  .ess-home-services {
+    padding:
+      48px 0 !important;
+  }
+
+
+  .ess-home-service-grid {
+    grid-template-columns: 1fr;
+
+    gap: 13px;
+  }
+
+
+  /*
+     Important:
+     Do NOT force 4:5 box.
+     Mobile image keeps its full natural dimensions.
+  */
+
+  .ess-home-service-photo picture {
+    aspect-ratio: auto;
+
+    height: auto;
+
+    display: block;
+  }
+
+
+  .ess-home-service-photo img {
+    position: static;
+
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+    object-position: center top;
+
+    transform: none !important;
+  }
+
+
+  .ess-home-service-content {
+    padding:
+      17px 17px 19px;
+  }
+
+
+  .ess-home-service-content h3 {
+    font-size: 16px;
+  }
+
+
+  .ess-home-service-content p {
+    min-height: 0;
+
+    font-size: 11px;
+  }
+
+
+  .ess-home-custom-service {
+    align-items: stretch;
+
+    flex-direction: column;
+
+    padding: 19px;
+  }
+
+
+  .ess-home-custom-service > a {
+    width: 100%;
+
+    min-height: 48px;
+  }
+
+
+  /* ABOUT */
+
+  .ess-home-about {
+    padding:
+      46px 0 !important;
+  }
+
+
+  .ess-home-values {
+    grid-template-columns: 1fr;
+  }
+
+
+  .ess-home-values > div {
+    min-height: 64px;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 12px;
+  }
+
+
+  .ess-home-values strong {
+    margin-top: 0;
+  }
+
+
+  /* WHY */
+
+  .ess-home-why {
+    padding:
+      46px 0 !important;
+  }
+
+
+  .ess-home-why-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .ess-home-why-grid article {
+    min-height: 0;
+
+    padding: 18px;
+  }
+
+
+  /* TRAINING */
+
+  .ess-home-training {
+    padding:
+      46px 0 !important;
+  }
+
+
+  .ess-home-training-grid {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px;
+  }
+
+
+  .ess-home-training-grid article {
+    min-height: 142px;
+
+    padding: 17px;
+  }
+
+
+  /* INDUSTRIES */
+
+  .ess-home-industries {
+    padding:
+      48px 0 !important;
+  }
+
+
+  .ess-home-industry-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .ess-home-industry-grid > a {
+    min-height: 78px;
+
+    padding: 17px;
+  }
+
+
+  /* CLIENTS */
+
+  .ess-home-clients {
+    padding:
+      47px 0 !important;
+  }
+
+
+  .ess-home-client-grid {
+    grid-template-columns:
+      repeat(2,minmax(0,1fr));
+  }
+
+
+  .ess-home-client-grid > div {
+    min-height: 70px;
+
+    padding: 10px;
+
+    font-size: 8px;
+  }
+
+
+  /* CTA */
+
+  .ess-home-contact {
+    padding:
+      0 0 44px !important;
+  }
+
+
+  .ess-home-contact-card
+  > div:first-child {
+    padding:
+      27px 20px;
+  }
+
+
+  .ess-home-contact-actions {
+    display: grid;
+  }
+
+
+  .ess-home-contact-actions a {
+    width: 100%;
+  }
+
+
+  .ess-home-contact-office {
+    padding:
+      22px 20px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONE
+========================================================= */
+
+@media (max-width: 390px) {
+
+  .ess-home-training-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .ess-home-client-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .ess-home-service-photo img {
+    width: 100% !important;
+    height: auto !important;
+
+    object-fit: contain !important;
+  }
+
+
+  .ess-home-hero-photo img {
+    width: 100% !important;
+    height: auto !important;
+
+    object-fit: contain !important;
+  }
+
+}
+
+
+/* HOME BODY MOBILE PHOTO FIX START */
+
+/* =========================================================
+   HOMEPAGE SERVICE PHOTOS
+   PHONE: SHOW COMPLETE MOBILE IMAGE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  body.ess-home-page
+  .ess-services-grid
+  .ess-service-card-photo {
+    width: 100% !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    aspect-ratio: auto !important;
+
+    overflow: hidden !important;
+
+    background: #071B2E !important;
+  }
+
+
+  body.ess-home-page
+  .ess-services-grid
+  .ess-service-card-photo picture {
+    width: 100% !important;
+    height: auto !important;
+
+    display: block !important;
+
+    aspect-ratio: auto !important;
+  }
+
+
+  body.ess-home-page
+  .ess-services-grid
+  .ess-service-card-photo img {
+    position: static !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    max-width: 100% !important;
+
+    display: block !important;
+
+    object-fit: contain !important;
+    object-position: center top !important;
+
+    transform: none !important;
+  }
+
+}
+
+
+/* Smaller phones */
+
+@media (max-width: 390px) {
+
+  body.ess-home-page
+  .ess-services-grid
+  .ess-service-card-photo,
+  body.ess-home-page
+  .ess-services-grid
+  .ess-service-card-photo picture {
+    aspect-ratio: auto !important;
+    height: auto !important;
+  }
+
+
+  body.ess-home-page
+  .ess-services-grid
+  .ess-service-card-photo img {
+    height: auto !important;
+
+    object-fit: contain !important;
+  }
+
+}
+
+/* HOME BODY MOBILE PHOTO FIX END */
+
+
+/* HOME RESTORE MOBILE IMAGE FIX START */
+
+@media (max-width: 767.98px) {
+
+  body.ess-home-page
+  .ess-services-grid
+  .ess-service-card-photo {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+
+    aspect-ratio: auto !important;
+
+    overflow: hidden !important;
+  }
+
+
+  body.ess-home-page
+  .ess-services-grid
+  .ess-service-card-photo picture {
+    width: 100% !important;
+    height: auto !important;
+
+    display: block !important;
+
+    aspect-ratio: auto !important;
+  }
+
+
+  body.ess-home-page
+  .ess-services-grid
+  .ess-service-card-photo img {
+    position: static !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    max-width: 100% !important;
+
+    display: block !important;
+
+    object-fit: contain !important;
+    object-position: center top !important;
+
+    transform: none !important;
+  }
+
+}
+
+
+/* HOME RESTORE MOBILE IMAGE FIX END */

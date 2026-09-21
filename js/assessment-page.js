@@ -1,9 +1,174 @@
 ﻿(function () {
 
+  "use strict";
+
+
+  function getStatusElements() {
+
+    return {
+
+      modal:
+        document.getElementById(
+          "essAssessmentStatus"
+        ),
+
+      icon:
+        document.getElementById(
+          "essAssessmentStatusIcon"
+        ),
+
+      label:
+        document.getElementById(
+          "essAssessmentStatusLabel"
+        ),
+
+      title:
+        document.getElementById(
+          "essAssessmentStatusTitle"
+        ),
+
+      message:
+        document.getElementById(
+          "essAssessmentStatusMessage"
+        )
+
+    };
+
+  }
+
+
+  function showStatus(type, title, message) {
+
+    const status =
+      getStatusElements();
+
+
+    if (!status.modal) {
+      return;
+    }
+
+
+    status.modal.classList.remove(
+      "is-success",
+      "is-error"
+    );
+
+
+    status.modal.classList.add(
+      type === "error"
+        ? "is-error"
+        : "is-success"
+    );
+
+
+    if (status.title) {
+      status.title.textContent =
+        title;
+    }
+
+
+    if (status.message) {
+      status.message.textContent =
+        message;
+    }
+
+
+    if (status.label) {
+
+      status.label.textContent =
+        type === "error"
+          ? "ACTION REQUIRED"
+          : "REQUEST STATUS";
+
+    }
+
+
+    if (status.icon) {
+
+      status.icon.innerHTML =
+        type === "error"
+          ? '<i class="fa fa-exclamation"></i>'
+          : '<i class="fa fa-check"></i>';
+
+    }
+
+
+    status.modal.classList.add(
+      "is-open"
+    );
+
+
+    status.modal.setAttribute(
+      "aria-hidden",
+      "false"
+    );
+
+  }
+
+
+  function closeStatus() {
+
+    const status =
+      getStatusElements();
+
+
+    if (!status.modal) {
+      return;
+    }
+
+
+    status.modal.classList.remove(
+      "is-open"
+    );
+
+
+    status.modal.setAttribute(
+      "aria-hidden",
+      "true"
+    );
+
+  }
+
+
+  function initStatusPopup() {
+
+    document
+      .querySelectorAll(
+        "[data-assessment-status-close]"
+      )
+      .forEach(
+        function (button) {
+
+          button.addEventListener(
+            "click",
+            closeStatus
+          );
+
+        }
+      );
+
+
+    document.addEventListener(
+      "keydown",
+      function (event) {
+
+        if (event.key === "Escape") {
+          closeStatus();
+        }
+
+      }
+    );
+
+  }
+
+
   function initAssessmentForm() {
 
     const form =
-      document.getElementById("essAssessmentForm");
+      document.getElementById(
+        "essAssessmentForm"
+      );
+
 
     if (!form) {
       return;
@@ -19,45 +184,58 @@
 
         if (!form.checkValidity()) {
 
-          form.reportValidity();
+          showStatus(
+            "error",
+            "Please complete the required fields",
+            "Enter your name, phone number, required service and site location before continuing."
+          );
+
+
+          setTimeout(
+            function () {
+              form.reportValidity();
+            },
+            250
+          );
+
 
           return;
+
         }
 
 
-        const get =
-          function (id) {
+        function get(id) {
 
-            const el =
-              document.getElementById(id);
+          const element =
+            document.getElementById(id);
 
-            return el
-              ? el.value.trim()
-              : "";
 
-          };
+          return element
+            ? String(
+                element.value || ""
+              ).trim()
+            : "";
+
+        }
 
 
         const name =
           get("assessmentName");
 
-        const company =
-          get("assessmentCompany");
-
         const phone =
           get("assessmentPhone");
+
+        const company =
+          get("assessmentCompany");
 
         const email =
           get("assessmentEmail");
 
-        const industry =
-          get("assessmentIndustry");
+        const service =
+          get("assessmentService");
 
         const location =
           get("assessmentLocation");
-
-        const service =
-          get("assessmentService");
 
         const people =
           get("assessmentPeople");
@@ -72,74 +250,173 @@
           get("assessmentMessage");
 
 
+        const subjectParts = [
+          "Assessment Request",
+          service
+        ];
+
+
+        if (company) {
+
+          subjectParts.push(
+            company
+          );
+
+        }
+        else {
+
+          subjectParts.push(
+            name
+          );
+
+        }
+
+
         const subject =
-          "Security Assessment Request - " +
-          company;
+          subjectParts.join(" - ");
 
 
-        const body = [
+        const lines = [
 
           "Dear Ethics Security Service,",
 
           "",
 
-          "I would like to request an assessment for the following requirement.",
+          "I would like to request an assessment.",
 
           "",
 
-          "CONTACT INFORMATION",
+          "CONTACT",
 
           "Name: " + name,
 
-          "Company / Organization: " + company,
+          "Phone: " + phone
 
-          "Phone: " + phone,
+        ];
 
-          "Email: " + (email || "Not specified"),
 
+        if (company) {
+
+          lines.push(
+            "Company / Organization: " +
+            company
+          );
+
+        }
+
+
+        if (email) {
+
+          lines.push(
+            "Email: " +
+            email
+          );
+
+        }
+
+
+        lines.push(
           "",
+          "REQUIREMENT",
+          "Service: " + service,
+          "Location: " + location
+        );
 
-          "SITE INFORMATION",
 
-          "Facility / Industry: " + industry,
+        if (people) {
 
-          "Site Location: " + location,
+          lines.push(
+            "Estimated Personnel: " +
+            people
+          );
 
+        }
+
+
+        if (duty) {
+
+          lines.push(
+            "Duty / Shift: " +
+            duty
+          );
+
+        }
+
+
+        if (start) {
+
+          lines.push(
+            "Expected Start Date: " +
+            start
+          );
+
+        }
+
+
+        if (message) {
+
+          lines.push(
+            "",
+            "ADDITIONAL DETAILS",
+            message
+          );
+
+        }
+
+
+        lines.push(
           "",
-
-          "SERVICE REQUIREMENT",
-
-          "Service Required: " + service,
-
-          "Estimated Personnel: " + (people || "To be discussed"),
-
-          "Duty / Shift Requirement: " + (duty || "To be discussed"),
-
-          "Expected Start Date: " + (start || "To be discussed"),
-
-          "",
-
-          "OPERATING DETAILS",
-
-          message,
-
-          "",
-
           "Regards,",
-
-          name,
-
-          company
-
-        ].join("\n");
+          name
+        );
 
 
-        window.location.href =
+        if (company) {
+
+          lines.push(
+            company
+          );
+
+        }
+
+
+        const body =
+          lines.join("\n");
+
+
+        const mailto =
           "mailto:ethicssupplier@gmail.com" +
           "?subject=" +
           encodeURIComponent(subject) +
           "&body=" +
           encodeURIComponent(body);
+
+
+        /*
+         * IMPORTANT:
+         * Mailto cannot confirm that an email
+         * was actually sent.
+         *
+         * We therefore tell the user accurately
+         * that the request has been prepared.
+         */
+
+        showStatus(
+          "success",
+          "Your request is ready",
+          "Your email application is opening with the request prepared. Please review the message and press Send."
+        );
+
+
+        setTimeout(
+          function () {
+
+            window.location.href =
+              mailto;
+
+          },
+          700
+        );
 
       }
     );
@@ -147,18 +424,29 @@
   }
 
 
+  function initialize() {
+
+    initStatusPopup();
+
+    initAssessmentForm();
+
+  }
+
+
   if (
-    document.readyState === "loading"
+    document.readyState ===
+    "loading"
   ) {
 
     document.addEventListener(
       "DOMContentLoaded",
-      initAssessmentForm
+      initialize
     );
 
-  } else {
+  }
+  else {
 
-    initAssessmentForm();
+    initialize();
 
   }
 

@@ -1,0 +1,281 @@
+/* =========================================================
+   ETHICS SECURITY SERVICE
+   SERVICE PAGE VISUAL FINAL FIX
+
+   Restores real service photos on desktop.
+   Keeps existing responsive/mobile structure.
+========================================================= */
+
+
+/* =========================================================
+   SERVICE PHOTO CONTAINER
+========================================================= */
+
+body.ess-service-page
+.ess-service-final-image {
+
+    position: relative !important;
+
+    display: block !important;
+
+    width: 100% !important;
+
+    overflow: hidden !important;
+
+    background: #E8EDF0 !important;
+
+    isolation: isolate !important;
+}
+
+
+/* picture must fill photo panel */
+
+body.ess-service-page
+.ess-service-final-image > picture {
+
+    position: absolute !important;
+
+    inset: 0 !important;
+
+    z-index: 1 !important;
+
+    display: block !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* REAL IMAGE */
+
+body.ess-service-page
+.ess-service-final-image > picture > img {
+
+    position: absolute !important;
+
+    inset: 0 !important;
+
+    z-index: 1 !important;
+
+    display: block !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    max-width: none !important;
+    max-height: none !important;
+
+    object-fit: cover !important;
+    object-position: center center !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    filter: none !important;
+
+    transform: none !important;
+
+    clip-path: none !important;
+
+    mix-blend-mode: normal !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/* Remove any placeholder layer sitting ABOVE the photograph */
+
+body.ess-service-page
+.ess-service-final-image::before {
+
+    content: none !important;
+    display: none !important;
+}
+
+
+/* Keep only a very subtle professional lower overlay */
+
+body.ess-service-page
+.ess-service-final-image::after {
+
+    content: "" !important;
+
+    position: absolute !important;
+
+    inset: 0 !important;
+
+    z-index: 2 !important;
+
+    pointer-events: none !important;
+
+    background:
+      linear-gradient(
+        to top,
+        rgba(7,27,46,.20) 0%,
+        rgba(7,27,46,.05) 28%,
+        transparent 55%
+      ) !important;
+}
+
+
+/* Service number must stay above image */
+
+body.ess-service-page
+.ess-service-final-image-index {
+
+    z-index: 4 !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* =========================================================
+   DESKTOP / LAPTOP
+========================================================= */
+
+@media (min-width: 768px) {
+
+    body.ess-service-page
+    .ess-service-final-image {
+
+        min-height: 430px !important;
+
+        aspect-ratio: auto !important;
+    }
+
+
+    body.ess-service-page
+    #general-security
+    .ess-service-final-image img {
+
+        object-position: center center !important;
+    }
+
+
+    body.ess-service-page
+    #armed-security
+    .ess-service-final-image img {
+
+        object-position: center center !important;
+    }
+
+
+    body.ess-service-page
+    #vip-protection
+    .ess-service-final-image img {
+
+        object-position: center center !important;
+    }
+
+
+    body.ess-service-page
+    #event-security
+    .ess-service-final-image img {
+
+        object-position: center center !important;
+    }
+
+
+    body.ess-service-page
+    #housekeeping
+    .ess-service-final-image img {
+
+        object-position: center center !important;
+    }
+
+
+    body.ess-service-page
+    #industrial-manpower
+    .ess-service-final-image img {
+
+        object-position: center center !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   Keep 1080x1350 / 4:5 photos professional.
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+    body.ess-service-page
+    .ess-service-final-service-grid {
+
+        gap: 24px !important;
+    }
+
+
+    body.ess-service-page
+    .ess-service-final-image {
+
+        min-height: 0 !important;
+
+        aspect-ratio: 4 / 5 !important;
+    }
+
+
+    body.ess-service-page
+    .ess-service-final-image > picture,
+    body.ess-service-page
+    .ess-service-final-image > picture > img {
+
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+
+    body.ess-service-page
+    .ess-service-final-image > picture > img {
+
+        object-fit: cover !important;
+        object-position: center center !important;
+    }
+
+
+    /*
+       Improve mobile text without changing design
+    */
+
+    body.ess-service-page
+    .ess-service-final-content h2 {
+
+        font-size: 28px !important;
+
+        line-height: 1.12 !important;
+    }
+
+
+    body.ess-service-page
+    .ess-service-final-content > p {
+
+        font-size: 13px !important;
+
+        line-height: 1.65 !important;
+    }
+
+
+    body.ess-service-page
+    .ess-service-final-links {
+
+        gap: 8px !important;
+    }
+
+
+    body.ess-service-page
+    .ess-service-final-links > a {
+
+        min-height: 46px !important;
+    }
+
+}

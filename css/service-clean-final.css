@@ -1,0 +1,1575 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   SERVICES PAGE - FINAL CLEAN VERSION
+========================================================= */
+
+:root {
+  --svc-navy: #071B2E;
+  --svc-navy-2: #0B2A47;
+  --svc-gold: #D2AA52;
+  --svc-gold-light: #E9CF8A;
+  --svc-gold-dark: #B88A32;
+  --svc-soft: #F6F8FA;
+  --svc-text: #263746;
+  --svc-muted: #667580;
+  --svc-border: #DFE5E9;
+  --svc-max: 1380px;
+}
+
+
+body.ess-service-page *,
+body.ess-service-page *::before,
+body.ess-service-page *::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   WIDTH
+========================================================= */
+
+.ess-svc-body-wrap {
+  width: 100%;
+  max-width: var(--svc-max);
+
+  margin: 0 auto;
+
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.ess-svc-hero {
+  position: relative;
+
+  min-height: 330px !important;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  padding: 0 !important;
+
+  background:
+    radial-gradient(
+      circle at 84% 18%,
+      rgba(210,170,82,.15),
+      transparent 28%
+    ),
+    linear-gradient(
+      135deg,
+      var(--svc-navy),
+      var(--svc-navy-2)
+    );
+}
+
+
+.ess-svc-hero::after {
+  content: "SERVICES";
+
+  position: absolute;
+
+  right: -20px;
+  bottom: -42px;
+
+  color:
+    rgba(255,255,255,.024);
+
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size:
+    clamp(120px,17vw,250px);
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: -.08em;
+
+  pointer-events: none;
+}
+
+
+.ess-svc-hero-inner {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+  max-width: var(--svc-max);
+
+  margin: 0 auto;
+
+  padding: 42px 24px;
+}
+
+
+.ess-svc-eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  color: var(--svc-gold-light);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: .16em;
+}
+
+
+.ess-svc-eyebrow::before {
+  content: "";
+
+  width: 34px;
+  height: 2px;
+
+  background: var(--svc-gold);
+}
+
+
+.ess-svc-hero h1 {
+  max-width: 850px;
+
+  margin: 14px 0 0;
+
+  color: #FFFFFF;
+
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size:
+    clamp(40px,4.4vw,60px);
+
+  line-height: 1.05;
+
+  letter-spacing: -.045em;
+}
+
+
+.ess-svc-hero h1 strong {
+  color: var(--svc-gold-light);
+}
+
+
+.ess-svc-hero p {
+  max-width: 690px;
+
+  margin: 15px 0 0;
+
+  color:
+    rgba(255,255,255,.68);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+.ess-svc-hero-actions {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: 22px;
+}
+
+
+.ess-svc-hero-actions a {
+  min-height: 47px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 11px 18px;
+
+  text-decoration: none !important;
+
+  font-size: 10px;
+
+  font-weight: 800;
+}
+
+
+.ess-svc-primary {
+  color: var(--svc-navy) !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--svc-gold-light),
+      var(--svc-gold)
+    );
+}
+
+
+.ess-svc-secondary {
+  color: #FFFFFF !important;
+
+  border:
+    1px solid rgba(255,255,255,.28);
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.ess-svc-intro {
+  padding: 52px 0 !important;
+
+  background: #FFFFFF;
+
+  border-bottom:
+    1px solid var(--svc-border);
+}
+
+
+.ess-svc-intro
+.ess-svc-body-wrap {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0,1fr)
+    minmax(300px,.45fr);
+
+  gap: 65px;
+
+  align-items: end;
+}
+
+
+.ess-svc-intro span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: var(--svc-gold-dark);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: .15em;
+}
+
+
+.ess-svc-intro h2 {
+  max-width: 750px;
+
+  margin: 0;
+
+  color: var(--svc-navy);
+
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size:
+    clamp(32px,3.5vw,48px);
+
+  line-height: 1.08;
+
+  letter-spacing: -.04em;
+}
+
+
+.ess-svc-intro h2 strong {
+  color: var(--svc-gold-dark);
+}
+
+
+.ess-svc-intro p {
+  margin: 0;
+
+  color: var(--svc-muted);
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   DIRECTORY
+========================================================= */
+
+.ess-svc-directory {
+  padding: 56px 0 !important;
+
+  background: var(--svc-soft);
+}
+
+
+.ess-svc-card {
+  display: grid;
+
+  grid-template-columns:
+    minmax(350px,.82fr)
+    minmax(0,1.18fr);
+
+  min-height: 470px;
+
+  margin-bottom: 22px;
+
+  overflow: hidden;
+
+  background: #FFFFFF;
+
+  border:
+    1px solid var(--svc-border);
+
+  box-shadow:
+    0 12px 36px rgba(7,27,46,.04);
+}
+
+
+.ess-svc-card:last-child {
+  margin-bottom: 0;
+}
+
+
+.ess-svc-reverse
+.ess-svc-photo {
+  order: 2;
+}
+
+
+.ess-svc-reverse
+.ess-svc-content {
+  order: 1;
+}
+
+
+/* =========================================================
+   PHOTO
+========================================================= */
+
+.ess-svc-photo {
+  position: relative;
+
+  min-width: 0;
+
+  overflow: hidden;
+
+  background: #E7ECEF;
+}
+
+
+.ess-svc-photo picture,
+.ess-svc-photo img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+}
+
+
+.ess-svc-photo img {
+  object-fit: cover;
+
+  object-position: center;
+}
+
+
+.ess-svc-photo::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(7,27,46,.38),
+      transparent 45%
+    );
+}
+
+
+.ess-svc-photo > span {
+  position: absolute;
+
+  left: 21px;
+  bottom: 18px;
+
+  z-index: 2;
+
+  color: #FFFFFF;
+
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size: 32px;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.ess-svc-content {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+
+  padding:
+    37px clamp(27px,4vw,54px);
+}
+
+
+.ess-svc-content > small {
+  color: var(--svc-gold-dark);
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: .14em;
+}
+
+
+.ess-svc-content h2 {
+  max-width: 650px;
+
+  margin: 9px 0 0;
+
+  color: var(--svc-navy);
+
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size:
+    clamp(27px,3vw,40px);
+
+  line-height: 1.1;
+
+  letter-spacing: -.035em;
+}
+
+
+.ess-svc-content h2 strong {
+  color: var(--svc-gold-dark);
+}
+
+
+.ess-svc-content > p {
+  max-width: 620px;
+
+  margin: 13px 0 0;
+
+  color: var(--svc-muted);
+
+  font-size: 12px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   TAGS
+========================================================= */
+
+.ess-svc-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top: 18px;
+}
+
+
+.ess-svc-tags span {
+  min-height: 30px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 6px 9px;
+
+  color: #52616D;
+
+  background: #F7F9FA;
+
+  border:
+    1px solid #E1E6EA;
+
+  font-size: 8px;
+
+  font-weight: 700;
+}
+
+
+.ess-svc-tags span::before {
+  content: "";
+
+  width: 5px;
+  height: 5px;
+
+  flex: 0 0 5px;
+
+  margin-right: 7px;
+
+  background: var(--svc-gold);
+
+  border-radius: 50%;
+}
+
+
+/* =========================================================
+   VIP FEATURES
+========================================================= */
+
+.ess-svc-feature-grid {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 7px;
+
+  margin-top: 18px;
+}
+
+
+.ess-svc-feature-grid > div {
+  min-height: 47px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 10px 12px;
+
+  background: #F7F9FA;
+
+  border:
+    1px solid #E1E6EA;
+}
+
+
+.ess-svc-feature-grid i {
+  width: 23px;
+
+  color: var(--svc-gold-dark);
+
+  text-align: center;
+
+  font-size: 14px;
+}
+
+
+.ess-svc-feature-grid span {
+  color: #52616D;
+
+  font-size: 9px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   FACTS
+========================================================= */
+
+.ess-svc-facts {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  margin-top: 19px;
+
+  border-top:
+    1px solid var(--svc-border);
+
+  border-bottom:
+    1px solid var(--svc-border);
+}
+
+
+.ess-svc-facts > div {
+  padding: 12px 13px;
+}
+
+
+.ess-svc-facts > div:first-child {
+  border-right:
+    1px solid var(--svc-border);
+}
+
+
+.ess-svc-facts small,
+.ess-svc-facts strong {
+  display: block;
+}
+
+
+.ess-svc-facts small {
+  color: var(--svc-gold-dark);
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: .10em;
+}
+
+
+.ess-svc-facts strong {
+  margin-top: 4px;
+
+  color: var(--svc-navy);
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.ess-svc-actions {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 9px;
+
+  margin-top: 19px;
+}
+
+
+.ess-svc-actions a {
+  min-height: 45px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 10px 16px;
+
+  text-decoration: none !important;
+
+  font-size: 9px;
+
+  font-weight: 800;
+}
+
+
+.ess-svc-action-main {
+  color: var(--svc-navy) !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--svc-gold-light),
+      var(--svc-gold)
+    );
+}
+
+
+.ess-svc-action-alt {
+  color: var(--svc-navy) !important;
+
+  background: #FFFFFF;
+
+  border:
+    1px solid #CCD5DB;
+}
+
+
+/* =========================================================
+   DARK INDUSTRIAL
+========================================================= */
+
+.ess-svc-dark {
+  background:
+    linear-gradient(
+      135deg,
+      var(--svc-navy),
+      var(--svc-navy-2)
+    );
+
+  border-color: #17374F;
+}
+
+
+.ess-svc-dark
+.ess-svc-content h2 {
+  color: #FFFFFF;
+}
+
+
+.ess-svc-dark
+.ess-svc-content h2 strong {
+  color: var(--svc-gold-light);
+}
+
+
+.ess-svc-dark
+.ess-svc-content > p {
+  color:
+    rgba(255,255,255,.60);
+}
+
+
+.ess-svc-dark
+.ess-svc-tags span {
+  color:
+    rgba(255,255,255,.72);
+
+  background:
+    rgba(255,255,255,.035);
+
+  border-color:
+    rgba(255,255,255,.11);
+}
+
+
+.ess-svc-dark
+.ess-svc-facts {
+  border-color:
+    rgba(255,255,255,.10);
+}
+
+
+.ess-svc-dark
+.ess-svc-facts > div:first-child {
+  border-right-color:
+    rgba(255,255,255,.10);
+}
+
+
+.ess-svc-dark
+.ess-svc-facts strong {
+  color: #FFFFFF;
+}
+
+
+.ess-svc-dark
+.ess-svc-action-alt {
+  color: #FFFFFF !important;
+
+  background:
+    rgba(255,255,255,.03);
+
+  border-color:
+    rgba(255,255,255,.20);
+}
+
+
+/* =========================================================
+   CUSTOM REQUIREMENT
+========================================================= */
+
+.ess-svc-custom {
+  padding: 0 0 22px !important;
+
+  background: var(--svc-soft);
+}
+
+
+.ess-svc-custom-inner {
+  display: grid;
+
+  grid-template-columns:
+    62px minmax(0,1fr) auto;
+
+  gap: 23px;
+
+  align-items: center;
+
+  padding: 30px 33px;
+
+  background: #FFFFFF;
+
+  border:
+    1px solid #DADFE3;
+
+  border-left:
+    4px solid var(--svc-gold);
+}
+
+
+.ess-svc-custom-icon {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: var(--svc-navy);
+
+  background: #F2E6C7;
+
+  font-size: 19px;
+}
+
+
+.ess-svc-custom-copy > span {
+  display: block;
+
+  color: var(--svc-gold-dark);
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: .14em;
+}
+
+
+.ess-svc-custom-copy h2 {
+  margin: 6px 0 0;
+
+  color: var(--svc-navy);
+
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size:
+    clamp(21px,2.4vw,30px);
+}
+
+
+.ess-svc-custom-copy p {
+  max-width: 720px;
+
+  margin: 7px 0 0;
+
+  color: var(--svc-muted);
+
+  font-size: 11px;
+
+  line-height: 1.65;
+}
+
+
+.ess-svc-custom-inner > a {
+  min-height: 48px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 11px 17px;
+
+  color: var(--svc-navy) !important;
+
+  background: var(--svc-gold);
+
+  text-decoration: none !important;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.ess-svc-cta {
+  padding: 0 0 68px !important;
+
+  background: var(--svc-soft);
+}
+
+
+.ess-svc-cta-inner {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 35px;
+
+  padding: 32px 36px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--svc-navy),
+      var(--svc-navy-2)
+    );
+}
+
+
+.ess-svc-cta-inner > div:first-child > span {
+  display: block;
+
+  color: var(--svc-gold-light);
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: .14em;
+}
+
+
+.ess-svc-cta h2 {
+  margin: 7px 0 0;
+
+  color: #FFFFFF;
+
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size:
+    clamp(23px,2.5vw,34px);
+}
+
+
+.ess-svc-cta-actions {
+  display: flex;
+
+  gap: 10px;
+
+  flex-shrink: 0;
+}
+
+
+.ess-svc-cta-actions a {
+  min-height: 49px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 11px 17px;
+
+  text-decoration: none !important;
+
+  font-size: 9px;
+
+  font-weight: 800;
+}
+
+
+.ess-svc-cta-main {
+  color: var(--svc-navy) !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--svc-gold-light),
+      var(--svc-gold)
+    );
+}
+
+
+.ess-svc-cta-call {
+  color: #FFFFFF !important;
+
+  border:
+    1px solid rgba(255,255,255,.27);
+}
+
+
+/* =========================================================
+   ACTIVE MAIN NAV
+========================================================= */
+
+@media (min-width: 992px) {
+
+  body.ess-service-page
+  .ess-services-toggle {
+    color: #B88A32 !important;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  .ess-svc-body-wrap {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+
+  .ess-svc-hero-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  .ess-svc-intro
+  .ess-svc-body-wrap {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+
+  .ess-svc-intro p {
+    max-width: 650px;
+  }
+
+
+  .ess-svc-card {
+    grid-template-columns:
+      minmax(290px,.82fr)
+      minmax(0,1.18fr);
+
+    min-height: 430px;
+  }
+
+
+  .ess-svc-content {
+    padding:
+      30px 27px;
+  }
+
+
+  .ess-svc-custom-inner {
+    grid-template-columns:
+      55px minmax(0,1fr);
+
+    gap: 18px;
+  }
+
+
+  .ess-svc-custom-inner > a {
+    grid-column:
+      1 / -1;
+
+    width: fit-content;
+  }
+
+
+  .ess-svc-cta-inner {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+}
+
+
+/* =========================================================
+   PHONE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  .ess-svc-body-wrap {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+
+  /* HERO */
+
+  .ess-svc-hero {
+    min-height: 0 !important;
+  }
+
+
+  .ess-svc-hero-inner {
+    padding: 31px 15px;
+  }
+
+
+  .ess-svc-hero::after {
+    right: -5px;
+    bottom: -6px;
+
+    font-size: 80px;
+  }
+
+
+  .ess-svc-eyebrow {
+    font-size: 9px;
+  }
+
+
+  .ess-svc-eyebrow::before {
+    width: 24px;
+  }
+
+
+  .ess-svc-hero h1 {
+    font-size:
+      clamp(34px,9.8vw,44px);
+
+    line-height: 1.08;
+  }
+
+
+  .ess-svc-hero h1 strong {
+    display: block;
+  }
+
+
+  .ess-svc-hero p {
+    font-size: 13px;
+  }
+
+
+  .ess-svc-hero-actions {
+    flex-direction: column;
+  }
+
+
+  .ess-svc-hero-actions a {
+    width: 100%;
+  }
+
+
+  /* INTRO */
+
+  .ess-svc-intro {
+    padding:
+      42px 0 !important;
+  }
+
+
+  .ess-svc-intro h2 {
+    font-size:
+      clamp(29px,8vw,38px);
+  }
+
+
+  .ess-svc-intro p {
+    font-size: 12px;
+  }
+
+
+  /* SERVICES */
+
+  .ess-svc-directory {
+    padding:
+      36px 0 44px !important;
+  }
+
+
+  .ess-svc-card,
+  .ess-svc-reverse {
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 0;
+
+    margin-bottom: 15px;
+  }
+
+
+  .ess-svc-card
+  .ess-svc-photo,
+  .ess-svc-reverse
+  .ess-svc-photo {
+    order: 1;
+  }
+
+
+  .ess-svc-card
+  .ess-svc-content,
+  .ess-svc-reverse
+  .ess-svc-content {
+    order: 2;
+  }
+
+
+  .ess-svc-photo {
+    aspect-ratio:
+      4 / 3.1;
+  }
+
+
+  .ess-svc-photo picture,
+  .ess-svc-photo img {
+    height: 100%;
+  }
+
+
+  .ess-svc-photo img {
+    object-fit: cover;
+  }
+
+
+  .ess-svc-photo > span {
+    left: 15px;
+    bottom: 12px;
+
+    font-size: 27px;
+  }
+
+
+  .ess-svc-content {
+    padding:
+      24px 18px 22px;
+  }
+
+
+  .ess-svc-content h2 {
+    font-size:
+      clamp(25px,7.5vw,32px);
+
+    line-height: 1.13;
+  }
+
+
+  .ess-svc-content > p {
+    font-size: 12px;
+  }
+
+
+  .ess-svc-tags {
+    gap: 6px;
+
+    margin-top: 15px;
+  }
+
+
+  .ess-svc-tags span {
+    min-height: 29px;
+
+    padding: 6px 8px;
+
+    font-size: 8px;
+  }
+
+
+  .ess-svc-feature-grid {
+    grid-template-columns: 1fr;
+
+    gap: 6px;
+  }
+
+
+  .ess-svc-facts {
+    margin-top: 16px;
+  }
+
+
+  .ess-svc-facts > div {
+    padding: 11px 9px;
+  }
+
+
+  .ess-svc-actions {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    margin-top: 16px;
+  }
+
+
+  .ess-svc-actions a {
+    width: 100%;
+
+    min-height: 48px;
+  }
+
+
+  /* CUSTOM */
+
+  .ess-svc-custom {
+    padding-bottom:
+      16px !important;
+  }
+
+
+  .ess-svc-custom-inner {
+    display: block;
+
+    padding:
+      24px 19px;
+  }
+
+
+  .ess-svc-custom-icon {
+    width: 47px;
+    height: 47px;
+
+    margin-bottom: 17px;
+  }
+
+
+  .ess-svc-custom-copy h2 {
+    font-size: 24px;
+  }
+
+
+  .ess-svc-custom-copy p {
+    font-size: 12px;
+  }
+
+
+  .ess-svc-custom-inner > a {
+    width: 100%;
+
+    min-height: 50px;
+
+    margin-top: 18px;
+  }
+
+
+  /* CTA */
+
+  .ess-svc-cta {
+    padding:
+      0 0 44px !important;
+  }
+
+
+  .ess-svc-cta-inner {
+    gap: 22px;
+
+    padding:
+      26px 20px;
+  }
+
+
+  .ess-svc-cta-actions {
+    width: 100%;
+
+    flex-direction: column;
+  }
+
+
+  .ess-svc-cta-actions a {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONE
+========================================================= */
+
+@media (max-width: 390px) {
+
+  .ess-svc-facts {
+    grid-template-columns: 1fr;
+  }
+
+
+  .ess-svc-facts > div:first-child {
+    border-right: 0;
+
+    border-bottom:
+      1px solid var(--svc-border);
+  }
+
+
+  .ess-svc-dark
+  .ess-svc-facts > div:first-child {
+    border-bottom-color:
+      rgba(255,255,255,.10);
+  }
+
+
+  .ess-svc-tags {
+    flex-direction: column;
+  }
+
+
+  .ess-svc-tags span {
+    width: 100%;
+  }
+
+}
+
+
+/* SERVICE MOBILE FULL IMAGE FIX START */
+
+/* =========================================================
+   SERVICE PAGE - MOBILE FULL PHOTO DISPLAY
+   Do not crop people on phone screens.
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  body.ess-service-page
+  .ess-svc-photo {
+    width: 100% !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    aspect-ratio: auto !important;
+
+    overflow: hidden !important;
+
+    background: #E8ECEF;
+  }
+
+
+  body.ess-service-page
+  .ess-svc-photo picture {
+    width: 100% !important;
+    height: auto !important;
+
+    display: block !important;
+  }
+
+
+  body.ess-service-page
+  .ess-svc-photo img {
+    position: static !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    max-width: 100% !important;
+
+    display: block !important;
+
+    object-fit: contain !important;
+    object-position: center top !important;
+
+    background: #E8ECEF;
+  }
+
+
+  /*
+     Number stays over bottom-left of the real image.
+  */
+
+  body.ess-service-page
+  .ess-svc-photo > span {
+    left: 16px !important;
+    bottom: 14px !important;
+
+    z-index: 4 !important;
+
+    font-size: 27px !important;
+  }
+
+
+  /*
+     Keep overlay but do not change/crop image dimensions.
+  */
+
+  body.ess-service-page
+  .ess-svc-photo::after {
+    position: absolute !important;
+
+    inset: 0 !important;
+
+    background:
+      linear-gradient(
+        to top,
+        rgba(7,27,46,.34) 0%,
+        rgba(7,27,46,.08) 28%,
+        rgba(7,27,46,0) 55%
+      ) !important;
+
+    pointer-events: none !important;
+  }
+
+}
+
+
+/* Smaller phones */
+
+@media (max-width: 430px) {
+
+  body.ess-service-page
+  .ess-svc-photo {
+    aspect-ratio: auto !important;
+  }
+
+
+  body.ess-service-page
+  .ess-svc-photo img {
+    width: 100% !important;
+    height: auto !important;
+
+    object-fit: contain !important;
+    object-position: center top !important;
+  }
+
+}
+
+
+/* Very small phones */
+
+@media (max-width: 360px) {
+
+  body.ess-service-page
+  .ess-svc-photo {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+
+  body.ess-service-page
+  .ess-svc-photo img {
+    height: auto !important;
+  }
+
+}
+
+
+/* =========================================================
+   SERVICES MAIN NAV ACTIVE STATE
+   Replaces old dropdown-button active state.
+========================================================= */
+
+@media (min-width: 992px) {
+
+  body.ess-service-page
+  .ess-nav-list
+  a[href="service.html"] {
+    color: #B88A32 !important;
+  }
+
+
+  body.ess-service-page
+  .ess-nav-list
+  a[href="service.html"]::after {
+    width: 24px !important;
+  }
+
+}
+
+/* SERVICE MOBILE FULL IMAGE FIX END */

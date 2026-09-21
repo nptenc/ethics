@@ -1,0 +1,1184 @@
+﻿/* =========================================================
+   ETHICS SECURITY SERVICE
+   GALLERY - CLEAN FINAL
+========================================================= */
+
+:root {
+  --gal-navy: #071B2E;
+  --gal-navy-2: #0B2A47;
+  --gal-gold: #D2AA52;
+  --gal-gold-light: #E9CF8A;
+  --gal-gold-dark: #B88A32;
+  --gal-soft: #F6F8FA;
+  --gal-text: #263746;
+  --gal-muted: #677580;
+  --gal-border: #DFE5E9;
+  --gal-max: 1380px;
+}
+
+
+body.ess-gallery-page *,
+body.ess-gallery-page *::before,
+body.ess-gallery-page *::after {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   WIDTH
+========================================================= */
+
+.ess-gallery-clean-body-wrap {
+  width: 100%;
+  max-width: var(--gal-max);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+
+/* =========================================================
+   COMPACT HERO
+========================================================= */
+
+.ess-gallery-clean-hero {
+  position: relative;
+
+  min-height: 315px !important;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  padding: 0 !important;
+
+  background:
+    radial-gradient(
+      circle at 84% 20%,
+      rgba(210,170,82,.14),
+      transparent 28%
+    ),
+    linear-gradient(
+      135deg,
+      #071B2E,
+      #0B2A47
+    );
+}
+
+
+.ess-gallery-clean-hero::after {
+  content: "GALLERY";
+
+  position: absolute;
+
+  right: -25px;
+  bottom: -40px;
+
+  color:
+    rgba(255,255,255,.025);
+
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size:
+    clamp(120px,17vw,250px);
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: -.075em;
+
+  pointer-events: none;
+}
+
+
+.ess-gallery-clean-hero-inner {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+  max-width: var(--gal-max);
+
+  margin: 0 auto;
+
+  padding: 54px 24px;
+}
+
+
+.ess-gallery-clean-eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  color: var(--gal-gold-light);
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: .16em;
+}
+
+
+.ess-gallery-clean-eyebrow::before {
+  content: "";
+
+  width: 34px;
+  height: 2px;
+
+  background: var(--gal-gold);
+}
+
+
+.ess-gallery-clean-hero h1 {
+  max-width: 850px;
+
+  margin: 15px 0 0;
+
+  color: #FFFFFF;
+
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size:
+    clamp(42px,4.5vw,63px);
+
+  line-height: 1.05;
+
+  letter-spacing: -.045em;
+}
+
+
+.ess-gallery-clean-hero h1 strong {
+  color: var(--gal-gold-light);
+}
+
+
+.ess-gallery-clean-hero p {
+  max-width: 630px;
+
+  margin: 18px 0 0;
+
+  color:
+    rgba(255,255,255,.66);
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   GALLERY SECTION
+========================================================= */
+
+.ess-gallery-clean-section {
+  padding: 70px 0 78px !important;
+
+  background: var(--gal-soft);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.ess-gallery-clean-head {
+  display: flex;
+
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 40px;
+
+  margin-bottom: 30px;
+}
+
+
+.ess-gallery-clean-head > div:first-child > span {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: var(--gal-gold-dark);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: .15em;
+}
+
+
+.ess-gallery-clean-head h2 {
+  max-width: 760px;
+
+  margin: 0;
+
+  color: var(--gal-navy);
+
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size:
+    clamp(34px,3.6vw,50px);
+
+  line-height: 1.08;
+
+  letter-spacing: -.04em;
+}
+
+
+.ess-gallery-clean-head h2 strong {
+  color: var(--gal-gold-dark);
+}
+
+
+.ess-gallery-clean-count {
+  min-width: 105px;
+
+  padding-left: 22px;
+
+  border-left:
+    2px solid var(--gal-gold);
+}
+
+
+.ess-gallery-clean-count strong,
+.ess-gallery-clean-count span {
+  display: block;
+}
+
+
+.ess-gallery-clean-count strong {
+  color: var(--gal-navy);
+
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size: 30px;
+
+  line-height: 1;
+}
+
+
+.ess-gallery-clean-count span {
+  margin-top: 5px;
+
+  color: var(--gal-muted);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: .1em;
+}
+
+
+/* =========================================================
+   FILTER TOOLBAR
+========================================================= */
+
+.ess-gallery-clean-toolbar {
+  margin-bottom: 24px;
+
+  padding-bottom: 15px;
+
+  border-bottom:
+    1px solid var(--gal-border);
+}
+
+
+.ess-gallery-clean-filters {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+}
+
+
+.ess-gallery-clean-filters button {
+  min-height: 40px;
+
+  padding: 9px 14px;
+
+  color: #50606C;
+
+  background: #FFFFFF;
+
+  border:
+    1px solid #D9E0E5;
+
+  font-family:
+    Inter, sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition:
+    color .18s ease,
+    background .18s ease,
+    border-color .18s ease;
+}
+
+
+.ess-gallery-clean-filters button:hover,
+.ess-gallery-clean-filters button.is-active {
+  color: var(--gal-navy);
+
+  background: var(--gal-gold-light);
+
+  border-color: var(--gal-gold);
+}
+
+
+/* =========================================================
+   MASONRY GRID
+========================================================= */
+
+.ess-gallery-clean-grid {
+  column-count: 4;
+
+  column-gap: 15px;
+}
+
+
+.ess-gallery-clean-item {
+  width: 100%;
+
+  display: inline-block;
+
+  break-inside: avoid;
+
+  margin: 0 0 15px;
+
+  overflow: hidden;
+
+  vertical-align: top;
+
+  background: #FFFFFF;
+
+  border:
+    1px solid var(--gal-border);
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 24px rgba(7,27,46,.035);
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+
+.ess-gallery-clean-item:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 14px 32px rgba(7,27,46,.075);
+}
+
+
+.ess-gallery-clean-item:focus-visible {
+  outline:
+    2px solid var(--gal-gold);
+
+  outline-offset: 2px;
+}
+
+
+/* PHOTO */
+
+.ess-gallery-clean-photo {
+  position: relative;
+
+  overflow: hidden;
+
+  background: #E7EBEE;
+}
+
+
+.ess-gallery-clean-photo img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  transition:
+    transform .3s ease;
+}
+
+
+.ess-gallery-clean-item:hover
+.ess-gallery-clean-photo img {
+  transform: scale(1.018);
+}
+
+
+.ess-gallery-clean-open {
+  position: absolute;
+
+  right: 12px;
+  bottom: 12px;
+
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: var(--gal-navy);
+
+  background:
+    rgba(233,207,138,.95);
+
+  box-shadow:
+    0 4px 14px rgba(7,27,46,.16);
+
+  font-size: 14px;
+
+  opacity: 0;
+
+  transform:
+    translateY(4px);
+
+  transition:
+    opacity .2s ease,
+    transform .2s ease;
+}
+
+
+.ess-gallery-clean-item:hover
+.ess-gallery-clean-open {
+  opacity: 1;
+
+  transform:
+    translateY(0);
+}
+
+
+/* CAPTION */
+
+.ess-gallery-clean-item figcaption {
+  padding: 14px 15px 16px;
+}
+
+
+.ess-gallery-clean-item figcaption span {
+  display: block;
+
+  color: var(--gal-gold-dark);
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: .10em;
+
+  text-transform: uppercase;
+}
+
+
+.ess-gallery-clean-item figcaption strong {
+  display: block;
+
+  margin-top: 5px;
+
+  color: var(--gal-navy);
+
+  font-family:
+    Montserrat, sans-serif;
+
+  font-size: 11px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   LOADING / EMPTY
+========================================================= */
+
+.ess-gallery-clean-loading,
+.ess-gallery-clean-empty {
+  padding: 70px 20px;
+
+  color: #78858E;
+
+  text-align: center;
+}
+
+
+.ess-gallery-clean-loading {
+  column-span: all;
+}
+
+
+.ess-gallery-clean-loading i,
+.ess-gallery-clean-empty i {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: var(--gal-gold-dark);
+
+  font-size: 28px;
+}
+
+
+.ess-gallery-clean-loading span {
+  font-size: 11px;
+}
+
+
+.ess-gallery-clean-empty strong {
+  display: block;
+
+  color: var(--gal-navy);
+
+  font-size: 15px;
+}
+
+
+.ess-gallery-clean-empty p {
+  margin: 6px 0 0;
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   LIGHTBOX
+========================================================= */
+
+.ess-gallery-clean-lightbox {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 30000;
+
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 18px;
+}
+
+
+.ess-gallery-clean-lightbox.is-open {
+  display: flex;
+}
+
+
+.ess-gallery-clean-lightbox-backdrop {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    rgba(2,12,21,.95);
+
+  backdrop-filter:
+    blur(5px);
+}
+
+
+.ess-gallery-clean-lightbox-shell {
+  position: relative;
+
+  z-index: 2;
+
+  width:
+    min(1180px,96vw);
+
+  height:
+    min(840px,94vh);
+
+  display: flex;
+
+  flex-direction: column;
+
+  overflow: hidden;
+
+  background: #071B2E;
+
+  box-shadow:
+    0 30px 90px rgba(0,0,0,.35);
+}
+
+
+/* HEADER */
+
+.ess-gallery-clean-lightbox-head {
+  min-height: 68px;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0,1fr)
+    auto
+    44px;
+
+  gap: 18px;
+
+  align-items: center;
+
+  padding: 11px 15px;
+
+  border-bottom:
+    1px solid rgba(255,255,255,.10);
+}
+
+
+.ess-gallery-clean-lightbox-head
+> div:first-child {
+  min-width: 0;
+}
+
+
+.ess-gallery-clean-lightbox-head
+> div:first-child span,
+.ess-gallery-clean-lightbox-head
+> div:first-child strong {
+  display: block;
+}
+
+
+.ess-gallery-clean-lightbox-head
+> div:first-child span {
+  color: var(--gal-gold);
+
+  font-size: 7px;
+
+  font-weight: 800;
+
+  letter-spacing: .12em;
+}
+
+
+.ess-gallery-clean-lightbox-head
+> div:first-child strong {
+  margin-top: 4px;
+
+  overflow: hidden;
+
+  color: #FFFFFF;
+
+  font-size: 11px;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+
+.ess-gallery-clean-lightbox-position {
+  color:
+    rgba(255,255,255,.55);
+
+  font-size: 10px;
+
+  white-space: nowrap;
+}
+
+
+.ess-gallery-clean-lightbox-head button {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #FFFFFF;
+
+  background:
+    rgba(255,255,255,.07);
+
+  border: 0;
+
+  cursor: pointer;
+
+  font-size: 17px;
+}
+
+
+/* IMAGE */
+
+.ess-gallery-clean-lightbox-image {
+  min-height: 0;
+
+  flex: 1;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px;
+
+  overflow: hidden;
+
+  touch-action: pan-y;
+}
+
+
+.ess-gallery-clean-lightbox-image img {
+  width: auto;
+  max-width: 100%;
+
+  height: auto;
+  max-height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* NAVIGATION */
+
+.ess-gallery-clean-prev,
+.ess-gallery-clean-next {
+  position: absolute;
+
+  top: 50%;
+
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  transform:
+    translateY(-50%);
+
+  color: var(--gal-navy);
+
+  background:
+    rgba(233,207,138,.96);
+
+  border: 0;
+
+  cursor: pointer;
+
+  font-size: 21px;
+
+  box-shadow:
+    0 5px 18px rgba(0,0,0,.18);
+}
+
+
+.ess-gallery-clean-prev {
+  left: 14px;
+}
+
+
+.ess-gallery-clean-next {
+  right: 14px;
+}
+
+
+/* =========================================================
+   ACTIVE NAV
+========================================================= */
+
+@media (min-width: 992px) {
+
+  body.ess-gallery-page
+  .ess-nav-list
+  a[href="gallery.html"] {
+    color: #B88A32 !important;
+  }
+
+
+  body.ess-gallery-page
+  .ess-nav-list
+  a[href="gallery.html"]::after {
+    width: 24px !important;
+  }
+
+}
+
+
+/* =========================================================
+   LAPTOP
+========================================================= */
+
+@media (max-width: 1199.98px) {
+
+  .ess-gallery-clean-grid {
+    column-count: 3;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  .ess-gallery-clean-body-wrap {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+
+  .ess-gallery-clean-hero-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+  .ess-gallery-clean-grid {
+    column-count: 2;
+  }
+
+}
+
+
+/* =========================================================
+   PHONE
+========================================================= */
+
+@media (max-width: 767.98px) {
+
+  .ess-gallery-clean-body-wrap {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+
+  .ess-gallery-clean-hero {
+    min-height: 255px !important;
+  }
+
+
+  .ess-gallery-clean-hero-inner {
+    padding: 43px 15px;
+  }
+
+
+  .ess-gallery-clean-hero::after {
+    right: -8px;
+    bottom: -10px;
+
+    font-size: 85px;
+  }
+
+
+  .ess-gallery-clean-eyebrow {
+    font-size: 9px;
+  }
+
+
+  .ess-gallery-clean-eyebrow::before {
+    width: 24px;
+  }
+
+
+  .ess-gallery-clean-hero h1 {
+    max-width: 100%;
+
+    font-size:
+      clamp(34px,10vw,44px);
+
+    line-height: 1.08;
+  }
+
+
+  .ess-gallery-clean-hero h1 strong {
+    display: block;
+  }
+
+
+  .ess-gallery-clean-hero p {
+    max-width: 95%;
+
+    font-size: 13px;
+  }
+
+
+  .ess-gallery-clean-section {
+    padding:
+      50px 0 56px !important;
+  }
+
+
+  .ess-gallery-clean-head {
+    align-items: flex-end;
+
+    gap: 18px;
+
+    margin-bottom: 24px;
+  }
+
+
+  .ess-gallery-clean-head
+  > div:first-child > span {
+    font-size: 8px;
+  }
+
+
+  .ess-gallery-clean-head h2 {
+    font-size:
+      clamp(28px,8vw,37px);
+  }
+
+
+  .ess-gallery-clean-count {
+    min-width: 70px;
+
+    padding-left: 13px;
+  }
+
+
+  .ess-gallery-clean-count strong {
+    font-size: 24px;
+  }
+
+
+  /* HORIZONTAL SWIPE FILTERS */
+
+  .ess-gallery-clean-toolbar {
+    margin-left: -18px;
+    margin-right: -18px;
+
+    padding-left: 18px;
+    padding-right: 18px;
+
+    overflow: hidden;
+  }
+
+
+  .ess-gallery-clean-filters {
+    flex-wrap: nowrap;
+
+    gap: 7px;
+
+    padding-bottom: 4px;
+
+    overflow-x: auto;
+
+    overscroll-behavior-inline:
+      contain;
+
+    scrollbar-width: none;
+
+    -webkit-overflow-scrolling:
+      touch;
+  }
+
+
+  .ess-gallery-clean-filters::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  .ess-gallery-clean-filters button {
+    min-height: 41px;
+
+    flex: 0 0 auto;
+
+    padding-left: 14px;
+    padding-right: 14px;
+
+    font-size: 9px;
+  }
+
+
+  /* TWO-COLUMN PHONE GALLERY */
+
+  .ess-gallery-clean-grid {
+    column-count: 2;
+
+    column-gap: 9px;
+  }
+
+
+  .ess-gallery-clean-item {
+    margin-bottom: 9px;
+  }
+
+
+  .ess-gallery-clean-item figcaption {
+    padding: 10px 10px 12px;
+  }
+
+
+  .ess-gallery-clean-item
+  figcaption span {
+    font-size: 6px;
+  }
+
+
+  .ess-gallery-clean-item
+  figcaption strong {
+    margin-top: 4px;
+
+    font-size: 9px;
+
+    line-height: 1.35;
+  }
+
+
+  .ess-gallery-clean-open {
+    right: 8px;
+    bottom: 8px;
+
+    width: 31px;
+    height: 31px;
+
+    opacity: 1;
+
+    transform: none;
+
+    font-size: 12px;
+  }
+
+
+  /* FULL PHONE LIGHTBOX */
+
+  .ess-gallery-clean-lightbox {
+    padding: 0;
+  }
+
+
+  .ess-gallery-clean-lightbox-shell {
+    width: 100vw;
+    height: 100dvh;
+
+    max-width: none;
+
+    background: #04121F;
+  }
+
+
+  .ess-gallery-clean-lightbox-head {
+    min-height: 64px;
+
+    grid-template-columns:
+      minmax(0,1fr)
+      auto
+      40px;
+
+    gap: 10px;
+
+    padding:
+      9px 10px;
+  }
+
+
+  .ess-gallery-clean-lightbox-head
+  button {
+    width: 38px;
+    height: 38px;
+  }
+
+
+  .ess-gallery-clean-lightbox-image {
+    padding:
+      10px 6px 18px;
+  }
+
+
+  .ess-gallery-clean-prev,
+  .ess-gallery-clean-next {
+    top: auto;
+
+    bottom: 18px;
+
+    width: 44px;
+    height: 44px;
+
+    transform: none;
+  }
+
+
+  .ess-gallery-clean-prev {
+    left: 18px;
+  }
+
+
+  .ess-gallery-clean-next {
+    right: 18px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL PHONE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .ess-gallery-clean-head {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+
+  .ess-gallery-clean-count {
+    padding-left: 0;
+
+    border-left: 0;
+  }
+
+
+  .ess-gallery-clean-count strong,
+  .ess-gallery-clean-count span {
+    display: inline;
+  }
+
+
+  .ess-gallery-clean-count span {
+    margin-left: 5px;
+  }
+
+
+  .ess-gallery-clean-grid {
+    column-count: 1;
+  }
+
+
+  .ess-gallery-clean-item
+  figcaption {
+    padding:
+      13px 14px 15px;
+  }
+
+
+  .ess-gallery-clean-item
+  figcaption strong {
+    font-size: 11px;
+  }
+
+}
