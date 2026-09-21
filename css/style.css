@@ -917,3 +917,271 @@ a:focus {
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
+
+
+/* ===== ETHICS FINAL RESPONSIVE FIX START ===== */
+
+/* -------------------------------------------------
+   GLOBAL IMAGE SAFETY
+-------------------------------------------------- */
+
+img {
+    max-width: 100%;
+}
+
+/* -------------------------------------------------
+   HERO / SLIDER IMAGES
+   Keep banners clean and full width
+-------------------------------------------------- */
+
+.hero img,
+.hero-slider img,
+.slider img,
+.carousel-item img,
+.banner img,
+.hero-media img,
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* Desktop slider */
+@media (min-width: 768px) {
+
+    .hero-slider img,
+    .slider img,
+    .carousel-item img,
+    .hero-media img,
+    .hero-image img {
+        object-position: center center;
+    }
+}
+
+
+/* -------------------------------------------------
+   SERVICE / PEOPLE PHOTO FIX
+   Prevent heads / bodies from being badly cropped
+-------------------------------------------------- */
+
+.service-card .image-wrap,
+.service-card .thumb,
+.service-card .service-image,
+.service-item .image-wrap,
+.service-item .thumb,
+.service-box .image,
+.project-card .image,
+.card-image {
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.service-card .image-wrap img,
+.service-card .thumb img,
+.service-card .service-image img,
+.service-card > img,
+.service-item .image-wrap img,
+.service-item .thumb img,
+.service-box .image img,
+.project-card .image img,
+.card-image img,
+.services img {
+    width: 100%;
+    display: block;
+    object-position: center top;
+}
+
+
+/* -------------------------------------------------
+   FULL BODY UTILITY
+   Add class "show-full-body" to any image/card where
+   you want the complete person visible
+-------------------------------------------------- */
+
+img.show-full-body,
+.show-full-body img {
+    object-fit: contain !important;
+    object-position: center center !important;
+    background: #ffffff;
+}
+
+
+/* -------------------------------------------------
+   MOBILE FINAL FIX
+-------------------------------------------------- */
+
+@media (max-width: 767px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Mobile hero uses vertical image area */
+    .hero-slider img,
+    .slider img,
+    .carousel-item img,
+    .hero-media img,
+    .hero-image img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    /*
+       Critical people-photo fix.
+       Do not aggressively crop service/security staff.
+    */
+    .service-card .image-wrap img,
+    .service-card .thumb img,
+    .service-card .service-image img,
+    .service-card > img,
+    .service-item .image-wrap img,
+    .service-item .thumb img,
+    .service-box .image img,
+    .project-card .image img,
+    .card-image img {
+        width: 100%;
+        height: auto !important;
+        max-height: none !important;
+        object-fit: contain !important;
+        object-position: center top !important;
+        background: #ffffff;
+    }
+
+    /* Improve section spacing */
+    section {
+        scroll-margin-top: 75px;
+    }
+
+    .section-padding {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    /* Main headings */
+    .section-title,
+    .section-heading h2 {
+        font-size: clamp(28px, 8vw, 36px);
+        line-height: 1.08;
+    }
+
+    /* Hero heading */
+    .hero-title,
+    .hero h1,
+    .slider h1 {
+        line-height: 1.06;
+    }
+
+    /* Paragraph readability */
+    p,
+    .lead,
+    .section-description {
+        line-height: 1.65;
+    }
+
+    /* Cards need breathing room */
+    .service-card,
+    .service-item,
+    .feature-card,
+    .industry-card,
+    .project-card {
+        margin-bottom: 20px;
+    }
+
+    /* Buttons easier to use on phones */
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /*
+       Decorative background typography can interfere
+       with readability on narrow devices.
+    */
+    .bg-watermark,
+    .section-watermark,
+    .decorative-text {
+        opacity: 0.035;
+    }
+}
+
+
+/* -------------------------------------------------
+   VERY SMALL PHONE FIX
+-------------------------------------------------- */
+
+@media (max-width: 390px) {
+
+    .section-padding {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .service-card,
+    .service-item,
+    .feature-card,
+    .industry-card {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+/* ===== ETHICS FINAL RESPONSIVE FIX END ===== */
+
+
+/* ===== ETHICS MOBILE SERVICE IMAGE HOTFIX START ===== */
+@media (max-width: 767px) {
+
+    /* Service card image box */
+    .service-card .image-wrap,
+    .service-card .thumb,
+    .service-card .service-image,
+    .service-item .image-wrap,
+    .service-item .thumb,
+    .service-box .image,
+    .project-card .image,
+    .card-image {
+        overflow: hidden !important;
+        background: #ffffff !important;
+        min-height: 220px !important;
+        aspect-ratio: 4 / 3 !important;
+    }
+
+    /* Force proper crop so full team/body area is visible better */
+    .service-card .image-wrap img,
+    .service-card .thumb img,
+    .service-card .service-image img,
+    .service-card > img,
+    .service-item .image-wrap img,
+    .service-item .thumb img,
+    .service-box .image img,
+    .project-card .image img,
+    .card-image img {
+        width: 100% !important;
+        height: 100% !important;
+        max-height: none !important;
+        display: block !important;
+        object-fit: cover !important;
+        object-position: center 82% !important;
+        background: #ffffff !important;
+    }
+
+    /* Slightly taller image area for service cards on mobile */
+    .service-card .image-wrap,
+    .service-card .thumb,
+    .service-card .service-image {
+        min-height: 240px !important;
+    }
+}
+/* ===== ETHICS MOBILE SERVICE IMAGE HOTFIX END ===== */
